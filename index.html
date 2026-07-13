@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>桃園災防區颱風動態網</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050b16;
+      --surface: rgba(13, 26, 47, .94);
+      --panel-head: #0f2038;
+      --text: #d9e5f5;
+      --muted: #8ba2c0;
+      --line: #1e3452;
+      --line2: #142438;
+      --red: #ff6257;
+      --red-soft: rgba(255, 98, 87, .13);
+      --blue: #38d2ff;
+      --green: #43dd9a;
+      --amber: #ffc45c;
+      --gold: #c9a336;
+      --brand: #ffc45c;
+      --brand-glow: rgba(255, 200, 92, .50);
+      --brand-soft: rgba(255, 196, 92, .10);
+      --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1100px 600px at 85% -10%, rgba(56, 210, 255, .10), transparent 60%),
+        radial-gradient(900px 700px at -10% 110%, rgba(31, 94, 255, .12), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(0deg, rgba(56, 210, 255, .045) 0 1px, transparent 1px 44px),
+        repeating-linear-gradient(90deg, rgba(56, 210, 255, .045) 0 1px, transparent 1px 44px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .radar {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 96vmin;
+      height: 96vmin;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background:
+        repeating-radial-gradient(circle at center, rgba(56, 210, 255, .30) 0 1px, transparent 1px 11.5%),
+        linear-gradient(0deg, transparent calc(50% - .5px), rgba(56, 210, 255, .25) 50%, transparent calc(50% + .5px)),
+        linear-gradient(90deg, transparent calc(50% - .5px), rgba(56, 210, 255, .25) 50%, transparent calc(50% + .5px));
+      opacity: .34;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .radar::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg,
+        rgba(56, 210, 255, .40),
+        rgba(56, 210, 255, .10) 55deg,
+        transparent 95deg 360deg);
+      animation: radar-sweep 7s linear infinite;
+    }
+    @keyframes radar-sweep {
+      to { transform: rotate(360deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .radar::after { animation: none; }
+    }
+    header, main {
+      position: relative;
+      z-index: 1;
+    }
+    .topbar {
+      background: linear-gradient(180deg, #0a1730, #081124);
+      color: #eaf3ff;
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .45);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .eoc-box {
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--muted);
+      background: rgba(13, 26, 47, .8);
+      border-radius: 8px;
+      padding: 8px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 200px;
+    }
+    .eoc-title {
+      font-size: .72rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+    .eoc-level {
+      font-size: 1.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .eoc-meta {
+      font-size: .72rem;
+      color: var(--muted);
+    }
+    .eoc-l1 { border-left-color: var(--red); }
+    .eoc-l1 .eoc-level { color: var(--red); text-shadow: 0 0 10px rgba(255, 98, 87, .5); }
+    .eoc-l2 { border-left-color: var(--amber); }
+    .eoc-l2 .eoc-level { color: var(--amber); text-shadow: 0 0 10px rgba(255, 196, 92, .4); }
+    .eoc-l3 { border-left-color: var(--blue); }
+    .eoc-l3 .eoc-level { color: var(--blue); }
+    .eoc-none { opacity: .8; }
+    .logo {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      background: white;
+      box-shadow: 0 0 0 3px rgba(201, 163, 54, .25), 0 0 22px rgba(255, 200, 92, .45);
+      flex: none;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .topbar .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 72px;
+      padding: 12px 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.35rem, 2vw, 1.9rem);
+      letter-spacing: 2px;
+      font-weight: 760;
+      text-shadow: 0 0 14px rgba(255, 200, 92, .40);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      color: #9db4d4;
+      font-size: .92rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+    button, .link-button, a.primary {
+      min-height: 40px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 0 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    button.primary, a.primary { background: var(--blue); color: #04121f; }
+    .link-button { background: #12233c; color: var(--text); border-color: var(--line); }
+    main.wrap {
+      padding: 22px 0 40px;
+    }
+    .status-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .module-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px 24px;
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #0b1728;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .meta-left {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .rain-scale {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(13, 26, 47, .6);
+      padding: 8px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+    .rain-scale-title {
+      color: var(--text);
+      font-weight: 700;
+      font-size: .84rem;
+      margin-bottom: 2px;
+    }
+    .star-note {
+      width: 100%;
+      font-size: .82rem;
+    }
+    .status-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      min-height: 92px;
+    }
+    .status-box strong {
+      display: block;
+      font-size: 1.08rem;
+      margin-top: 6px;
+    }
+    .status-box span {
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    section h2 {
+      margin: 0;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      background: var(--panel-head);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .module {
+      margin-bottom: 18px;
+    }
+    .ty-overview {
+      padding: 16px 18px;
+    }
+    .overview-summary {
+      margin: 0;
+    }
+    .ty-list {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+    .ty-list li {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      align-items: baseline;
+      padding: 10px 0 4px;
+      border-top: 1px solid var(--line2);
+    }
+    .ty-badge {
+      background: #16283f;
+      color: #a9c0de;
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: .8rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .ty-badge.alert {
+      background: var(--red);
+      color: white;
+    }
+    .ty-detail {
+      color: var(--muted);
+      font-size: .94rem;
+    }
+    .empty-note {
+      margin: 0;
+      padding: 16px 18px;
+      color: var(--muted);
+    }
+    .grid.inner {
+      padding: 16px;
+    }
+    .grid.inner .cards {
+      padding: 0;
+    }
+    .grid.inner > * {
+      min-width: 0;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    #reportText {
+      min-height: 0;
+      border-top: 1px solid var(--line);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      padding: 16px;
+    }
+    .division-card {
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--green);
+      border-radius: 8px;
+      padding: 12px;
+      min-height: 142px;
+    }
+    .division-card.risk-watch { border-top-color: var(--amber); background: rgba(255, 196, 92, .08); }
+    .division-card.risk-high { border-top-color: var(--red); background: var(--red-soft); }
+    .division-name {
+      font-weight: 800;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .risk-chip {
+      font-size: .78rem;
+      font-weight: 700;
+      padding: 1px 10px;
+      border-radius: 999px;
+      border: 1px solid currentColor;
+      white-space: nowrap;
+    }
+    .station-list {
+      margin-top: 8px;
+      border-top: 1px dashed var(--line);
+      padding-top: 6px;
+    }
+    .station-title {
+      font-size: .72rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+    }
+    .station-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 2px 0;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .station-row span:last-child {
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .station-row.primary,
+    .station-row.primary span:last-child {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .metric-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2px 12px;
+      padding: 5px 0;
+      border-top: 1px solid var(--line2);
+      font-size: .94rem;
+    }
+    .metric-row span { color: var(--muted); }
+    .metric-row strong { color: var(--text); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .95rem;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    thead th {
+      background: var(--panel-head);
+      color: #a9c0de;
+      font-size: .86rem;
+    }
+    td span {
+      color: var(--muted);
+      margin-left: 2px;
+    }
+    .risk-normal { color: var(--green); }
+    .risk-watch { color: var(--amber); }
+    .risk-high { color: var(--red); }
+    .report-box {
+      margin-top: 18px;
+    }
+    pre {
+      margin: 0;
+      padding: 18px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .96rem;
+      background: #071120;
+      color: #cfe3ff;
+      border-radius: 0 0 8px 8px;
+      min-height: 420px;
+    }
+    .notice {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .copy-state {
+      min-width: 7em;
+      color: #d8dee6;
+      font-size: .9rem;
+      text-align: right;
+    }
+    .copy-state.dark {
+      color: var(--muted);
+      min-width: 0;
+    }
+    .status-box.alert {
+      border-left-color: var(--brand);
+      background: var(--brand-soft);
+    }
+    .status-box.alert strong {
+      color: var(--brand);
+    }
+    .typhoon-box {
+      margin-bottom: 18px;
+      border-left: 5px solid var(--brand);
+    }
+    .typhoon-box h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--brand);
+    }
+    .h2-tools {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button.small, .link-button.small, a.primary.small {
+      min-height: 32px;
+      padding: 0 12px;
+      font-size: .85rem;
+    }
+    .link-button.small {
+      border: 1px solid var(--line);
+    }
+    .typhoon-item {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .typhoon-item:last-child { border-bottom: none; }
+    .typhoon-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+    .typhoon-head strong {
+      font-size: 1.06rem;
+      color: var(--brand);
+    }
+    .typhoon-head span {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    pre.typhoon-text {
+      min-height: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .typhoon-footnote {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: .8rem;
+    }
+    .typhoon-footnote a {
+      color: var(--muted);
+    }
+    .typhoon-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .typhoon-images img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: block;
+      background: white;
+    }
+    @media (max-width: 860px) {
+      .topbar .wrap { align-items: flex-start; flex-direction: column; }
+      .status-strip, .grid { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      th, td { padding: 10px; font-size: .9rem; }
+      .copy-state { text-align: left; }
+      h1 { font-size: 1.3rem; letter-spacing: 1px; }
+      .logo { width: 52px; height: 52px; }
+      .grid.inner { padding: 12px; }
+      .table-wrap { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="radar" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <img class="logo" src="logo.png" alt="桃園災防區章">
+        <div>
+          <h1>桃園災防區颱風動態網</h1>
+          <div class="meta">
+            <span>頁面更新：2026-07-14 05:41:52</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="eoc-box eoc-none" title="依中央氣象署警報與中央災害應變中心開設狀態自動查報研判">
+        <span class="eoc-title">桃園市災害應變中心</span>
+        <strong class="eoc-level">未開設</strong>
+        <span class="eoc-meta">⬇ 07-12 17:40 降級成未開設｜查報 05:41</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="status-strip">
+      <div class="status-box"><span>颱風警報</span><strong class="risk-normal">無</strong></div>
+    </div>
+
+    <section class="module typhoon-box">
+      <h2><span>颱風動態概況</span></h2>
+      
+      <div class="ty-overview">
+        <p class="overview-summary">目前臺灣周邊共有 <strong>2</strong> 個颱風生成（資料時間：民國115年07月14日02時）。</p>
+        <ul class="ty-list">
+          <li>
+            <span class="ty-badge">觀察中</span>
+            <strong>颱風熱帶性低氣壓 TD10 (原巴威颱風)</strong>
+            <span class="ty-detail">位於臺灣北方約1350公里海面，向東北移動，近中心最大風速每秒12公尺。</span>
+          </li>
+          <li>
+            <span class="ty-badge">觀察中</span>
+            <strong>第11號 輕度颱風海神（HAISHEN）</strong>
+            <span class="ty-detail">位於臺灣東南方約1950公里海面，向北北西移動，近中心最大風速每秒18公尺。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="module">
+      <h2><span>颱風警報單</span></h2>
+      <p class="empty-note">中央氣象署目前未發布颱風警報。</p>
+    </section>
+
+    <section class="module">
+      <h2><span>桃園災防區雨量、風速概覽</span>
+        <span class="h2-tools">
+          <button class="primary small" type="button" onclick="copyReport()">複製報告詞</button>
+          <a class="link-button small" href="report.txt" target="_blank" rel="noopener">純文字</a>
+          <span class="copy-state dark" id="copyState"></span>
+        </span>
+      </h2>
+      <div class="module-meta">
+        <div class="meta-left">
+          <span>雨量資訊更新時間：2026-07-14 05:30:00</span>
+          <span>風速資訊更新時間：2026-07-14 05:35:18</span>
+          <span class="star-note">★ 為統計近年同鄉鎮區多測站雨勢較高測站，作為統計依據</span>
+        </div>
+        <div class="rain-scale">
+          <div class="rain-scale-title">中央氣象署雨量分級標準</div>
+          <span>◆ 大雨＝時雨量40毫米以上或日累積80毫米以上</span>
+          <span>◆ 豪雨＝3小時累積100毫米以上或日累積200毫米以上</span>
+          <span>◆ 大豪雨＝日累積350毫米以上</span>
+          <span>◆ 超大豪雨＝日累積500毫米以上</span>
+        </div>
+      </div>
+      <div class="cards">
+        
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>蘆竹災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>1.5 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>東 0.7尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>1.6尺/秒（2級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 蘆竹</span><span>時 0｜日 1.5 毫米</span></div><div class="station-row"><span>西濱S023K</span><span>時 0｜日 3 毫米</span></div></div>
+            </article>
+            
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>桃園災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>3.5 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>東南東 0.9尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>1.8尺/秒（2級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 國二E009K</span><span>時 0｜日 3.5 毫米</span></div><div class="station-row"><span>桃園</span><span>時 0｜日 23 毫米</span></div><div class="station-row"><span>中德</span><span>時 0｜日 8.5 毫米</span></div></div>
+            </article>
+            
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>八德災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>12.5 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>東南 1.8尺/秒（2級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>3.6尺/秒（3級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 八德</span><span>時 0｜日 12.5 毫米</span></div><div class="station-row"><span>八德蔬果</span><span>時 0｜日 7 毫米</span></div></div>
+            </article>
+            
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>平鎮災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>3.5 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>靜 0.0尺/秒（0級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>0.6尺/秒（1級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 國一高架N063K</span><span>時 0｜日 3.5 毫米</span></div><div class="station-row"><span>平鎮</span><span>時 0｜日 1.5 毫米</span></div></div>
+            </article>
+            
+      </div>
+      <pre id="reportText">桃園災防區報告：
+🟥桃園災防區雨量統計：
+（時間：7月14日0400至0600時）
+🔵蘆竹災防分區
+時雨量：0mm
+日雨量：1.5mm
+風向風力：東1級
+
+🔵桃園災防分區
+時雨量：0mm
+日雨量：3.5mm
+風向風力：東南東1級
+
+🔵八德災防分區
+時雨量：0mm
+日雨量：12.5mm
+風向風力：東南2級
+
+🔵平鎮災防分區
+時雨量：0mm
+日雨量：3.5mm
+風向風力：靜0級
+
+🔵綜合說明 ：
+🔶《時雨量》各區均為0毫米。
+🔶《日雨量》以八德區12.5毫米較高。
+🔶《風力風向》風向0-2級，瞬間達3級。
+🔵災情管制：本部所轄各災防分區均無災情。
+⭐️綜合研判分析：
+桃園地區目前觀測無明顯降雨。</pre>
+    </section>
+
+    <section class="module">
+      <h2><span>災情管制</span></h2>
+      <p class="empty-note">本部所轄各災防分區均無災情。</p>
+    </section>
+
+    <p class="notice">資料來源：中央氣象署 10 分鐘雨量、風速觀測資料及颱風警報單；本頁由 Mac Mini 排程自動更新。</p>
+  </main>
+
+  <script>
+    async function copyText(text, stateId) {
+      const state = document.getElementById(stateId);
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (err) {
+        const area = document.createElement('textarea');
+        area.value = text;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand('copy');
+        area.remove();
+      }
+      if (state) {
+        state.textContent = '已複製';
+        setTimeout(() => state.textContent = '', 1800);
+      }
+    }
+    function copyReport() {
+      copyText(document.getElementById('reportText').textContent.trim(), 'copyState');
+    }
+    function copyTyphoon() {
+      const text = Array.from(document.querySelectorAll('.typhoon-text'))
+        .map(el => el.textContent.trim())
+        .join('\n\n');
+      copyText(text, 'typhoonCopyState');
+    }
+  </script>
+</body>
+</html>
