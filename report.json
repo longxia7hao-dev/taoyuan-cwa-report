@@ -20,8 +20,8 @@
         "station_id": "C0C62",
         "direction": "東",
         "wind_force": 1,
-        "wind_speed": 0.7,
-        "wind_time": "07/14 05:20",
+        "wind_speed": 0.9,
+        "wind_time": "07/14 05:30",
         "gust_force": 2,
         "gust_speed": 1.6,
         "gust_time": "07/14 05:20"
@@ -68,7 +68,7 @@
         "wind_time": "07/14 05:20",
         "gust_force": 2,
         "gust_speed": 1.8,
-        "gust_time": "07/14 05:20"
+        "gust_time": "07/14 05:30"
       },
       "stations": [
         {
@@ -150,7 +150,7 @@
         "three_hr": 0.0,
         "six_hr": 0.0,
         "twelve_hr": 0.5,
-        "twenty_four_hr": 1.5,
+        "twenty_four_hr": 1.0,
         "today": 0.0
       },
       "wind": {
@@ -181,14 +181,14 @@
       "hour_rain": 0.0,
       "day_rain": 3.5,
       "three_hr": 0.0,
-      "twenty_four_hr": 1.5
+      "twenty_four_hr": 1.0
     }
   ],
   "period": "7月14日0400至0600時",
-  "rain_obs_time": "2026-07-14 05:30:00",
-  "rain_gen_time": "2026-07-14 05:38:12",
-  "wind_update_time": "2026-07-14 05:35:18",
-  "generated_at": "2026-07-14 05:41:52",
+  "rain_obs_time": "2026-07-14 05:40:00",
+  "rain_gen_time": "2026-07-14 05:47:08",
+  "wind_update_time": "2026-07-14 05:45:20",
+  "generated_at": "2026-07-14 05:51:54",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區12.5毫米較高",
@@ -249,7 +249,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 05:41",
+    "checked_at": "2026-07-14 05:51",
     "source_ok": true
   }
 }
