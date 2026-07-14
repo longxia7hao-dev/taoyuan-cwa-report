@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：7月14日1400至1600時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：1.5mm\n風向風力：北北西2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：3.5mm\n風向風力：西南西1級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：10mm\n風向風力：西北2級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：1mm\n風向風力：北北西1級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區10毫米較高。\n🔶《風力風向》風向1-2級，瞬間達3級。\n🔵災情管制：本部所轄各災防分區均無災情。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：7月14日1400至1600時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：0.5mm\n風向風力：北北西2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：3mm\n風向風力：西南西1級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：7.5mm\n風向風力：西北2級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：1mm\n風向風力：北北西1級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區7.5毫米較高。\n🔶《風力風向》風向1-2級，瞬間達3級。\n🔵災情管制：本部所轄各災防分區均無災情。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
   "items": [
     {
       "name": "蘆竹",
@@ -12,7 +12,7 @@
         "three_hr": 0.0,
         "six_hr": 0.0,
         "twelve_hr": 0.0,
-        "twenty_four_hr": 1.0,
+        "twenty_four_hr": 0.5,
         "today": 0.0
       },
       "wind": {
@@ -20,8 +20,8 @@
         "station_id": "C0C62",
         "direction": "北北西",
         "wind_force": 2,
-        "wind_speed": 2.2,
-        "wind_time": "07/14 14:40",
+        "wind_speed": 2.3,
+        "wind_time": "07/14 14:50",
         "gust_force": 3,
         "gust_speed": 4.9,
         "gust_time": "07/14 14:30"
@@ -30,7 +30,7 @@
         {
           "name": "蘆竹",
           "hour": 0.0,
-          "day24": 1.5,
+          "day24": 0.5,
           "primary": true
         },
         {
@@ -41,9 +41,9 @@
         }
       ],
       "hour_rain": 0.0,
-      "day_rain": 1.5,
+      "day_rain": 0.5,
       "three_hr": 0.0,
-      "twenty_four_hr": 1.0
+      "twenty_four_hr": 0.5
     },
     {
       "name": "桃園",
@@ -74,24 +74,24 @@
         {
           "name": "國二E009K",
           "hour": 0.0,
-          "day24": 3.5,
+          "day24": 3.0,
           "primary": true
         },
         {
           "name": "桃園",
           "hour": 0.0,
-          "day24": 20.5,
+          "day24": 17.0,
           "primary": false
         },
         {
           "name": "中德",
           "hour": 0.0,
-          "day24": 6.5,
+          "day24": 5.5,
           "primary": false
         }
       ],
       "hour_rain": 0.0,
-      "day_rain": 3.5,
+      "day_rain": 3.0,
       "three_hr": 0.0,
       "twenty_four_hr": 17.0
     },
@@ -124,7 +124,7 @@
         {
           "name": "八德",
           "hour": 0.0,
-          "day24": 10.0,
+          "day24": 7.5,
           "primary": true
         },
         {
@@ -135,7 +135,7 @@
         }
       ],
       "hour_rain": 0.0,
-      "day_rain": 10.0,
+      "day_rain": 7.5,
       "three_hr": 0.0,
       "twenty_four_hr": 7.5
     },
@@ -173,8 +173,8 @@
         },
         {
           "name": "平鎮",
-          "hour": 0.0,
-          "day24": 0.5,
+          "hour": 0.5,
+          "day24": 1.0,
           "primary": false
         }
       ],
@@ -185,13 +185,13 @@
     }
   ],
   "period": "7月14日1400至1600時",
-  "rain_obs_time": "2026-07-14 14:50:00",
-  "rain_gen_time": "2026-07-14 14:57:08",
-  "wind_update_time": "2026-07-14 14:55:20",
-  "generated_at": "2026-07-14 15:00:10",
+  "rain_obs_time": "2026-07-14 15:00:00",
+  "rain_gen_time": "2026-07-14 15:07:07",
+  "wind_update_time": "2026-07-14 15:05:21",
+  "generated_at": "2026-07-14 15:12:16",
   "summary": {
     "hour_rain": "各區均為0毫米",
-    "day_rain": "以八德區10毫米較高",
+    "day_rain": "以八德區7.5毫米較高",
     "wind": "風向1-2級，瞬間達3級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "forecast_rain_4h_mm": 3.1,
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 15:00",
+    "checked_at": "2026-07-14 15:12",
     "source_ok": true
   }
 }
