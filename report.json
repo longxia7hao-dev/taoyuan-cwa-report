@@ -188,7 +188,7 @@
   "rain_obs_time": "2026-07-14 16:10:00",
   "rain_gen_time": "2026-07-14 16:19:08",
   "wind_update_time": "2026-07-14 16:15:19",
-  "generated_at": "2026-07-14 16:19:58",
+  "generated_at": "2026-07-14 16:20:55",
   "summary": {
     "hour_rain": "以八德區0.5毫米較高",
     "day_rain": "以桃園區3毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 16:19",
+    "checked_at": "2026-07-14 16:20",
     "source_ok": true
   }
 }
