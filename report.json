@@ -159,7 +159,7 @@
         "direction": "靜",
         "wind_force": 0,
         "wind_speed": 0.0,
-        "wind_time": "07/14 20:40",
+        "wind_time": "07/14 20:50",
         "gust_force": 1,
         "gust_speed": 0.9,
         "gust_time": "07/14 20:40"
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月14日2000至2200時",
-  "rain_obs_time": "2026-07-14 20:50:00",
-  "rain_gen_time": "2026-07-14 20:57:07",
-  "wind_update_time": "2026-07-14 20:55:19",
-  "generated_at": "2026-07-14 21:02:09",
+  "rain_obs_time": "2026-07-14 21:00:00",
+  "rain_gen_time": "2026-07-14 21:07:07",
+  "wind_update_time": "2026-07-14 21:05:21",
+  "generated_at": "2026-07-14 21:12:31",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區16.5毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 21:01",
+    "checked_at": "2026-07-14 21:11",
     "source_ok": true
   }
 }
