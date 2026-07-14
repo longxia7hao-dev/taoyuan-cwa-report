@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月14日1800至2000時",
-  "rain_obs_time": "2026-07-14 18:50:00",
-  "rain_gen_time": "2026-07-14 18:57:07",
-  "wind_update_time": "2026-07-14 18:55:19",
-  "generated_at": "2026-07-14 19:01:47",
+  "rain_obs_time": "2026-07-14 19:00:00",
+  "rain_gen_time": "2026-07-14 19:08:07",
+  "wind_update_time": "2026-07-14 19:05:19",
+  "generated_at": "2026-07-14 19:11:37",
   "summary": {
     "hour_rain": "以平鎮區5.5毫米較高",
     "day_rain": "以平鎮區16.5毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 19:01",
+    "checked_at": "2026-07-14 19:10",
     "source_ok": true
   }
 }
