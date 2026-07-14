@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：7月14日1800至2000時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：0.5mm\n風向風力：東2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：北北東1級\n\n🔵八德災防分區\n時雨量：4mm\n日雨量：4.5mm\n風向風力：西1級\n\n🔵平鎮災防分區\n時雨量：5.5mm\n日雨量：16.5mm\n風向風力：東南1級\n\n🔵綜合說明 ：\n🔶《時雨量》以平鎮區5.5毫米較高。\n🔶《日雨量》以平鎮區16.5毫米較高。\n🔶《風力風向》風向1-2級，瞬間達2級。\n🔵災情管制：本部所轄各災防分區均無災情。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，整體未達大雨標準。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：7月14日1800至2000時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：北北東1級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：4.5mm\n風向風力：西1級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：16.5mm\n風向風力：東南1級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以平鎮區16.5毫米較高。\n🔶《風力風向》風向1-2級，瞬間達2級。\n🔵災情管制：本部所轄各災防分區均無災情。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
   "items": [
     {
       "name": "蘆竹",
@@ -23,14 +23,14 @@
         "wind_speed": 1.7,
         "wind_time": "07/14 18:10",
         "gust_force": 2,
-        "gust_speed": 2.7,
-        "gust_time": "07/14 18:10"
+        "gust_speed": 2.8,
+        "gust_time": "07/14 19:00"
       },
       "stations": [
         {
           "name": "蘆竹",
           "hour": 0.0,
-          "day24": 0.5,
+          "day24": 0.0,
           "primary": true
         },
         {
@@ -41,7 +41,7 @@
         }
       ],
       "hour_rain": 0.0,
-      "day_rain": 0.5,
+      "day_rain": 0.0,
       "three_hr": 0.0,
       "twenty_four_hr": 0.0
     },
@@ -56,7 +56,7 @@
         "three_hr": 0.0,
         "six_hr": 0.0,
         "twelve_hr": 0.0,
-        "twenty_four_hr": 0.5,
+        "twenty_four_hr": 0.0,
         "today": 0.0
       },
       "wind": {
@@ -93,7 +93,7 @@
       "hour_rain": 0.0,
       "day_rain": 0.0,
       "three_hr": 0.0,
-      "twenty_four_hr": 0.5
+      "twenty_four_hr": 0.0
     },
     {
       "name": "八德",
@@ -123,7 +123,7 @@
       "stations": [
         {
           "name": "八德",
-          "hour": 4.0,
+          "hour": 0.0,
           "day24": 4.5,
           "primary": true
         },
@@ -134,7 +134,7 @@
           "primary": false
         }
       ],
-      "hour_rain": 4.0,
+      "hour_rain": 0.0,
       "day_rain": 4.5,
       "three_hr": 4.0,
       "twenty_four_hr": 4.5
@@ -167,7 +167,7 @@
       "stations": [
         {
           "name": "國一高架N063K",
-          "hour": 5.5,
+          "hour": 0.0,
           "day24": 16.5,
           "primary": true
         },
@@ -178,22 +178,22 @@
           "primary": false
         }
       ],
-      "hour_rain": 5.5,
+      "hour_rain": 0.0,
       "day_rain": 16.5,
       "three_hr": 0.0,
       "twenty_four_hr": 1.0
     }
   ],
   "period": "7月14日1800至2000時",
-  "rain_obs_time": "2026-07-14 19:00:00",
-  "rain_gen_time": "2026-07-14 19:08:07",
-  "wind_update_time": "2026-07-14 19:05:19",
-  "generated_at": "2026-07-14 19:11:37",
+  "rain_obs_time": "2026-07-14 19:10:00",
+  "rain_gen_time": "2026-07-14 19:19:07",
+  "wind_update_time": "2026-07-14 19:15:19",
+  "generated_at": "2026-07-14 19:22:47",
   "summary": {
-    "hour_rain": "以平鎮區5.5毫米較高",
+    "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區16.5毫米較高",
     "wind": "風向1-2級，瞬間達2級",
-    "analysis": "桃園地區現有局部降雨，整體未達大雨標準。",
+    "analysis": "桃園地區目前觀測無明顯降雨。",
     "forecast_rain_4h_mm": 0.0,
     "typhoon_stage": 0
   },
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 19:10",
+    "checked_at": "2026-07-14 19:22",
     "source_ok": true
   }
 }
