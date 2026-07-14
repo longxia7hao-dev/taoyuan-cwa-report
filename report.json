@@ -56,7 +56,7 @@
         "three_hr": 0.0,
         "six_hr": 0.0,
         "twelve_hr": 0.0,
-        "twenty_four_hr": 1.5,
+        "twenty_four_hr": 1.0,
         "today": 0.0
       },
       "wind": {
@@ -93,7 +93,7 @@
       "hour_rain": 0.0,
       "day_rain": 3.0,
       "three_hr": 0.0,
-      "twenty_four_hr": 1.5
+      "twenty_four_hr": 1.0
     },
     {
       "name": "八德",
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月14日1600至1800時",
-  "rain_obs_time": "2026-07-14 16:50:00",
-  "rain_gen_time": "2026-07-14 16:57:08",
-  "wind_update_time": "2026-07-14 16:55:20",
-  "generated_at": "2026-07-14 17:02:17",
+  "rain_obs_time": "2026-07-14 17:00:00",
+  "rain_gen_time": "2026-07-14 17:08:07",
+  "wind_update_time": "2026-07-14 17:05:21",
+  "generated_at": "2026-07-14 17:12:45",
   "summary": {
     "hour_rain": "以八德區0.5毫米較高",
     "day_rain": "以桃園區3毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 17:02",
+    "checked_at": "2026-07-14 17:12",
     "source_ok": true
   }
 }
