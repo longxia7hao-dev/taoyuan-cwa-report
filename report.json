@@ -23,8 +23,8 @@
         "wind_speed": 2.2,
         "wind_time": "07/14 09:10",
         "gust_force": 3,
-        "gust_speed": 4.7,
-        "gust_time": "07/14 09:20"
+        "gust_speed": 5.1,
+        "gust_time": "07/14 09:50"
       },
       "stations": [
         {
@@ -36,7 +36,7 @@
         {
           "name": "西濱S023K",
           "hour": 0.0,
-          "day24": 1.5,
+          "day24": 1.0,
           "primary": false
         }
       ],
@@ -86,7 +86,7 @@
         {
           "name": "中德",
           "hour": 0.0,
-          "day24": 8.5,
+          "day24": 8.0,
           "primary": false
         }
       ],
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月14日0800至1000時",
-  "rain_obs_time": "2026-07-14 09:50:00",
-  "rain_gen_time": "2026-07-14 09:57:08",
-  "wind_update_time": "2026-07-14 09:55:20",
-  "generated_at": "2026-07-14 10:01:52",
+  "rain_obs_time": "2026-07-14 10:00:00",
+  "rain_gen_time": "2026-07-14 10:06:09",
+  "wind_update_time": "2026-07-14 10:05:19",
+  "generated_at": "2026-07-14 10:10:39",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區12.5毫米較高",
@@ -205,33 +205,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年07月14日02時",
+      "data_time": "民國115年07月14日08時",
       "typhoons": [
         {
           "intensity": "颱風",
-          "name": "熱帶性低氣壓 TD10 (原巴威颱風)",
+          "name": "熱帶性低氣壓 TD11 (原海神颱風)",
           "number": "",
           "eng": "",
-          "move_speed": "30",
+          "move_speed": "14",
           "move_dir": "東北",
-          "max_wind": "12",
-          "lat": 35.8,
-          "lon": 119.5,
-          "direction": "北",
-          "distance_km": 1350
-        },
-        {
-          "intensity": "輕度颱風",
-          "name": "海神",
-          "number": "第11號",
-          "eng": "HAISHEN",
-          "move_speed": "15",
-          "move_dir": "北北西",
-          "max_wind": "18",
-          "lat": 12.3,
-          "lon": 135.1,
+          "max_wind": "15",
+          "lat": 12.7,
+          "lon": 134.5,
           "direction": "東南",
-          "distance_km": 1950
+          "distance_km": 1880
         }
       ]
     }
@@ -249,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 10:00",
+    "checked_at": "2026-07-14 10:10",
     "source_ok": true
   }
 }
