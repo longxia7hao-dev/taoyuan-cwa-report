@@ -106,7 +106,7 @@
         "three_hr": 0.5,
         "six_hr": 0.5,
         "twelve_hr": 0.5,
-        "twenty_four_hr": 3.5,
+        "twenty_four_hr": 1.5,
         "today": 0.5
       },
       "wind": {
@@ -137,7 +137,7 @@
       "hour_rain": 0.0,
       "day_rain": 7.5,
       "three_hr": 0.5,
-      "twenty_four_hr": 3.5
+      "twenty_four_hr": 1.5
     },
     {
       "name": "平鎮",
@@ -159,7 +159,7 @@
         "direction": "靜",
         "wind_force": 0,
         "wind_speed": 0.0,
-        "wind_time": "07/14 15:30",
+        "wind_time": "07/14 15:40",
         "gust_force": 1,
         "gust_speed": 1.4,
         "gust_time": "07/14 15:20"
@@ -185,16 +185,16 @@
     }
   ],
   "period": "7月14日1400至1600時",
-  "rain_obs_time": "2026-07-14 15:40:00",
-  "rain_gen_time": "2026-07-14 15:47:07",
-  "wind_update_time": "2026-07-14 15:45:20",
-  "generated_at": "2026-07-14 15:50:36",
+  "rain_obs_time": "2026-07-14 15:50:00",
+  "rain_gen_time": "2026-07-14 15:57:07",
+  "wind_update_time": "2026-07-14 15:55:20",
+  "generated_at": "2026-07-14 16:02:23",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區7.5毫米較高",
     "wind": "風向0-2級，瞬間達3級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
-    "forecast_rain_4h_mm": 7.2,
+    "forecast_rain_4h_mm": 2.2,
     "typhoon_stage": 0
   },
   "sources": {
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 15:50",
+    "checked_at": "2026-07-14 16:01",
     "source_ok": true
   }
 }
