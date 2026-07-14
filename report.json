@@ -115,10 +115,10 @@
         "direction": "靜",
         "wind_force": 0,
         "wind_speed": 0.0,
-        "wind_time": "07/15 04:10",
-        "gust_force": 0,
-        "gust_speed": 0.0,
-        "gust_time": "07/15 04:10"
+        "wind_time": "07/15 04:20",
+        "gust_force": 1,
+        "gust_speed": 0.4,
+        "gust_time": "07/15 04:20"
       },
       "stations": [
         {
@@ -159,10 +159,10 @@
         "direction": "靜",
         "wind_force": 0,
         "wind_speed": 0.0,
-        "wind_time": "07/15 04:10",
-        "gust_force": 0,
-        "gust_speed": 0.2,
-        "gust_time": "07/15 04:10"
+        "wind_time": "07/15 04:20",
+        "gust_force": 1,
+        "gust_speed": 0.6,
+        "gust_time": "07/15 04:20"
       },
       "stations": [
         {
@@ -186,9 +186,9 @@
   ],
   "period": "7月15日0400至0600時",
   "rain_obs_time": "2026-07-15 04:20:00",
-  "rain_gen_time": "2026-07-15 04:27:07",
-  "wind_update_time": "2026-07-15 04:25:19",
-  "generated_at": "2026-07-15 04:30:07",
+  "rain_gen_time": "2026-07-15 04:37:08",
+  "wind_update_time": "2026-07-15 04:35:20",
+  "generated_at": "2026-07-15 04:40:07",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-15 04:30",
+    "checked_at": "2026-07-15 04:40",
     "source_ok": true
   }
 }
