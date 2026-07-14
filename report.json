@@ -64,11 +64,11 @@
         "station_id": "C2C48",
         "direction": "東南東",
         "wind_force": 1,
-        "wind_speed": 0.6,
-        "wind_time": "07/15 03:40",
-        "gust_force": 1,
-        "gust_speed": 1.4,
-        "gust_time": "07/15 03:30"
+        "wind_speed": 0.7,
+        "wind_time": "07/15 03:50",
+        "gust_force": 2,
+        "gust_speed": 1.6,
+        "gust_time": "07/15 03:50"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日0200至0400時",
-  "rain_obs_time": "2026-07-15 03:50:00",
-  "rain_gen_time": "2026-07-15 03:57:08",
-  "wind_update_time": "2026-07-15 03:55:21",
-  "generated_at": "2026-07-15 04:00:12",
+  "rain_obs_time": "2026-07-15 04:00:00",
+  "rain_gen_time": "2026-07-15 04:08:31",
+  "wind_update_time": "2026-07-15 04:05:19",
+  "generated_at": "2026-07-15 04:11:38",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-15 04:00",
+    "checked_at": "2026-07-15 04:10",
     "source_ok": true
   }
 }
