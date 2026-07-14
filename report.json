@@ -20,8 +20,8 @@
         "station_id": "C0C62",
         "direction": "北北東",
         "wind_force": 2,
-        "wind_speed": 2.1,
-        "wind_time": "07/14 10:20",
+        "wind_speed": 2.2,
+        "wind_time": "07/14 11:00",
         "gust_force": 4,
         "gust_speed": 6.0,
         "gust_time": "07/14 10:40"
@@ -130,7 +130,7 @@
         {
           "name": "八德蔬果",
           "hour": 0.0,
-          "day24": 7.0,
+          "day24": 6.5,
           "primary": false
         }
       ],
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月14日1000至1200時",
-  "rain_obs_time": "2026-07-14 11:00:00",
-  "rain_gen_time": "2026-07-14 11:08:31",
-  "wind_update_time": "2026-07-14 11:05:21",
-  "generated_at": "2026-07-14 11:11:03",
+  "rain_obs_time": "2026-07-14 11:10:00",
+  "rain_gen_time": "2026-07-14 11:19:07",
+  "wind_update_time": "2026-07-14 11:15:21",
+  "generated_at": "2026-07-14 11:20:57",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區12.5毫米較高",
@@ -236,7 +236,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 11:10",
+    "checked_at": "2026-07-14 11:20",
     "source_ok": true
   }
 }
