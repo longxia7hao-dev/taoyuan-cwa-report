@@ -188,7 +188,7 @@
   "rain_obs_time": "2026-07-15 07:40:00",
   "rain_gen_time": "2026-07-15 07:47:08",
   "wind_update_time": "2026-07-15 07:45:19",
-  "generated_at": "2026-07-15 07:48:19",
+  "generated_at": "2026-07-15 07:50:05",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-15 07:47",
+    "checked_at": "2026-07-15 07:50",
     "source_ok": true
   }
 }
