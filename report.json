@@ -185,16 +185,16 @@
     }
   ],
   "period": "7月14日0800至1000時",
-  "rain_obs_time": "2026-07-14 09:40:00",
-  "rain_gen_time": "2026-07-14 09:48:07",
-  "wind_update_time": "2026-07-14 09:45:20",
-  "generated_at": "2026-07-14 09:54:11",
+  "rain_obs_time": "2026-07-14 09:50:00",
+  "rain_gen_time": "2026-07-14 09:57:08",
+  "wind_update_time": "2026-07-14 09:55:20",
+  "generated_at": "2026-07-14 10:01:52",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區12.5毫米較高",
     "wind": "風向1-2級，瞬間達3級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
-    "forecast_rain_4h_mm": 1.8,
+    "forecast_rain_4h_mm": 2.5,
     "typhoon_stage": 0
   },
   "sources": {
@@ -249,7 +249,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 09:51",
+    "checked_at": "2026-07-14 10:00",
     "source_ok": true
   }
 }
