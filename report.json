@@ -158,8 +158,8 @@
         "station_id": "C0C65",
         "direction": "東北",
         "wind_force": 2,
-        "wind_speed": 1.7,
-        "wind_time": "07/14 07:20",
+        "wind_speed": 2.0,
+        "wind_time": "07/14 07:50",
         "gust_force": 3,
         "gust_speed": 4.1,
         "gust_time": "07/14 07:40"
@@ -185,16 +185,16 @@
     }
   ],
   "period": "7月14日0600至0800時",
-  "rain_obs_time": "2026-07-14 07:50:00",
-  "rain_gen_time": "2026-07-14 07:57:08",
-  "wind_update_time": "2026-07-14 07:55:21",
-  "generated_at": "2026-07-14 08:02:21",
+  "rain_obs_time": "2026-07-14 08:00:00",
+  "rain_gen_time": "2026-07-14 08:07:07",
+  "wind_update_time": "2026-07-14 08:05:19",
+  "generated_at": "2026-07-14 08:10:59",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區12.5毫米較高",
     "wind": "風向1-2級，瞬間達3級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
-    "forecast_rain_4h_mm": 0.6,
+    "forecast_rain_4h_mm": 0.7,
     "typhoon_stage": 0
   },
   "sources": {
@@ -249,7 +249,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-14 08:01",
+    "checked_at": "2026-07-14 08:10",
     "source_ok": true
   }
 }
