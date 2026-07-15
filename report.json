@@ -23,8 +23,8 @@
         "wind_speed": 3.8,
         "wind_time": "07/15 10:30",
         "gust_force": 4,
-        "gust_speed": 6.8,
-        "gust_time": "07/15 10:50"
+        "gust_speed": 7.4,
+        "gust_time": "07/15 11:00"
       },
       "stations": [
         {
@@ -78,13 +78,13 @@
           "primary": true
         },
         {
-          "name": "中德",
+          "name": "桃園",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
         },
         {
-          "name": "桃園",
+          "name": "中德",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日1000至1200時",
-  "rain_obs_time": "2026-07-15 11:00:00",
-  "rain_gen_time": "2026-07-15 11:06:09",
-  "wind_update_time": "2026-07-15 11:05:22",
-  "generated_at": "2026-07-15 11:10:12",
+  "rain_obs_time": "2026-07-15 11:10:00",
+  "rain_gen_time": "2026-07-15 11:19:07",
+  "wind_update_time": "2026-07-15 11:15:28",
+  "generated_at": "2026-07-15 11:22:04",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-15 11:10",
+    "checked_at": "2026-07-15 11:21",
     "source_ok": true
   }
 }
