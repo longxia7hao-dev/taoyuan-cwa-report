@@ -65,7 +65,7 @@
         "direction": "西",
         "wind_force": 1,
         "wind_speed": 1.1,
-        "wind_time": "07/15 13:10",
+        "wind_time": "07/15 13:40",
         "gust_force": 3,
         "gust_speed": 3.4,
         "gust_time": "07/15 13:20"
@@ -185,16 +185,16 @@
     }
   ],
   "period": "7月15日1200至1400時",
-  "rain_obs_time": "2026-07-15 13:40:00",
-  "rain_gen_time": "2026-07-15 13:47:07",
-  "wind_update_time": "2026-07-15 13:45:20",
-  "generated_at": "2026-07-15 13:50:06",
+  "rain_obs_time": "2026-07-15 13:50:00",
+  "rain_gen_time": "2026-07-15 13:56:08",
+  "wind_update_time": "2026-07-15 13:55:19",
+  "generated_at": "2026-07-15 14:02:33",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
     "wind": "風向1-3級，瞬間達4級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
-    "forecast_rain_4h_mm": 5.0,
+    "forecast_rain_4h_mm": 4.4,
     "typhoon_stage": 0
   },
   "sources": {
@@ -222,7 +222,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-15 13:50",
+    "checked_at": "2026-07-15 14:00",
     "source_ok": true
   }
 }
