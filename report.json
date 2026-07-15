@@ -67,8 +67,8 @@
         "wind_speed": 0.9,
         "wind_time": "07/15 16:40",
         "gust_force": 2,
-        "gust_speed": 2.0,
-        "gust_time": "07/15 16:40"
+        "gust_speed": 2.2,
+        "gust_time": "07/15 16:50"
       },
       "stations": [
         {
@@ -101,13 +101,13 @@
         "station": "八德",
         "station_id": "C0C49",
         "region": "八德區",
-        "ten_min": 0.0,
-        "one_hr": 0.0,
-        "three_hr": 0.0,
-        "six_hr": 0.0,
-        "twelve_hr": 0.0,
-        "twenty_four_hr": 4.0,
-        "today": 0.0
+        "ten_min": 1.5,
+        "one_hr": 1.5,
+        "three_hr": 1.5,
+        "six_hr": 1.5,
+        "twelve_hr": 1.5,
+        "twenty_four_hr": 5.5,
+        "today": 1.5
       },
       "wind": {
         "station": "八德",
@@ -136,8 +136,8 @@
       ],
       "hour_rain": 0.0,
       "day_rain": 4.0,
-      "three_hr": 0.0,
-      "twenty_four_hr": 4.0
+      "three_hr": 1.5,
+      "twenty_four_hr": 5.5
     },
     {
       "name": "平鎮",
@@ -161,8 +161,8 @@
         "wind_speed": 1.2,
         "wind_time": "07/15 16:40",
         "gust_force": 2,
-        "gust_speed": 2.9,
-        "gust_time": "07/15 16:10"
+        "gust_speed": 3.2,
+        "gust_time": "07/15 16:50"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日1600至1800時",
-  "rain_obs_time": "2026-07-15 16:50:00",
-  "rain_gen_time": "2026-07-15 16:56:25",
-  "wind_update_time": "2026-07-15 16:55:20",
-  "generated_at": "2026-07-15 17:02:51",
+  "rain_obs_time": "2026-07-15 17:00:00",
+  "rain_gen_time": "2026-07-15 17:08:32",
+  "wind_update_time": "2026-07-15 17:05:23",
+  "generated_at": "2026-07-15 17:12:54",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": true,
     "central_event": "萬里溪堰塞湖中央災害應變中心",
-    "checked_at": "2026-07-15 17:01",
+    "checked_at": "2026-07-15 17:12",
     "source_ok": true
   }
 }
