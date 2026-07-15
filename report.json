@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日2200至2400時",
-  "rain_obs_time": "2026-07-15 23:50:00",
-  "rain_gen_time": "2026-07-15 23:56:25",
-  "wind_update_time": "2026-07-15 23:55:20",
-  "generated_at": "2026-07-16 00:00:36",
+  "rain_obs_time": "2026-07-16 00:00:00",
+  "rain_gen_time": "2026-07-16 00:07:07",
+  "wind_update_time": "2026-07-16 00:05:20",
+  "generated_at": "2026-07-16 00:11:03",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區1.5毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": true,
     "central_event": "萬里溪堰塞湖中央災害應變中心",
-    "checked_at": "2026-07-16 00:00",
+    "checked_at": "2026-07-16 00:10",
     "source_ok": true
   }
 }
