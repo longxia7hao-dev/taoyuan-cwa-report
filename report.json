@@ -159,10 +159,10 @@
         "direction": "東南東",
         "wind_force": 1,
         "wind_speed": 0.6,
-        "wind_time": "07/15 19:30",
+        "wind_time": "07/15 19:40",
         "gust_force": 2,
-        "gust_speed": 1.7,
-        "gust_time": "07/15 19:20"
+        "gust_speed": 2.6,
+        "gust_time": "07/15 19:40"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日1800至2000時",
-  "rain_obs_time": "2026-07-15 19:40:00",
-  "rain_gen_time": "2026-07-15 19:48:07",
-  "wind_update_time": "2026-07-15 19:45:20",
-  "generated_at": "2026-07-15 19:50:13",
+  "rain_obs_time": "2026-07-15 19:50:00",
+  "rain_gen_time": "2026-07-15 19:56:24",
+  "wind_update_time": "2026-07-15 19:55:20",
+  "generated_at": "2026-07-15 20:01:35",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區1.5毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": true,
     "central_event": "萬里溪堰塞湖中央災害應變中心",
-    "checked_at": "2026-07-15 19:50",
+    "checked_at": "2026-07-15 20:00",
     "source_ok": true
   }
 }
