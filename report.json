@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "西南",
         "wind_force": 2,
-        "wind_speed": 2.8,
-        "wind_time": "07/15 09:30",
+        "wind_speed": 3.2,
+        "wind_time": "07/15 09:40",
         "gust_force": 4,
-        "gust_speed": 5.6,
-        "gust_time": "07/15 09:20"
+        "gust_speed": 6.4,
+        "gust_time": "07/15 09:40"
       },
       "stations": [
         {
@@ -158,11 +158,11 @@
         "station_id": "C0C65",
         "direction": "西南",
         "wind_force": 1,
-        "wind_speed": 0.7,
-        "wind_time": "07/15 09:30",
+        "wind_speed": 0.8,
+        "wind_time": "07/15 09:40",
         "gust_force": 2,
-        "gust_speed": 2.7,
-        "gust_time": "07/15 09:30"
+        "gust_speed": 2.8,
+        "gust_time": "07/15 09:40"
       },
       "stations": [
         {
@@ -185,16 +185,16 @@
     }
   ],
   "period": "7月15日0800至1000時",
-  "rain_obs_time": "2026-07-15 09:40:00",
-  "rain_gen_time": "2026-07-15 09:47:24",
-  "wind_update_time": "2026-07-15 09:45:20",
-  "generated_at": "2026-07-15 09:51:10",
+  "rain_obs_time": "2026-07-15 09:50:00",
+  "rain_gen_time": "2026-07-15 09:57:07",
+  "wind_update_time": "2026-07-15 09:55:20",
+  "generated_at": "2026-07-15 10:01:48",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
     "wind": "風向1-2級，瞬間達4級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
-    "forecast_rain_4h_mm": 1.1,
+    "forecast_rain_4h_mm": 1.8,
     "typhoon_stage": 0
   },
   "sources": {
@@ -222,7 +222,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-07-15 09:51",
+    "checked_at": "2026-07-15 10:01",
     "source_ok": true
   }
 }
