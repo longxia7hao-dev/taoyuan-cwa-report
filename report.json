@@ -65,10 +65,10 @@
         "direction": "東南東",
         "wind_force": 1,
         "wind_speed": 0.9,
-        "wind_time": "07/15 16:20",
+        "wind_time": "07/15 16:30",
         "gust_force": 2,
         "gust_speed": 2.0,
-        "gust_time": "07/15 16:20"
+        "gust_time": "07/15 16:30"
       },
       "stations": [
         {
@@ -115,7 +115,7 @@
         "direction": "北北西",
         "wind_force": 1,
         "wind_speed": 1.1,
-        "wind_time": "07/15 16:10",
+        "wind_time": "07/15 16:30",
         "gust_force": 3,
         "gust_speed": 4.2,
         "gust_time": "07/15 16:10"
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日1600至1800時",
-  "rain_obs_time": "2026-07-15 16:30:00",
-  "rain_gen_time": "2026-07-15 16:39:24",
-  "wind_update_time": "2026-07-15 16:35:19",
-  "generated_at": "2026-07-15 16:40:09",
+  "rain_obs_time": "2026-07-15 16:40:00",
+  "rain_gen_time": "2026-07-15 16:47:07",
+  "wind_update_time": "2026-07-15 16:45:20",
+  "generated_at": "2026-07-15 16:50:35",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以平鎮區17毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": true,
     "central_event": "萬里溪堰塞湖中央災害應變中心",
-    "checked_at": "2026-07-15 16:40",
+    "checked_at": "2026-07-15 16:50",
     "source_ok": true
   }
 }
