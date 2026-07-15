@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：7月15日2000至2200時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：西南西2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東南東1級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：1.5mm\n風向風力：東南1級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：0.5mm\n風向風力：東1級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區1.5毫米較高。\n🔶《風力風向》風向1-2級，瞬間達3級。\n🔵災情管制：本部所轄各災防分區均無災情。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：7月15日2000至2200時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：西南西2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東南1級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：1.5mm\n風向風力：東南1級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：0.5mm\n風向風力：東1級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區1.5毫米較高。\n🔶《風力風向》風向1-2級，瞬間達4級。\n🔵災情管制：本部所轄各災防分區均無災情。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
   "items": [
     {
       "name": "蘆竹",
@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "西南西",
         "wind_force": 2,
-        "wind_speed": 2.9,
-        "wind_time": "07/15 20:10",
-        "gust_force": 3,
-        "gust_speed": 5.3,
-        "gust_time": "07/15 20:10"
+        "wind_speed": 3.1,
+        "wind_time": "07/15 20:20",
+        "gust_force": 4,
+        "gust_speed": 5.8,
+        "gust_time": "07/15 20:20"
       },
       "stations": [
         {
@@ -62,13 +62,13 @@
       "wind": {
         "station": "桃園",
         "station_id": "C2C48",
-        "direction": "東南東",
+        "direction": "東南",
         "wind_force": 1,
         "wind_speed": 0.7,
-        "wind_time": "07/15 20:10",
+        "wind_time": "07/15 20:20",
         "gust_force": 2,
-        "gust_speed": 1.9,
-        "gust_time": "07/15 20:10"
+        "gust_speed": 2.0,
+        "gust_time": "07/15 20:20"
       },
       "stations": [
         {
@@ -114,11 +114,11 @@
         "station_id": "C0C49",
         "direction": "東南",
         "wind_force": 1,
-        "wind_speed": 0.4,
-        "wind_time": "07/15 20:10",
+        "wind_speed": 0.6,
+        "wind_time": "07/15 20:20",
         "gust_force": 2,
-        "gust_speed": 1.6,
-        "gust_time": "07/15 20:10"
+        "gust_speed": 1.9,
+        "gust_time": "07/15 20:20"
       },
       "stations": [
         {
@@ -185,14 +185,14 @@
     }
   ],
   "period": "7月15日2000至2200時",
-  "rain_obs_time": "2026-07-15 20:20:00",
-  "rain_gen_time": "2026-07-15 20:27:07",
-  "wind_update_time": "2026-07-15 20:25:22",
-  "generated_at": "2026-07-15 20:30:37",
+  "rain_obs_time": "2026-07-15 20:30:00",
+  "rain_gen_time": "2026-07-15 20:41:08",
+  "wind_update_time": "2026-07-15 20:35:19",
+  "generated_at": "2026-07-15 20:42:08",
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區1.5毫米較高",
-    "wind": "風向1-2級，瞬間達3級",
+    "wind": "風向1-2級，瞬間達4級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "forecast_rain_4h_mm": 0.0,
     "typhoon_stage": 0
@@ -202,10 +202,12 @@
     "wind": "https://www.cwa.gov.tw/V8/C/W/WindSpeed/MOD/WindAll_68.html"
   },
   "typhoon": {
-    "status": "error",
-    "error": "HTTPSConnectionPool(host='www.cwa.gov.tw', port=443): Read timed out. (read timeout=25)",
+    "status": "ok",
     "warnings": [],
-    "news": null
+    "news": {
+      "data_time": "民國115年07月14日08時",
+      "typhoons": []
+    }
   },
   "eoc": {
     "rank": 1,
@@ -220,7 +222,7 @@
     },
     "central_open": true,
     "central_event": "萬里溪堰塞湖中央災害應變中心",
-    "checked_at": "2026-07-15 20:30",
+    "checked_at": "2026-07-15 20:40",
     "source_ok": true
   }
 }
