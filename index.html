@@ -103,33 +103,40 @@
       flex-wrap: wrap;
     }
     .hazard-link {
-      border: 1px solid var(--line);
-      border-left: 4px solid var(--blue);
-      background: rgba(13, 26, 47, .8);
-      border-radius: 8px;
-      padding: 8px 14px;
+      border: 1.5px solid var(--blue);
+      background: rgba(56, 210, 255, .14);
+      border-radius: 10px;
+      padding: 10px 16px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 2px;
+      gap: 3px;
       min-width: 150px;
       text-decoration: none;
-      transition: background .15s;
+      cursor: pointer;
+      box-shadow: 0 0 0 3px rgba(56, 210, 255, .10);
+      transition: background .15s, transform .15s, box-shadow .15s;
     }
-    .hazard-link:hover { background: rgba(56, 210, 255, .12); }
-    .hazard-title {
-      font-size: .72rem;
-      color: var(--muted);
-      letter-spacing: 1px;
+    .hazard-link:hover {
+      background: rgba(56, 210, 255, .26);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(56, 210, 255, .28);
     }
     .hazard-name {
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 800;
       color: var(--blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
     }
-    .hazard-meta {
-      font-size: .72rem;
-      color: var(--muted);
+    .hazard-arrow { font-size: .82rem; opacity: .85; }
+    .hazard-sub {
+      font-size: .74rem;
+      color: var(--text);
+      opacity: .8;
     }
     .eoc-box {
       border: 1px solid var(--line);
@@ -600,7 +607,7 @@
         <div>
           <h1>桃園災防區颱風動態網</h1>
           <div class="meta">
-            <span>頁面更新：2026-07-15 08:00:08</span>
+            <span>頁面更新：2026-07-15 08:12:01</span>
           </div>
         </div>
       </div>
@@ -609,12 +616,11 @@
       <div class="eoc-box eoc-none" title="依中央氣象署警報與中央災害應變中心開設狀態自動查報研判">
         <span class="eoc-title">桃園市災害應變中心</span>
         <strong class="eoc-level">未開設</strong>
-        <span class="eoc-meta">⬇ 07-12 17:40 降級成未開設｜查報 08:00</span>
+        <span class="eoc-meta">⬇ 07-12 17:40 降級成未開設｜查報 08:11</span>
       </div>
         <a class="hazard-link" href="https://dmap.ncdr.nat.gov.tw/" target="_blank" rel="noopener" title="國家災害防救科技中心 災害潛勢地圖">
-          <span class="hazard-title">災害潛勢查詢</span>
-          <strong class="hazard-name">各災防分區潛勢區</strong>
-          <span class="hazard-meta">淹水／坡地／土石流</span>
+          <span class="hazard-name">🔍 災害潛勢查詢 <span class="hazard-arrow">↗</span></span>
+          <span class="hazard-sub">各災防分區潛勢區</span>
         </a>
       </div>
     </div>
@@ -650,8 +656,8 @@
       </h2>
       <div class="module-meta">
         <div class="meta-left">
-          <span>雨量資訊更新時間：2026-07-15 07:50:00</span>
-          <span>風速資訊更新時間：2026-07-15 07:55:19</span>
+          <span>雨量資訊更新時間：2026-07-15 08:00:00</span>
+          <span>風速資訊更新時間：2026-07-15 08:05:19</span>
           <span class="star-note">★ 為統計近年同鄉鎮區多測站雨勢較高測站，作為統計依據</span>
         </div>
         <div class="rain-scale">
@@ -671,8 +677,8 @@
               </div>
               <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
               <div class="metric-row"><span>日雨量</span><strong>0 毫米</strong></div>
-              <div class="metric-row"><span>風向風力</span><strong>南南西 1.6尺/秒（2級風）</strong></div>
-              <div class="metric-row"><span>瞬間風速</span><strong>3.2尺/秒（2級風）</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>西南 1.7尺/秒（2級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>3.3尺/秒（2級風）</strong></div>
               <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 蘆竹</span><span>時 0｜日 0 毫米</span></div><div class="station-row"><span>西濱S023K</span><span>時 0｜日 0 毫米</span></div></div>
             </article>
             
@@ -683,7 +689,7 @@
               </div>
               <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
               <div class="metric-row"><span>日雨量</span><strong>0 毫米</strong></div>
-              <div class="metric-row"><span>風向風力</span><strong>東北 0.6尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>西 0.6尺/秒（1級風）</strong></div>
               <div class="metric-row"><span>瞬間風速</span><strong>1.7尺/秒（2級風）</strong></div>
               <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 國二E009K</span><span>時 0｜日 0 毫米</span></div><div class="station-row"><span>中德</span><span>時 0｜日 0 毫米</span></div><div class="station-row"><span>桃園</span><span>時 0｜日 0 毫米</span></div></div>
             </article>
@@ -696,7 +702,7 @@
               <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
               <div class="metric-row"><span>日雨量</span><strong>4.5 毫米</strong></div>
               <div class="metric-row"><span>風向風力</span><strong>東南 0.7尺/秒（1級風）</strong></div>
-              <div class="metric-row"><span>瞬間風速</span><strong>1.6尺/秒（2級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>1.9尺/秒（2級風）</strong></div>
               <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 八德</span><span>時 0｜日 4.5 毫米</span></div><div class="station-row"><span>八德蔬果</span><span>時 0｜日 0 毫米</span></div></div>
             </article>
             
@@ -707,7 +713,7 @@
               </div>
               <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
               <div class="metric-row"><span>日雨量</span><strong>17 毫米</strong></div>
-              <div class="metric-row"><span>風向風力</span><strong>東南 0.6尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>東南東 0.8尺/秒（1級風）</strong></div>
               <div class="metric-row"><span>瞬間風速</span><strong>1.6尺/秒（2級風）</strong></div>
               <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 國一高架N063K</span><span>時 0｜日 17 毫米</span></div><div class="station-row"><span>平鎮</span><span>時 0｜日 0.5 毫米</span></div></div>
             </article>
@@ -719,12 +725,12 @@
 🔵蘆竹災防分區
 時雨量：0mm
 日雨量：0mm
-風向風力：南南西2級
+風向風力：西南2級
 
 🔵桃園災防分區
 時雨量：0mm
 日雨量：0mm
-風向風力：東北1級
+風向風力：西1級
 
 🔵八德災防分區
 時雨量：0mm
@@ -734,7 +740,7 @@
 🔵平鎮災防分區
 時雨量：0mm
 日雨量：17mm
-風向風力：東南1級
+風向風力：東南東1級
 
 🔵綜合說明 ：
 🔶《時雨量》各區均為0毫米。
