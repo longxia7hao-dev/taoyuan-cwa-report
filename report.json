@@ -23,8 +23,8 @@
         "wind_speed": 4.0,
         "wind_time": "07/15 17:20",
         "gust_force": 4,
-        "gust_speed": 7.6,
-        "gust_time": "07/15 17:20"
+        "gust_speed": 7.7,
+        "gust_time": "07/15 17:30"
       },
       "stations": [
         {
@@ -106,7 +106,7 @@
         "three_hr": 1.5,
         "six_hr": 1.5,
         "twelve_hr": 1.5,
-        "twenty_four_hr": 5.0,
+        "twenty_four_hr": 2.0,
         "today": 1.5
       },
       "wind": {
@@ -137,7 +137,7 @@
       "hour_rain": 1.5,
       "day_rain": 5.5,
       "three_hr": 1.5,
-      "twenty_four_hr": 5.0
+      "twenty_four_hr": 2.0
     },
     {
       "name": "平鎮",
@@ -160,9 +160,9 @@
         "wind_force": 2,
         "wind_speed": 1.7,
         "wind_time": "07/15 17:10",
-        "gust_force": 2,
-        "gust_speed": 3.1,
-        "gust_time": "07/15 17:10"
+        "gust_force": 3,
+        "gust_speed": 4.6,
+        "gust_time": "07/15 17:30"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "7月15日1600至1800時",
-  "rain_obs_time": "2026-07-15 17:20:00",
-  "rain_gen_time": "2026-07-15 17:27:07",
-  "wind_update_time": "2026-07-15 17:35:21",
-  "generated_at": "2026-07-15 17:40:15",
+  "rain_obs_time": "2026-07-15 17:40:00",
+  "rain_gen_time": "2026-07-15 17:49:08",
+  "wind_update_time": "2026-07-15 17:45:20",
+  "generated_at": "2026-07-15 17:50:09",
   "summary": {
     "hour_rain": "以八德區1.5毫米較高",
     "day_rain": "以平鎮區6毫米較高",
@@ -222,7 +222,7 @@
     },
     "central_open": true,
     "central_event": "萬里溪堰塞湖中央災害應變中心",
-    "checked_at": "2026-07-15 17:40",
+    "checked_at": "2026-07-15 17:50",
     "source_ok": true
   }
 }
