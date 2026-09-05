@@ -67,8 +67,8 @@
         "wind_speed": 0.5,
         "wind_time": "09/06 03:40",
         "gust_force": 2,
-        "gust_speed": 1.7,
-        "gust_time": "09/06 03:40"
+        "gust_speed": 1.8,
+        "gust_time": "09/06 03:50"
       },
       "stations": [
         {
@@ -159,10 +159,10 @@
         "direction": "西南",
         "wind_force": 1,
         "wind_speed": 1.2,
-        "wind_time": "09/06 03:40",
+        "wind_time": "09/06 03:50",
         "gust_force": 2,
-        "gust_speed": 2.0,
-        "gust_time": "09/06 03:40"
+        "gust_speed": 2.1,
+        "gust_time": "09/06 03:50"
       },
       "stations": [
         {
@@ -185,17 +185,17 @@
     }
   ],
   "period": "9月6日0200至0400時",
-  "rain_obs_time": "2026-09-06 03:50:00",
-  "rain_gen_time": "2026-09-06 03:56:07",
-  "wind_update_time": "2026-09-06 03:55:17",
-  "generated_at": "2026-09-06 04:00:08",
+  "rain_obs_time": "2026-09-06 04:00:00",
+  "rain_gen_time": "2026-09-06 04:07:06",
+  "wind_update_time": "2026-09-06 04:05:18",
+  "generated_at": "2026-09-06 04:10:06",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 09 - 06 03: 59",
-    "captured_at": "2026-09-05T19:59:25.953Z",
-    "received_at": "2026-09-06T03:59:25+08:00",
+    "source_page_time": "時間：2026 - 09 - 06 04: 09",
+    "captured_at": "2026-09-05T20:09:26.911Z",
+    "received_at": "2026-09-06T04:09:26+08:00",
     "age_minutes": 0.7,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-09-05T19:59:24.815Z",
-    "incidents_received_at": "2026-09-06T03:59:25+08:00",
+    "incidents_captured_at": "2026-09-05T20:09:25.586Z",
+    "incidents_received_at": "2026-09-06T04:09:26+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.7
   },
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-06 04:00",
+    "checked_at": "2026-09-06 04:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
