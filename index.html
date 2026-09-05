@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>桃園災防區颱風動態網</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050b16;
+      --surface: rgba(13, 26, 47, .94);
+      --panel-head: #0f2038;
+      --text: #d9e5f5;
+      --muted: #8ba2c0;
+      --line: #1e3452;
+      --line2: #142438;
+      --red: #ff6257;
+      --red-soft: rgba(255, 98, 87, .13);
+      --blue: #38d2ff;
+      --green: #43dd9a;
+      --amber: #ffc45c;
+      --gold: #c9a336;
+      --brand: #43dd9a;
+      --brand-glow: rgba(67, 221, 154, .45);
+      --brand-soft: rgba(67, 221, 154, .10);
+      --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1100px 600px at 85% -10%, rgba(56, 210, 255, .10), transparent 60%),
+        radial-gradient(900px 700px at -10% 110%, rgba(31, 94, 255, .12), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(0deg, rgba(56, 210, 255, .045) 0 1px, transparent 1px 44px),
+        repeating-linear-gradient(90deg, rgba(56, 210, 255, .045) 0 1px, transparent 1px 44px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .radar {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 96vmin;
+      height: 96vmin;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background:
+        repeating-radial-gradient(circle at center, rgba(56, 210, 255, .30) 0 1px, transparent 1px 11.5%),
+        linear-gradient(0deg, transparent calc(50% - .5px), rgba(56, 210, 255, .25) 50%, transparent calc(50% + .5px)),
+        linear-gradient(90deg, transparent calc(50% - .5px), rgba(56, 210, 255, .25) 50%, transparent calc(50% + .5px));
+      opacity: .34;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .radar::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg,
+        rgba(56, 210, 255, .40),
+        rgba(56, 210, 255, .10) 55deg,
+        transparent 95deg 360deg);
+      animation: radar-sweep 7s linear infinite;
+    }
+    @keyframes radar-sweep {
+      to { transform: rotate(360deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .radar::after { animation: none; }
+    }
+    header, main {
+      position: relative;
+      z-index: 1;
+    }
+    .topbar {
+      background: linear-gradient(180deg, #0a1730, #081124);
+      color: #eaf3ff;
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .45);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .header-side {
+      display: flex;
+      align-items: stretch;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hazard-link {
+      border: 1.5px solid var(--blue);
+      background: rgba(56, 210, 255, .14);
+      border-radius: 10px;
+      padding: 10px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      min-width: 150px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 0 0 3px rgba(56, 210, 255, .10);
+      transition: background .15s, transform .15s, box-shadow .15s;
+    }
+    .hazard-link:hover {
+      background: rgba(56, 210, 255, .26);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(56, 210, 255, .28);
+    }
+    .hazard-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .hazard-arrow { font-size: .82rem; opacity: .85; }
+    .hazard-sub {
+      font-size: .74rem;
+      color: var(--text);
+      opacity: .8;
+    }
+    .eoc-box {
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--muted);
+      background: rgba(13, 26, 47, .8);
+      border-radius: 8px;
+      padding: 8px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 200px;
+    }
+    .eoc-title {
+      font-size: .72rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+    .eoc-level {
+      font-size: 1.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .eoc-meta {
+      font-size: .72rem;
+      color: var(--muted);
+    }
+    .eoc-l1 { border-left-color: var(--red); }
+    .eoc-l1 .eoc-level { color: var(--red); text-shadow: 0 0 10px rgba(255, 98, 87, .5); }
+    .eoc-l2 { border-left-color: var(--amber); }
+    .eoc-l2 .eoc-level { color: var(--amber); text-shadow: 0 0 10px rgba(255, 196, 92, .4); }
+    .eoc-l3 { border-left-color: var(--blue); }
+    .eoc-l3 .eoc-level { color: var(--blue); }
+    .eoc-none { opacity: .8; }
+    .logo {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      background: white;
+      box-shadow: 0 0 0 3px rgba(201, 163, 54, .25), 0 0 22px rgba(255, 200, 92, .45);
+      flex: none;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .topbar .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 72px;
+      padding: 12px 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.35rem, 2vw, 1.9rem);
+      letter-spacing: 2px;
+      font-weight: 760;
+      text-shadow: 0 0 14px rgba(255, 200, 92, .40);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      color: #9db4d4;
+      font-size: .92rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+    button, .link-button, a.primary {
+      min-height: 40px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 0 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    button.primary, a.primary { background: var(--blue); color: #04121f; }
+    .link-button { background: #39424d; color: var(--text); border-color: #4a5561; }
+    main.wrap {
+      padding: 22px 0 40px;
+    }
+    .status-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .module-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px 24px;
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #0b1728;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .meta-left {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .rain-scale {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(13, 26, 47, .6);
+      padding: 8px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+    .rain-scale-title {
+      color: var(--text);
+      font-weight: 700;
+      font-size: .84rem;
+      margin-bottom: 2px;
+    }
+    .star-note {
+      width: 100%;
+      font-size: .82rem;
+    }
+    .status-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+      min-height: 92px;
+    }
+    .status-box strong {
+      display: block;
+      font-size: 1.08rem;
+      margin-top: 6px;
+    }
+    .status-box.typhoon-normal {
+      border-left-color: var(--green);
+    }
+    .status-box span {
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    section h2 {
+      margin: 0;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      background: var(--panel-head);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .module {
+      margin-bottom: 18px;
+    }
+    .ty-overview {
+      padding: 16px 18px;
+    }
+    .overview-summary {
+      margin: 0;
+    }
+    .ty-list {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+    .ty-list li {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      align-items: baseline;
+      padding: 10px 0 4px;
+      border-top: 1px solid var(--line2);
+    }
+    .ty-badge {
+      background: #16283f;
+      color: #a9c0de;
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: .8rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .ty-badge.alert {
+      background: var(--red);
+      color: white;
+    }
+    .ty-detail {
+      color: var(--muted);
+      font-size: .94rem;
+    }
+    .empty-note {
+      margin: 0;
+      padding: 16px 18px;
+      color: var(--muted);
+    }
+    .disaster-meta {
+      padding: 9px 18px;
+      color: var(--muted);
+      background: #0b1728;
+      border-bottom: 1px solid var(--line);
+      font-size: .84rem;
+      display: grid;
+      gap: 3px;
+    }
+    .disaster-body { padding: 16px; }
+    .disaster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+    }
+    .disaster-stat {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(7, 17, 32, .6);
+    }
+    .disaster-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: .8rem;
+    }
+    .disaster-stat strong {
+      margin: 2px 4px 0 0;
+      color: var(--text);
+      font-size: 1.5rem;
+    }
+    .disaster-stat small { color: var(--muted); }
+    .disaster-stat-button {
+      width: 100%;
+      appearance: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+      transition: border-color .15s, background .15s, box-shadow .15s, transform .15s;
+    }
+    .disaster-stat-button:hover,
+    .disaster-stat-button:focus-visible {
+      border-color: var(--blue);
+      background: rgba(56, 210, 255, .10);
+      box-shadow: 0 0 0 3px rgba(56, 210, 255, .10);
+      outline: none;
+      transform: translateY(-1px);
+    }
+    .disaster-stat-button[aria-expanded="true"] {
+      border-color: var(--blue);
+      background: rgba(56, 210, 255, .08);
+    }
+    .disaster-stat-button em {
+      display: block;
+      margin-top: 5px;
+      color: var(--blue);
+      font-size: .7rem;
+      font-style: normal;
+      font-weight: 700;
+    }
+    .disaster-subtitle {
+      margin: 14px 0 7px;
+      color: var(--muted);
+      font-size: .84rem;
+      font-weight: 700;
+    }
+    .pending-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 8px;
+    }
+    .pending-stat {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 10px;
+      border: 1px solid var(--line2);
+      border-radius: 7px;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    .pending-stat strong { color: var(--text); white-space: nowrap; }
+    .disaster-badge {
+      padding: 3px 10px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .disaster-badge.live { color: var(--green); }
+    .disaster-badge.stale { color: var(--amber); }
+    .disaster-badge.unavailable { color: var(--muted); }
+    .disaster-warning {
+      margin: 12px 0 0;
+      padding: 9px 12px;
+      border-left: 3px solid var(--amber);
+      background: rgba(255, 196, 92, .08);
+      color: var(--amber);
+      font-size: .84rem;
+    }
+    .incident-section {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .disaster-summary-panel {
+      margin-top: 16px;
+      padding: 14px;
+      border: 1px solid var(--blue);
+      border-radius: 8px;
+      background: rgba(56, 210, 255, .055);
+      scroll-margin-top: 16px;
+    }
+    .disaster-summary-heading { margin-bottom: 10px; }
+    .disaster-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 8px;
+    }
+    .disaster-summary-grid > div {
+      padding: 9px 10px;
+      border: 1px solid var(--line2);
+      border-radius: 7px;
+      background: rgba(7, 17, 32, .7);
+      text-align: center;
+    }
+    .disaster-summary-grid span {
+      display: block;
+      color: var(--muted);
+      font-size: .76rem;
+    }
+    .disaster-summary-grid strong {
+      margin-right: 3px;
+      color: var(--text);
+      font-size: 1.1rem;
+    }
+    .disaster-summary-grid small { color: var(--muted); }
+    .disaster-summary-text {
+      margin: 10px 0 0;
+      color: var(--text);
+      font-size: .84rem;
+      line-height: 1.65;
+    }
+    .incident-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px 16px;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+    .incident-heading strong { color: var(--text); font-size: .92rem; }
+    .incident-scroll {
+      max-height: 440px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-color: var(--blue) #071120;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #071120;
+    }
+    .incident-scroll:focus { outline: 2px solid var(--blue); outline-offset: 2px; }
+    .incident-row {
+      display: grid;
+      grid-template-columns: 150px 80px minmax(190px, 1fr) 88px;
+      gap: 10px;
+      align-items: center;
+      min-height: 44px;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--line2);
+      font-size: .84rem;
+    }
+    .incident-row:last-child { border-bottom: none; }
+    .incident-row-head {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      min-height: 38px;
+      background: var(--panel-head);
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .incident-time { color: var(--muted); }
+    .incident-district { color: #a9c0de; font-weight: 700; }
+    .incident-category { color: var(--text); }
+    .incident-status {
+      justify-self: end;
+      min-width: 68px;
+      padding: 2px 8px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      text-align: center;
+      font-size: .78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .incident-status.pending { color: var(--red); }
+    .incident-status.progress { color: var(--amber); }
+    .incident-status.done { color: var(--green); }
+    .incident-status.closed { color: var(--blue); }
+    .incident-status.cancelled,
+    .incident-status.unknown { color: var(--muted); }
+    .incident-empty {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      background: #071120;
+    }
+    .incident-privacy {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: .76rem;
+    }
+    .grid.inner {
+      padding: 16px;
+    }
+    .grid.inner .cards {
+      padding: 0;
+    }
+    .grid.inner > * {
+      min-width: 0;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    #reportText {
+      min-height: 0;
+      border-top: 1px solid var(--line);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      padding: 16px;
+    }
+    .division-card {
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--green);
+      border-radius: 8px;
+      padding: 12px;
+      min-height: 142px;
+    }
+    .division-card.risk-watch { border-top-color: var(--amber); background: rgba(255, 196, 92, .08); }
+    .division-card.risk-high { border-top-color: var(--red); background: var(--red-soft); }
+    .division-name {
+      font-weight: 800;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .risk-chip {
+      font-size: .78rem;
+      font-weight: 700;
+      padding: 1px 10px;
+      border-radius: 999px;
+      border: 1px solid currentColor;
+      white-space: nowrap;
+    }
+    .station-list {
+      margin-top: 8px;
+      border-top: 1px dashed var(--line);
+      padding-top: 6px;
+    }
+    .station-title {
+      font-size: .72rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+    }
+    .station-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 2px 0;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .station-row span:last-child {
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .station-row.primary,
+    .station-row.primary span:last-child {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .metric-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2px 12px;
+      padding: 5px 0;
+      border-top: 1px solid var(--line2);
+      font-size: .94rem;
+    }
+    .metric-row span { color: var(--muted); }
+    .metric-row strong { color: var(--text); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .95rem;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    thead th {
+      background: var(--panel-head);
+      color: #a9c0de;
+      font-size: .86rem;
+    }
+    td span {
+      color: var(--muted);
+      margin-left: 2px;
+    }
+    .risk-normal { color: var(--green); }
+    .risk-watch { color: var(--amber); }
+    .risk-high { color: var(--red); }
+    .report-box {
+      margin-top: 18px;
+    }
+    pre {
+      margin: 0;
+      padding: 18px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: .96rem;
+      background: #071120;
+      color: #cfe3ff;
+      border-radius: 0 0 8px 8px;
+      min-height: 420px;
+    }
+    .notice {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .copy-state {
+      min-width: 7em;
+      color: #d8dee6;
+      font-size: .9rem;
+      text-align: right;
+    }
+    .copy-state.dark {
+      color: var(--muted);
+      min-width: 0;
+    }
+    .status-box.alert {
+      border-left-color: var(--brand);
+      background: var(--brand-soft);
+    }
+    .status-box.alert strong {
+      color: var(--brand);
+    }
+    .typhoon-box {
+      margin-bottom: 18px;
+      border-left: 5px solid var(--brand);
+    }
+    .typhoon-box h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--brand);
+    }
+    .h2-tools {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button.small, .link-button.small, a.primary.small {
+      min-height: 32px;
+      padding: 0 12px;
+      font-size: .85rem;
+    }
+    .link-button.small {
+      border: 1px solid var(--line);
+    }
+    .typhoon-item {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .typhoon-item:last-child { border-bottom: none; }
+    .typhoon-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+    .typhoon-head strong {
+      font-size: 1.06rem;
+      color: var(--brand);
+    }
+    .typhoon-head span {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    pre.typhoon-text {
+      min-height: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .typhoon-footnote {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: .8rem;
+    }
+    .typhoon-footnote a {
+      color: var(--muted);
+    }
+    .typhoon-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .typhoon-images img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: block;
+      background: white;
+    }
+    @media (max-width: 860px) {
+      .topbar .wrap { align-items: flex-start; flex-direction: column; }
+      .header-side { width: 100%; flex-wrap: nowrap; }
+      .header-side > .eoc-box,
+      .header-side > .hazard-link { flex: 1 1 0; min-width: 0; }
+      .status-strip, .grid { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      th, td { padding: 10px; font-size: .9rem; }
+      .copy-state { text-align: left; }
+      h1 { font-size: 1.3rem; letter-spacing: 1px; }
+      .logo { width: 52px; height: 52px; }
+      .grid.inner { padding: 12px; }
+      .table-wrap { display: none; }
+      .incident-row:not(.incident-row-head) {
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+          "category status"
+          "time district";
+        gap: 4px 10px;
+      }
+      .incident-time { grid-area: time; }
+      .incident-district { grid-area: district; }
+      .incident-category { grid-area: category; }
+      .incident-status { grid-area: status; }
+      .incident-row-head { display: none; }
+      .incident-heading { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="radar" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <img class="logo" src="logo.png" alt="桃園災防區章">
+        <div>
+          <h1>桃園災防區颱風動態網</h1>
+          <div class="meta">
+            <span>頁面更新：2026-09-05 23:50:04</span>
+            <span>每 5 分鐘自動更新</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-side">
+
+      <div class="eoc-box eoc-none" title="依消防署災害情報看板縣市應變中心資料自動查報；桃園市政府官方市政新聞備援">
+        <span class="eoc-title">桃園市災害應變中心</span>
+        <strong class="eoc-level">未開設</strong>
+        <span class="eoc-meta">⬇ 08-09 19:00 降級成未開設｜查報 23:50</span>
+      </div>
+        <a class="hazard-link" href="https://dmap.ncdr.nat.gov.tw/" target="_blank" rel="noopener" title="國家災害防救科技中心 災害潛勢地圖">
+          <span class="hazard-name">🔍 災害潛勢查詢 <span class="hazard-arrow">↗</span></span>
+          <span class="hazard-sub">各災防分區潛勢區</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="status-strip">
+      <div class="status-box typhoon-normal"><span>颱風警報</span><strong class="risk-normal">尚未發布（科羅旺觀察中）</strong></div>
+    </div>
+
+    <section class="module typhoon-box">
+      <h2><span>颱風動態概況</span>
+        <span class="h2-tools">
+          <a class="link-button small" href="https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_WARN.html" target="_blank" rel="noopener">中央氣象署颱風警報</a>
+        </span>
+      </h2>
+      
+      <div class="ty-overview">
+        <p class="overview-summary">目前臺灣周邊共有 <strong>1</strong> 個颱風生成（資料時間：民國115年09月05日20時）。</p>
+        <ul class="ty-list">
+          <li>
+            <span class="ty-badge">觀察中</span>
+            <strong>第23號 輕度颱風科羅旺（KROVANH）</strong>
+            <span class="ty-detail">位於臺灣東北東方約760公里海面，向東南移動，近中心最大風速每秒18公尺。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="module">
+      <h2><span>颱風警報單</span></h2>
+      <p class="empty-note">中央氣象署目前未發布颱風警報。</p>
+    </section>
+
+    <section class="module">
+      <h2><span>桃園災防區雨量、風速概覽</span>
+        <span class="h2-tools">
+          <button class="primary small" type="button" onclick="copyReport()">複製報告詞</button>
+          <a class="link-button small" href="https://www.cwa.gov.tw/V8/C/P/Rainfall/Rainfall_Hour.html?ID=3" target="_blank" rel="noopener">中央氣象署雨量報告</a>
+          <a class="link-button small" href="https://www.cwa.gov.tw/V8/C/W/WindSpeed/WindSpeed_All.html?CID=C&StationID=C" target="_blank" rel="noopener">中央氣象署風速報告</a>
+          <span class="copy-state dark" id="copyState"></span>
+        </span>
+      </h2>
+      <div class="module-meta">
+        <div class="meta-left">
+          <span>雨量資訊更新時間：2026-09-05 23:40:00</span>
+          <span>風速資訊更新時間：2026-09-05 23:45:17</span>
+          <span class="star-note">★ 為統計近年同鄉鎮區多測站雨勢較高測站，作為統計依據</span>
+        </div>
+        <div class="rain-scale">
+          <div class="rain-scale-title">中央氣象署雨量分級標準</div>
+          <span>◆ 大雨＝時雨量40毫米以上或日累積80毫米以上</span>
+          <span>◆ 豪雨＝3小時累積100毫米以上或日累積200毫米以上</span>
+          <span>◆ 大豪雨＝日累積350毫米以上</span>
+          <span>◆ 超大豪雨＝日累積500毫米以上</span>
+        </div>
+      </div>
+      <div class="cards">
+        
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>蘆竹災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>2 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>東 1.0尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>1.6尺/秒（2級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 蘆竹</span><span>時 0｜日 2 毫米</span></div><div class="station-row"><span>西濱S017K</span><span>時 0｜日 0.5 毫米</span></div></div>
+            </article>
+            
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>桃園災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>2.5 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>西北 0.3尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>0.9尺/秒（1級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 國二E009K</span><span>時 0｜日 2.5 毫米</span></div><div class="station-row"><span>中德</span><span>時 0｜日 4 毫米</span></div><div class="station-row"><span>桃園</span><span>時 0｜日 1 毫米</span></div></div>
+            </article>
+            
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>八德災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>5 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>西南 0.8尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>1.8尺/秒（2級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 八德</span><span>時 0｜日 5 毫米</span></div><div class="station-row"><span>八德蔬果</span><span>時 0｜日 4 毫米</span></div></div>
+            </article>
+            
+            <article class="division-card risk-normal">
+              <div class="division-name">
+                <span>平鎮災防分區</span>
+                <span class="risk-chip risk-normal">正常</span>
+              </div>
+              <div class="metric-row"><span>時雨量</span><strong>0 毫米</strong></div>
+              <div class="metric-row"><span>日雨量</span><strong>1 毫米</strong></div>
+              <div class="metric-row"><span>風向風力</span><strong>東南東 1.4尺/秒（1級風）</strong></div>
+              <div class="metric-row"><span>瞬間風速</span><strong>2.1尺/秒（2級風）</strong></div>
+              <div class="station-list"><div class="station-title">分區測站明細</div><div class="station-row primary"><span>★ 國一高架N063K</span><span>時 0｜日 1 毫米</span></div><div class="station-row"><span>平鎮</span><span>時 0｜日 1 毫米</span></div></div>
+            </article>
+            
+      </div>
+      <pre id="reportText">桃園災防區報告：
+🟥桃園災防區雨量統計：
+（時間：9月5日2200至2400時）
+🔵蘆竹災防分區
+時雨量：0mm
+日雨量：2mm
+風向風力：東1級
+
+🔵桃園災防分區
+時雨量：0mm
+日雨量：2.5mm
+風向風力：西北1級
+
+🔵八德災防分區
+時雨量：0mm
+日雨量：5mm
+風向風力：西南1級
+
+🔵平鎮災防分區
+時雨量：0mm
+日雨量：1mm
+風向風力：東南東1級
+
+🔵綜合說明 ：
+🔶《時雨量》各區均為0毫米。
+🔶《日雨量》以八德區5毫米較高。
+🔶《風力風向》風向1級，瞬間達2級。
+🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。
+⭐️綜合研判分析：
+桃園地區目前觀測無明顯降雨。</pre>
+    </section>
+
+
+    <section class="module disaster-module">
+      <h2><span>災情管制</span>
+        <span class="h2-tools">
+          <span class="disaster-badge live">同步正常</span>
+          <a class="link-button small" href="https://portal2.emic.gov.tw/SSO2_Develop/" target="_blank" rel="noopener">EMIC災害防救資訊系統登入</a>
+        </span>
+      </h2>
+      <div class="disaster-meta"><div>◆EMIC資料更新時間：2026 - 09 - 05 23: 49</div><div>◆本站同步時間：2026-09-05 23:49:05</div><div>◆災情清單同步時間：2026-09-05 23:49:05</div><div>◆專案：平時作業</div></div>
+      
+      <div class="disaster-body">
+        <div class="disaster-grid"><button class="disaster-stat disaster-stat-button" type="button" id="disasterTotalButton" aria-expanded="false" aria-controls="disasterSummary" onclick="toggleDisasterSummary()"><span>災情總數</span><strong>0</strong><small>件</small><em>點擊查看概要⌄</em></button><div class="disaster-stat"><span>死亡</span><strong>0</strong><small>人</small></div><div class="disaster-stat"><span>受傷</span><strong>0</strong><small>人</small></div><div class="disaster-stat"><span>失蹤</span><strong>0</strong><small>人</small></div><div class="disaster-stat"><span>疏散撤離</span><strong>0</strong><small>人</small></div><div class="disaster-stat"><span>收容安置</span><strong>0</strong><small>人</small></div></div>
+        <div class="disaster-subtitle">待處理狀況</div>
+        <div class="pending-grid"><div class="pending-stat"><span>災情未指派</span><strong>0 件</strong></div><div class="pending-stat"><span>災情未回覆</span><strong>0 件</strong></div><div class="pending-stat"><span>表單未更新</span><strong>0 件</strong></div><div class="pending-stat"><span>任務未回覆</span><strong>0 件</strong></div><div class="pending-stat"><span>會議未回覆</span><strong>0 件</strong></div><div class="pending-stat"><span>核心群組未回覆</span><strong>0 件</strong></div></div>
+        
+        <div class="disaster-summary-panel" id="disasterSummary" hidden>
+          <div class="incident-heading disaster-summary-heading">
+            <strong>災情狀況概要</strong><span>EMIC統計共 0 件</span>
+          </div>
+          <div class="disaster-summary-grid">
+            <div><span>人員傷亡</span><strong>0</strong><small>人</small></div>
+            <div><span>疏散收容</span><strong>0</strong><small>人</small></div>
+            <div><span>待處理</span><strong>0</strong><small>件</small></div>
+            <div><span>公開分類明細</span><strong>0</strong><small>筆</small></div>
+          </div>
+          <p class="disaster-summary-text">目前EMIC災情總數為0件。</p>
+          
+        <div class="incident-section">
+          <div class="incident-heading"><strong>案件分類明細</strong><span>已同步 0 筆</span></div>
+          <p class="incident-empty">目前災情總數為0件，尚無案件分類明細。</p>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <p class="notice">資料來源：中央氣象署 10 分鐘雨量、風速觀測資料及颱風警報單；災情統計來源：消防署 EMIC 應變管理系統；本頁由 Mac Mini 排程自動更新。</p>
+  </main>
+
+  <script>
+    // GitHub Pages 首頁可能快取10分鐘。警報期間每20秒以唯一網址查 report.json，
+    // 一發現版本不同就換成帶時間戳的新頁，避免舊文字與氣象署已更新的固定圖址混搭。
+    const pageVersion = "2026-09-05 23:50:04|";
+    let versionReloading = false;
+    async function checkSiteVersion() {
+      if (versionReloading) return;
+      try {
+        const response = await fetch('report.json?poll=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) return;
+        const data = await response.json();
+        const reportNos = ((data.typhoon || {}).warnings || [])
+          .map(item => item.report_no || '')
+          .join('|');
+        const nextVersion = (data.generated_at || '') + '|' + reportNos;
+        if (nextVersion && nextVersion !== pageVersion) {
+          versionReloading = true;
+          location.replace(location.pathname + '?r=' + Date.now());
+        }
+      } catch (err) {
+        // 網路短暫中斷時保留現有頁面，下一輪再試。
+      }
+    }
+    setInterval(checkSiteVersion, 60000);
+    setTimeout(checkSiteVersion, 5000);
+    // 最長5分鐘仍強制換一個唯一網址，作為版本輪詢失敗的備援。
+    setTimeout(() => {
+      if (!versionReloading) location.replace(location.pathname + '?r=' + Date.now());
+    }, 5 * 60 * 1000);
+
+    function toggleDisasterSummary() {
+      const button = document.getElementById('disasterTotalButton');
+      const summary = document.getElementById('disasterSummary');
+      if (!button || !summary) return;
+      const willOpen = summary.hidden;
+      summary.hidden = !willOpen;
+      button.setAttribute('aria-expanded', String(willOpen));
+      const hint = button.querySelector('em');
+      if (hint) hint.textContent = willOpen ? '收合概要⌃' : '點擊查看概要⌄';
+      if (willOpen) {
+        setTimeout(() => summary.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+      }
+    }
+
+    async function copyText(text, stateId) {
+      const state = document.getElementById(stateId);
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (err) {
+        const area = document.createElement('textarea');
+        area.value = text;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand('copy');
+        area.remove();
+      }
+      if (state) {
+        state.textContent = '已複製';
+        setTimeout(() => state.textContent = '', 1800);
+      }
+    }
+    function copyReport() {
+      copyText(document.getElementById('reportText').textContent.trim(), 'copyState');
+    }
+    function copyTyphoon() {
+      const text = Array.from(document.querySelectorAll('.typhoon-text'))
+        .map(el => el.textContent.trim())
+        .join('\n\n');
+      copyText(text, 'typhoonCopyState');
+    }
+  </script>
+</body>
+</html>
