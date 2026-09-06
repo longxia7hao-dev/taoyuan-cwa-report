@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-09-06 17:50:00",
   "rain_gen_time": "2026-09-06 17:57:07",
   "wind_update_time": "2026-09-06 17:55:17",
-  "generated_at": "2026-09-06 18:04:46",
+  "generated_at": "2026-09-06 18:06:39",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "",
-    "captured_at": "2026-09-06T10:04:46.261Z",
-    "received_at": "2026-09-06T18:04:46+08:00",
+    "source_page_time": "時間：2026 - 09 - 06 18: 05",
+    "captured_at": "2026-09-06T10:06:39.262Z",
+    "received_at": "2026-09-06T18:06:39+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 0,
@@ -206,17 +206,17 @@
       "sheltered": 0
     },
     "pending": {
-      "unassigned": 8,
-      "unreplied": 2,
-      "form_not_updated": 1,
-      "task_unreplied": 4,
+      "unassigned": 0,
+      "unreplied": 0,
+      "form_not_updated": 0,
+      "task_unreplied": 0,
       "meeting_unreplied": 0,
       "core_group_unreplied": 0
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-09-06T10:04:42.482Z",
-    "incidents_received_at": "2026-09-06T18:04:46+08:00",
+    "incidents_captured_at": "2026-09-06T10:05:39.349Z",
+    "incidents_received_at": "2026-09-06T18:06:39+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
