@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：9月6日1000至1200時）\n🔵蘆竹災防分區\n時雨量：1.5mm\n日雨量：4mm\n風向風力：西南1級\n\n🔵桃園災防分區\n時雨量：0.5mm\n日雨量：2.5mm\n風向風力：西1級\n\n🔵八德災防分區\n時雨量：4mm\n日雨量：6mm\n風向風力：西南1級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東南1級\n\n🔵綜合說明 ：\n🔶《時雨量》以八德區4毫米較高。\n🔶《日雨量》以八德區6毫米較高。\n🔶《風力風向》風向1級，瞬間達2級。\n🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，整體未達大雨標準。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：9月6日1000至1200時）\n🔵蘆竹災防分區\n時雨量：1.5mm\n日雨量：4mm\n風向風力：南南西1級\n\n🔵桃園災防分區\n時雨量：0.5mm\n日雨量：2.5mm\n風向風力：西南西1級\n\n🔵八德災防分區\n時雨量：4mm\n日雨量：6mm\n風向風力：西南西1級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東南1級\n\n🔵綜合說明 ：\n🔶《時雨量》以八德區4毫米較高。\n🔶《日雨量》以八德區6毫米較高。\n🔶《風力風向》風向1級，瞬間達2級。\n🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，整體未達大雨標準。",
   "items": [
     {
       "name": "蘆竹",
@@ -7,24 +7,24 @@
         "station": "蘆竹",
         "station_id": "C0C62",
         "region": "蘆竹區",
-        "ten_min": 0.0,
-        "one_hr": 0.5,
-        "three_hr": 4.5,
-        "six_hr": 4.5,
-        "twelve_hr": 4.5,
-        "twenty_four_hr": 4.5,
-        "today": 4.5
+        "ten_min": 0.5,
+        "one_hr": 1.0,
+        "three_hr": 5.0,
+        "six_hr": 5.0,
+        "twelve_hr": 5.0,
+        "twenty_four_hr": 5.0,
+        "today": 5.0
       },
       "wind": {
         "station": "蘆竹",
         "station_id": "C0C62",
-        "direction": "西南",
+        "direction": "南南西",
         "wind_force": 1,
-        "wind_speed": 0.7,
-        "wind_time": "09/06 11:30",
-        "gust_force": 1,
-        "gust_speed": 1.5,
-        "gust_time": "09/06 11:30"
+        "wind_speed": 0.9,
+        "wind_time": "09/06 11:40",
+        "gust_force": 2,
+        "gust_speed": 1.6,
+        "gust_time": "09/06 11:40"
       },
       "stations": [
         {
@@ -42,8 +42,8 @@
       ],
       "hour_rain": 1.5,
       "day_rain": 4.0,
-      "three_hr": 4.5,
-      "twenty_four_hr": 4.5
+      "three_hr": 5.0,
+      "twenty_four_hr": 5.0
     },
     {
       "name": "桃園",
@@ -53,7 +53,7 @@
         "region": "桃園區",
         "ten_min": 0.0,
         "one_hr": 0.0,
-        "three_hr": 10.0,
+        "three_hr": 9.5,
         "six_hr": 11.5,
         "twelve_hr": 11.5,
         "twenty_four_hr": 12.0,
@@ -62,10 +62,10 @@
       "wind": {
         "station": "桃園",
         "station_id": "C2C48",
-        "direction": "西",
+        "direction": "西南西",
         "wind_force": 1,
         "wind_speed": 0.7,
-        "wind_time": "09/06 11:10",
+        "wind_time": "09/06 11:40",
         "gust_force": 2,
         "gust_speed": 2.0,
         "gust_time": "09/06 11:10"
@@ -92,7 +92,7 @@
       ],
       "hour_rain": 0.5,
       "day_rain": 2.5,
-      "three_hr": 10.0,
+      "three_hr": 9.5,
       "twenty_four_hr": 12.0
     },
     {
@@ -102,7 +102,7 @@
         "station_id": "C0C49",
         "region": "八德區",
         "ten_min": 0.0,
-        "one_hr": 1.0,
+        "one_hr": 0.0,
         "three_hr": 5.0,
         "six_hr": 5.0,
         "twelve_hr": 5.5,
@@ -112,13 +112,13 @@
       "wind": {
         "station": "八德",
         "station_id": "C0C49",
-        "direction": "西南",
+        "direction": "西南西",
         "wind_force": 1,
-        "wind_speed": 0.3,
-        "wind_time": "09/06 11:30",
+        "wind_speed": 0.8,
+        "wind_time": "09/06 11:40",
         "gust_force": 2,
-        "gust_speed": 2.0,
-        "gust_time": "09/06 11:20"
+        "gust_speed": 2.5,
+        "gust_time": "09/06 11:40"
       },
       "stations": [
         {
@@ -146,7 +146,7 @@
         "station_id": "C0C65",
         "region": "平鎮區",
         "ten_min": 0.0,
-        "one_hr": 0.5,
+        "one_hr": 0.0,
         "three_hr": 1.5,
         "six_hr": 1.5,
         "twelve_hr": 1.5,
@@ -185,18 +185,18 @@
     }
   ],
   "period": "9月6日1000至1200時",
-  "rain_obs_time": "2026-09-06 11:40:00",
-  "rain_gen_time": "2026-09-06 11:48:07",
-  "wind_update_time": "2026-09-06 11:45:16",
-  "generated_at": "2026-09-06 11:50:02",
+  "rain_obs_time": "2026-09-06 11:50:00",
+  "rain_gen_time": "2026-09-06 11:56:22",
+  "wind_update_time": "2026-09-06 11:55:17",
+  "generated_at": "2026-09-06 12:00:04",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 09 - 06 11: 49",
-    "captured_at": "2026-09-06T03:49:12.937Z",
-    "received_at": "2026-09-06T11:49:12+08:00",
-    "age_minutes": 0.8,
+    "source_page_time": "時間：2026 - 09 - 06 11: 59",
+    "captured_at": "2026-09-06T03:59:09.934Z",
+    "received_at": "2026-09-06T11:59:09+08:00",
+    "age_minutes": 0.9,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -215,10 +215,10 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-09-06T03:49:09.417Z",
-    "incidents_received_at": "2026-09-06T11:49:12+08:00",
+    "incidents_captured_at": "2026-09-06T03:59:07.561Z",
+    "incidents_received_at": "2026-09-06T11:59:09+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.8
+    "incidents_age_minutes": 0.9
   },
   "summary": {
     "hour_rain": "以八德區4毫米較高",
@@ -226,7 +226,7 @@
     "wind": "風向1級，瞬間達2級",
     "analysis": "桃園地區現有局部降雨，整體未達大雨標準。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
-    "forecast_rain_4h_mm": 1.9,
+    "forecast_rain_4h_mm": 1.6,
     "typhoon_stage": 0
   },
   "sources": {
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-06 11:50",
+    "checked_at": "2026-09-06 12:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
