@@ -51,10 +51,10 @@
         "station": "桃園",
         "station_id": "C2C48",
         "region": "桃園區",
-        "ten_min": 0.5,
+        "ten_min": 0.0,
         "one_hr": 1.5,
         "three_hr": 3.0,
-        "six_hr": 8.0,
+        "six_hr": 7.0,
         "twelve_hr": 15.5,
         "twenty_four_hr": 15.5,
         "today": 15.5
@@ -145,13 +145,13 @@
         "station": "平鎮",
         "station_id": "C0C65",
         "region": "平鎮區",
-        "ten_min": 0.0,
-        "one_hr": 0.0,
-        "three_hr": 1.0,
-        "six_hr": 2.5,
-        "twelve_hr": 2.5,
-        "twenty_four_hr": 2.5,
-        "today": 2.5
+        "ten_min": 0.5,
+        "one_hr": 0.5,
+        "three_hr": 1.5,
+        "six_hr": 3.0,
+        "twelve_hr": 3.0,
+        "twenty_four_hr": 3.0,
+        "today": 3.0
       },
       "wind": {
         "station": "平鎮",
@@ -180,23 +180,23 @@
       ],
       "hour_rain": 1.0,
       "day_rain": 2.0,
-      "three_hr": 1.0,
-      "twenty_four_hr": 2.5
+      "three_hr": 1.5,
+      "twenty_four_hr": 3.0
     }
   ],
   "period": "9月6日1400至1600時",
-  "rain_obs_time": "2026-09-06 15:40:00",
-  "rain_gen_time": "2026-09-06 15:47:07",
-  "wind_update_time": "2026-09-06 15:45:16",
-  "generated_at": "2026-09-06 15:50:03",
+  "rain_obs_time": "2026-09-06 15:50:00",
+  "rain_gen_time": "2026-09-06 15:57:07",
+  "wind_update_time": "2026-09-06 15:55:17",
+  "generated_at": "2026-09-06 16:00:09",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 09 - 06 15: 49",
-    "captured_at": "2026-09-06T07:49:28.892Z",
-    "received_at": "2026-09-06T15:49:28+08:00",
-    "age_minutes": 0.6,
+    "source_page_time": "時間：2026 - 09 - 06 15: 55",
+    "captured_at": "2026-09-06T07:59:26.886Z",
+    "received_at": "2026-09-06T15:59:26+08:00",
+    "age_minutes": 0.7,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -215,10 +215,10 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-09-06T07:49:26.356Z",
-    "incidents_received_at": "2026-09-06T15:49:28+08:00",
+    "incidents_captured_at": "2026-09-06T07:55:27.484Z",
+    "incidents_received_at": "2026-09-06T15:59:26+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.6
+    "incidents_age_minutes": 0.7
   },
   "summary": {
     "hour_rain": "以蘆竹、八德區1.5毫米較高",
@@ -226,7 +226,7 @@
     "wind": "風向1級，瞬間達2級",
     "analysis": "桃園地區現有局部降雨，整體未達大雨標準。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
-    "forecast_rain_4h_mm": 4.5,
+    "forecast_rain_4h_mm": 3.4,
     "typhoon_stage": 0
   },
   "sources": {
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-06 15:50",
+    "checked_at": "2026-09-06 16:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
