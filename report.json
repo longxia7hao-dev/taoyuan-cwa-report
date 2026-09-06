@@ -7,13 +7,13 @@
         "station": "蘆竹",
         "station_id": "C0C62",
         "region": "蘆竹區",
-        "ten_min": 0.5,
-        "one_hr": 1.0,
-        "three_hr": 1.0,
-        "six_hr": 1.0,
-        "twelve_hr": 1.0,
-        "twenty_four_hr": 1.0,
-        "today": 1.0
+        "ten_min": 1.0,
+        "one_hr": 2.0,
+        "three_hr": 2.0,
+        "six_hr": 2.0,
+        "twelve_hr": 2.0,
+        "twenty_four_hr": 2.0,
+        "today": 2.0
       },
       "wind": {
         "station": "蘆竹",
@@ -42,8 +42,8 @@
       ],
       "hour_rain": 0.5,
       "day_rain": 0.5,
-      "three_hr": 1.0,
-      "twenty_four_hr": 1.0
+      "three_hr": 2.0,
+      "twenty_four_hr": 2.0
     },
     {
       "name": "桃園",
@@ -51,13 +51,13 @@
         "station": "桃園",
         "station_id": "C2C48",
         "region": "桃園區",
-        "ten_min": 2.0,
-        "one_hr": 6.0,
-        "three_hr": 7.0,
-        "six_hr": 7.0,
-        "twelve_hr": 7.0,
-        "twenty_four_hr": 7.5,
-        "today": 7.0
+        "ten_min": 0.5,
+        "one_hr": 6.5,
+        "three_hr": 7.5,
+        "six_hr": 7.5,
+        "twelve_hr": 7.5,
+        "twenty_four_hr": 8.0,
+        "today": 7.5
       },
       "wind": {
         "station": "桃園",
@@ -92,8 +92,8 @@
       ],
       "hour_rain": 0.0,
       "day_rain": 0.5,
-      "three_hr": 7.0,
-      "twenty_four_hr": 7.5
+      "three_hr": 7.5,
+      "twenty_four_hr": 8.0
     },
     {
       "name": "八德",
@@ -158,11 +158,11 @@
         "station_id": "C0C65",
         "direction": "東南",
         "wind_force": 1,
-        "wind_speed": 0.8,
-        "wind_time": "09/06 09:10",
+        "wind_speed": 1.1,
+        "wind_time": "09/06 09:20",
         "gust_force": 2,
-        "gust_speed": 2.6,
-        "gust_time": "09/06 09:10"
+        "gust_speed": 2.9,
+        "gust_time": "09/06 09:20"
       },
       "stations": [
         {
@@ -185,18 +185,18 @@
     }
   ],
   "period": "9月6日0800至1000時",
-  "rain_obs_time": "2026-09-06 09:20:00",
-  "rain_gen_time": "2026-09-06 09:26:22",
-  "wind_update_time": "2026-09-06 09:25:17",
-  "generated_at": "2026-09-06 09:30:03",
+  "rain_obs_time": "2026-09-06 09:30:00",
+  "rain_gen_time": "2026-09-06 09:39:22",
+  "wind_update_time": "2026-09-06 09:35:17",
+  "generated_at": "2026-09-06 09:40:02",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 09 - 06 09: 29",
-    "captured_at": "2026-09-06T01:29:53.929Z",
-    "received_at": "2026-09-06T09:29:53+08:00",
-    "age_minutes": 0.2,
+    "source_page_time": "時間：2026 - 09 - 06 09: 39",
+    "captured_at": "2026-09-06T01:39:54.912Z",
+    "received_at": "2026-09-06T09:39:54+08:00",
+    "age_minutes": 0.1,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -215,10 +215,10 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-09-06T01:29:52.518Z",
-    "incidents_received_at": "2026-09-06T09:29:53+08:00",
+    "incidents_captured_at": "2026-09-06T01:39:53.187Z",
+    "incidents_received_at": "2026-09-06T09:39:54+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.2
+    "incidents_age_minutes": 0.1
   },
   "summary": {
     "hour_rain": "以蘆竹區0.5毫米較高",
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-06 09:30",
+    "checked_at": "2026-09-06 09:40",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
