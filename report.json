@@ -10,8 +10,8 @@
         "ten_min": 0.0,
         "one_hr": 0.0,
         "three_hr": 0.0,
-        "six_hr": 5.5,
-        "twelve_hr": 13.0,
+        "six_hr": 5.0,
+        "twelve_hr": 12.5,
         "twenty_four_hr": 15.5,
         "today": 15.5
       },
@@ -54,7 +54,7 @@
         "ten_min": 0.0,
         "one_hr": 0.0,
         "three_hr": 0.5,
-        "six_hr": 13.0,
+        "six_hr": 12.5,
         "twelve_hr": 19.0,
         "twenty_four_hr": 30.0,
         "today": 30.0
@@ -103,9 +103,9 @@
         "region": "八德區",
         "ten_min": 0.0,
         "one_hr": 0.0,
-        "three_hr": 1.0,
-        "six_hr": 20.0,
-        "twelve_hr": 26.5,
+        "three_hr": 0.5,
+        "six_hr": 19.5,
+        "twelve_hr": 24.5,
         "twenty_four_hr": 28.5,
         "today": 28.5
       },
@@ -136,7 +136,7 @@
       ],
       "hour_rain": 0.0,
       "day_rain": 28.5,
-      "three_hr": 1.0,
+      "three_hr": 0.5,
       "twenty_four_hr": 28.5
     },
     {
@@ -147,8 +147,8 @@
         "region": "平鎮區",
         "ten_min": 0.0,
         "one_hr": 0.0,
-        "three_hr": 2.0,
-        "six_hr": 14.5,
+        "three_hr": 1.5,
+        "six_hr": 14.0,
         "twelve_hr": 18.5,
         "twenty_four_hr": 18.5,
         "today": 18.5
@@ -180,23 +180,23 @@
       ],
       "hour_rain": 0.0,
       "day_rain": 15.5,
-      "three_hr": 2.0,
+      "three_hr": 1.5,
       "twenty_four_hr": 18.5
     }
   ],
   "period": "9月6日2200至2400時",
-  "rain_obs_time": "2026-09-06 22:10:00",
-  "rain_gen_time": "2026-09-06 22:19:06",
+  "rain_obs_time": "2026-09-06 22:20:00",
+  "rain_gen_time": "2026-09-06 22:26:22",
   "wind_update_time": "2026-09-06 22:15:18",
-  "generated_at": "2026-09-06 22:20:04",
+  "generated_at": "2026-09-06 22:30:06",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 09 - 06 22: 19",
-    "captured_at": "2026-09-06T14:19:08.528Z",
-    "received_at": "2026-09-06T22:19:08+08:00",
-    "age_minutes": 0.9,
+    "source_page_time": "時間：2026 - 09 - 06 22: 29",
+    "captured_at": "2026-09-06T14:29:09.244Z",
+    "received_at": "2026-09-06T22:29:09+08:00",
+    "age_minutes": 1.0,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -215,10 +215,10 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-09-06T14:19:06.976Z",
-    "incidents_received_at": "2026-09-06T22:19:08+08:00",
+    "incidents_captured_at": "2026-09-06T14:29:06.779Z",
+    "incidents_received_at": "2026-09-06T22:29:09+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.9
+    "incidents_age_minutes": 1.0
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-06 22:20",
+    "checked_at": "2026-09-06 22:30",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
