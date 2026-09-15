@@ -185,10 +185,10 @@
     }
   ],
   "period": "9月15日2000至2200時",
-  "rain_obs_time": "2026-09-15 21:50:00",
-  "rain_gen_time": "2026-09-15 21:56:08",
-  "wind_update_time": "2026-09-15 21:55:20",
-  "generated_at": "2026-09-15 22:00:12",
+  "rain_obs_time": "2026-09-15 22:00:00",
+  "rain_gen_time": "2026-09-15 22:08:31",
+  "wind_update_time": "2026-09-15 22:05:21",
+  "generated_at": "2026-09-15 22:10:04",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 5013.4,
+    "age_minutes": 5023.2,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 5013.4
+    "incidents_age_minutes": 5023.2
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年09月15日14時",
+      "data_time": "民國115年09月15日20時",
       "typhoons": [
         {
           "intensity": "颱風",
           "name": "熱帶性低氣壓 TD28",
           "number": "",
           "eng": "",
-          "move_speed": "5",
-          "move_dir": "西北",
+          "move_speed": "10",
+          "move_dir": "北北西",
           "max_wind": "15",
-          "lat": 14.8,
-          "lon": 150.0,
+          "lat": 14.9,
+          "lon": 149.9,
           "direction": "東南東",
-          "distance_km": 3190
+          "distance_km": 3180
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-15 22:00",
+    "checked_at": "2026-09-15 22:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
