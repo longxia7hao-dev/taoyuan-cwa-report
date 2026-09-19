@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "北北東",
         "wind_force": 1,
-        "wind_speed": 0.7,
-        "wind_time": "09/20 02:40",
-        "gust_force": 1,
-        "gust_speed": 1.4,
-        "gust_time": "09/20 02:40"
+        "wind_speed": 0.9,
+        "wind_time": "09/20 02:50",
+        "gust_force": 2,
+        "gust_speed": 1.7,
+        "gust_time": "09/20 02:50"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "9月20日0200至0400時",
-  "rain_obs_time": "2026-09-20 02:50:00",
-  "rain_gen_time": "2026-09-20 02:57:07",
-  "wind_update_time": "2026-09-20 02:55:19",
-  "generated_at": "2026-09-20 03:00:07",
+  "rain_obs_time": "2026-09-20 03:00:00",
+  "rain_gen_time": "2026-09-20 03:09:07",
+  "wind_update_time": "2026-09-20 03:05:19",
+  "generated_at": "2026-09-20 03:10:07",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 11073.3,
+    "age_minutes": 11083.3,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 11073.3
+    "incidents_age_minutes": 11083.3
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-20 03:00",
+    "checked_at": "2026-09-20 03:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
