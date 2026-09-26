@@ -64,11 +64,11 @@
         "station_id": "C2C48",
         "direction": "西",
         "wind_force": 1,
-        "wind_speed": 0.5,
-        "wind_time": "09/27 02:30",
-        "gust_force": 1,
-        "gust_speed": 1.5,
-        "gust_time": "09/27 02:10"
+        "wind_speed": 0.6,
+        "wind_time": "09/27 02:40",
+        "gust_force": 2,
+        "gust_speed": 2.0,
+        "gust_time": "09/27 02:40"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "9月27日0200至0400時",
-  "rain_obs_time": "2026-09-27 02:40:00",
-  "rain_gen_time": "2026-09-27 02:46:24",
-  "wind_update_time": "2026-09-27 02:45:18",
-  "generated_at": "2026-09-27 02:50:05",
+  "rain_obs_time": "2026-09-27 02:50:00",
+  "rain_gen_time": "2026-09-27 02:56:07",
+  "wind_update_time": "2026-09-27 02:55:20",
+  "generated_at": "2026-09-27 03:00:06",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 21143.3,
+    "age_minutes": 21153.3,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 21143.3
+    "incidents_age_minutes": 21153.3
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年09月26日20時",
+      "data_time": "民國115年09月27日02時",
       "typhoons": [
         {
           "intensity": "中度颱風",
           "name": "舒力基",
           "number": "第25號",
           "eng": "SURIGAE",
-          "move_speed": "12",
+          "move_speed": "15",
           "move_dir": "北北東",
-          "max_wind": "33",
-          "lat": 23.3,
-          "lon": 127.0,
+          "max_wind": "38",
+          "lat": 24.0,
+          "lon": 127.2,
           "direction": "東",
-          "distance_km": 610
+          "distance_km": 630
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-27 02:50",
+    "checked_at": "2026-09-27 03:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
