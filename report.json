@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "西北西",
         "wind_force": 3,
-        "wind_speed": 3.8,
-        "wind_time": "09/26 13:10",
+        "wind_speed": 4.0,
+        "wind_time": "09/26 13:30",
         "gust_force": 4,
-        "gust_speed": 6.8,
-        "gust_time": "09/26 13:10"
+        "gust_speed": 6.9,
+        "gust_time": "09/26 13:30"
       },
       "stations": [
         {
@@ -78,13 +78,13 @@
           "primary": true
         },
         {
-          "name": "中德",
+          "name": "桃園",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
         },
         {
-          "name": "桃園",
+          "name": "中德",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
@@ -185,10 +185,10 @@
     }
   ],
   "period": "9月26日1200至1400時",
-  "rain_obs_time": "2026-09-26 13:30:00",
-  "rain_gen_time": "2026-09-26 13:37:13",
-  "wind_update_time": "2026-09-26 13:35:22",
-  "generated_at": "2026-09-26 13:40:05",
+  "rain_obs_time": "2026-09-26 13:40:00",
+  "rain_gen_time": "2026-09-26 13:47:08",
+  "wind_update_time": "2026-09-26 13:45:21",
+  "generated_at": "2026-09-26 13:50:07",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 20353.3,
+    "age_minutes": 20363.3,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 20353.3
+    "incidents_age_minutes": 20363.3
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-26 13:40",
+    "checked_at": "2026-09-26 13:50",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
