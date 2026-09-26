@@ -162,7 +162,7 @@
         "wind_time": "09/26 14:10",
         "gust_force": 3,
         "gust_speed": 3.5,
-        "gust_time": "09/26 14:40"
+        "gust_time": "09/26 15:00"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "9月26日1400至1600時",
-  "rain_obs_time": "2026-09-26 15:00:00",
-  "rain_gen_time": "2026-09-26 15:06:29",
-  "wind_update_time": "2026-09-26 15:05:21",
-  "generated_at": "2026-09-26 15:10:04",
+  "rain_obs_time": "2026-09-26 15:10:00",
+  "rain_gen_time": "2026-09-26 15:17:23",
+  "wind_update_time": "2026-09-26 15:15:20",
+  "generated_at": "2026-09-26 15:20:04",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 20443.2,
+    "age_minutes": 20453.2,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 20443.2
+    "incidents_age_minutes": 20453.2
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年09月26日08時",
+      "data_time": "民國115年09月26日14時",
       "typhoons": [
         {
           "intensity": "輕度颱風",
           "name": "舒力基",
           "number": "第25號",
           "eng": "SURIGAE",
-          "move_speed": "11",
+          "move_speed": "9",
           "move_dir": "北",
           "max_wind": "30",
-          "lat": 22.3,
-          "lon": 127.1,
-          "direction": "東南東",
-          "distance_km": 640
+          "lat": 22.9,
+          "lon": 126.9,
+          "direction": "東",
+          "distance_km": 610
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-26 15:10",
+    "checked_at": "2026-09-26 15:20",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
