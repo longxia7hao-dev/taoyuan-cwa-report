@@ -161,8 +161,8 @@
         "wind_speed": 0.3,
         "wind_time": "09/26 23:30",
         "gust_force": 1,
-        "gust_speed": 0.9,
-        "gust_time": "09/26 23:30"
+        "gust_speed": 1.1,
+        "gust_time": "09/26 23:50"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "9月26日2200至2400時",
-  "rain_obs_time": "2026-09-26 23:50:00",
-  "rain_gen_time": "2026-09-26 23:56:28",
-  "wind_update_time": "2026-09-26 23:55:22",
-  "generated_at": "2026-09-27 00:00:05",
+  "rain_obs_time": "2026-09-27 00:00:00",
+  "rain_gen_time": "2026-09-27 00:06:26",
+  "wind_update_time": "2026-09-27 00:05:21",
+  "generated_at": "2026-09-27 00:10:04",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 20973.3,
+    "age_minutes": 20983.2,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 20973.3
+    "incidents_age_minutes": 20983.2
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-09-27 00:00",
+    "checked_at": "2026-09-27 00:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
