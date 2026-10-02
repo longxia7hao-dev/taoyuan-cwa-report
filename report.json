@@ -104,7 +104,7 @@
         "ten_min": 0.0,
         "one_hr": 0.0,
         "three_hr": 0.0,
-        "six_hr": 2.5,
+        "six_hr": 2.0,
         "twelve_hr": 17.0,
         "twenty_four_hr": 17.0,
         "today": 2.0
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日0400至0600時",
-  "rain_obs_time": "2026-10-03 05:40:00",
-  "rain_gen_time": "2026-10-03 05:47:08",
+  "rain_obs_time": "2026-10-03 05:50:00",
+  "rain_gen_time": "2026-10-03 05:56:27",
   "wind_update_time": "2026-10-03 05:45:18",
-  "generated_at": "2026-10-03 05:50:04",
+  "generated_at": "2026-10-03 06:00:06",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 05: 49",
-    "captured_at": "2026-10-02T21:49:03.370Z",
-    "received_at": "2026-10-03T05:50:04+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 05: 59",
+    "captured_at": "2026-10-02T21:59:04.406Z",
+    "received_at": "2026-10-03T06:00:05+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-02T21:50:04.502Z",
-    "incidents_received_at": "2026-10-03T05:50:04+08:00",
+    "incidents_captured_at": "2026-10-02T22:00:05.427Z",
+    "incidents_received_at": "2026-10-03T06:00:05+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
@@ -226,7 +226,7 @@
     "wind": "風向2-3級，瞬間達5級",
     "analysis": "桃園地區現有局部降雨，整體未達大雨標準。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
-    "forecast_rain_4h_mm": 0.0,
+    "forecast_rain_4h_mm": 0.2,
     "typhoon_stage": 0
   },
   "sources": {
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 05:50",
+    "checked_at": "2026-10-03 06:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
