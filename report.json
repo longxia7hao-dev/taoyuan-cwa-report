@@ -23,8 +23,8 @@
         "wind_speed": 2.9,
         "wind_time": "10/02 10:30",
         "gust_force": 4,
-        "gust_speed": 6.4,
-        "gust_time": "10/02 10:20"
+        "gust_speed": 7.2,
+        "gust_time": "10/02 10:40"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月2日1000至1200時",
-  "rain_obs_time": "2026-10-02 10:40:00",
-  "rain_gen_time": "2026-10-02 10:46:28",
-  "wind_update_time": "2026-10-02 10:45:20",
-  "generated_at": "2026-10-02 10:50:10",
+  "rain_obs_time": "2026-10-02 10:50:00",
+  "rain_gen_time": "2026-10-02 10:56:27",
+  "wind_update_time": "2026-10-02 10:55:19",
+  "generated_at": "2026-10-02 11:00:20",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 28823.3,
+    "age_minutes": 28833.5,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 28823.3
+    "incidents_age_minutes": 28833.5
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -226,7 +226,7 @@
     "wind": "風向2-4級，瞬間達5級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。（最後同步：2026-09-12 10:26，資料可能延遲）",
-    "forecast_rain_4h_mm": 3.0,
+    "forecast_rain_4h_mm": 3.8,
     "typhoon_stage": 0
   },
   "sources": {
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-02 10:50",
+    "checked_at": "2026-10-02 11:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
