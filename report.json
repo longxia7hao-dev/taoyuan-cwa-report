@@ -10,7 +10,7 @@
         "ten_min": 0.0,
         "one_hr": 0.0,
         "three_hr": 0.0,
-        "six_hr": 0.5,
+        "six_hr": 0.0,
         "twelve_hr": 2.5,
         "twenty_four_hr": 2.5,
         "today": 0.0
@@ -54,7 +54,7 @@
         "ten_min": 0.0,
         "one_hr": 0.0,
         "three_hr": 0.0,
-        "six_hr": 6.0,
+        "six_hr": 5.5,
         "twelve_hr": 7.5,
         "twenty_four_hr": 7.5,
         "today": 0.0
@@ -185,18 +185,18 @@
     }
   ],
   "period": "10月3日0200至0400時",
-  "rain_obs_time": "2026-10-03 02:50:00",
-  "rain_gen_time": "2026-10-03 02:56:26",
-  "wind_update_time": "2026-10-03 02:55:19",
-  "generated_at": "2026-10-03 03:00:05",
+  "rain_obs_time": "2026-10-03 03:00:00",
+  "rain_gen_time": "2026-10-03 03:07:11",
+  "wind_update_time": "2026-10-03 03:05:20",
+  "generated_at": "2026-10-03 03:10:04",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 02: 59",
-    "captured_at": "2026-10-02T18:59:50.785Z",
-    "received_at": "2026-10-03T02:59:50+08:00",
-    "age_minutes": 0.3,
+    "source_page_time": "時間：2026 - 10 - 03 03: 09",
+    "captured_at": "2026-10-02T19:09:51.781Z",
+    "received_at": "2026-10-03T03:09:51+08:00",
+    "age_minutes": 0.2,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -215,10 +215,10 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-02T18:59:49.544Z",
-    "incidents_received_at": "2026-10-03T02:59:50+08:00",
+    "incidents_captured_at": "2026-10-02T19:09:50.521Z",
+    "incidents_received_at": "2026-10-03T03:09:51+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.3
+    "incidents_age_minutes": 0.2
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 03:00",
+    "checked_at": "2026-10-03 03:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
