@@ -7,13 +7,13 @@
         "station": "蘆竹",
         "station_id": "C0C62",
         "region": "蘆竹區",
-        "ten_min": 0.0,
-        "one_hr": 0.0,
-        "three_hr": 0.0,
-        "six_hr": 0.0,
-        "twelve_hr": 0.0,
-        "twenty_four_hr": 0.0,
-        "today": 0.0
+        "ten_min": 0.5,
+        "one_hr": 0.5,
+        "three_hr": 0.5,
+        "six_hr": 0.5,
+        "twelve_hr": 0.5,
+        "twenty_four_hr": 0.5,
+        "today": 0.5
       },
       "wind": {
         "station": "蘆竹",
@@ -42,8 +42,8 @@
       ],
       "hour_rain": 0.0,
       "day_rain": 0.0,
-      "three_hr": 0.0,
-      "twenty_four_hr": 0.0
+      "three_hr": 0.5,
+      "twenty_four_hr": 0.5
     },
     {
       "name": "桃園",
@@ -64,11 +64,11 @@
         "station_id": "C2C48",
         "direction": "東南東",
         "wind_force": 1,
-        "wind_speed": 1.4,
-        "wind_time": "10/02 20:20",
+        "wind_speed": 1.5,
+        "wind_time": "10/02 20:30",
         "gust_force": 2,
-        "gust_speed": 2.8,
-        "gust_time": "10/02 20:20"
+        "gust_speed": 3.0,
+        "gust_time": "10/02 20:30"
       },
       "stations": [
         {
@@ -158,11 +158,11 @@
         "station_id": "C0C65",
         "direction": "東北",
         "wind_force": 2,
-        "wind_speed": 2.6,
-        "wind_time": "10/02 20:20",
-        "gust_force": 3,
-        "gust_speed": 5.2,
-        "gust_time": "10/02 20:10"
+        "wind_speed": 2.7,
+        "wind_time": "10/02 20:30",
+        "gust_force": 5,
+        "gust_speed": 8.4,
+        "gust_time": "10/02 20:30"
       },
       "stations": [
         {
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月2日2000至2200時",
-  "rain_obs_time": "2026-10-02 20:30:00",
-  "rain_gen_time": "2026-10-02 20:36:46",
-  "wind_update_time": "2026-10-02 20:35:19",
-  "generated_at": "2026-10-02 20:40:05",
+  "rain_obs_time": "2026-10-02 20:40:00",
+  "rain_gen_time": "2026-10-02 20:46:28",
+  "wind_update_time": "2026-10-02 20:45:21",
+  "generated_at": "2026-10-02 20:50:07",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 02 20: 39",
-    "captured_at": "2026-10-02T12:39:54.129Z",
-    "received_at": "2026-10-02T20:39:54+08:00",
+    "source_page_time": "時間：2026 - 10 - 02 20: 49",
+    "captured_at": "2026-10-02T12:49:55.094Z",
+    "received_at": "2026-10-02T20:49:55+08:00",
     "age_minutes": 0.2,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-02T12:39:51.325Z",
-    "incidents_received_at": "2026-10-02T20:39:54+08:00",
+    "incidents_captured_at": "2026-10-02T12:49:52.054Z",
+    "incidents_received_at": "2026-10-02T20:49:55+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.2
   },
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-02 20:40",
+    "checked_at": "2026-10-02 20:50",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
