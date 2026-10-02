@@ -158,8 +158,8 @@
         "station_id": "C0C65",
         "direction": "北北東",
         "wind_force": 3,
-        "wind_speed": 3.9,
-        "wind_time": "10/02 15:30",
+        "wind_speed": 4.3,
+        "wind_time": "10/02 15:40",
         "gust_force": 5,
         "gust_speed": 8.0,
         "gust_time": "10/02 15:20"
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月2日1400至1600時",
-  "rain_obs_time": "2026-10-02 15:40:00",
-  "rain_gen_time": "2026-10-02 15:46:28",
-  "wind_update_time": "2026-10-02 15:45:20",
-  "generated_at": "2026-10-02 15:50:06",
+  "rain_obs_time": "2026-10-02 15:50:00",
+  "rain_gen_time": "2026-10-02 15:57:07",
+  "wind_update_time": "2026-10-02 15:55:18",
+  "generated_at": "2026-10-02 16:00:10",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 09 - 12 10: 25",
     "captured_at": "2026-09-12T02:26:50.379Z",
     "received_at": "2026-09-12T10:26:50+08:00",
-    "age_minutes": 29123.3,
+    "age_minutes": 29133.3,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-09-12T02:25:48.960Z",
     "incidents_received_at": "2026-09-12T10:26:50+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 29123.3
+    "incidents_age_minutes": 29133.3
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -226,7 +226,7 @@
     "wind": "風向1-3級，瞬間達5級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。（最後同步：2026-09-12 10:26，資料可能延遲）",
-    "forecast_rain_4h_mm": 2.2,
+    "forecast_rain_4h_mm": 0.9,
     "typhoon_stage": 0
   },
   "sources": {
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年10月02日08時",
+      "data_time": "民國115年10月02日14時",
       "typhoons": [
         {
           "intensity": "輕度颱風",
           "name": "彩雲",
           "number": "第26號",
           "eng": "CHOI-WAN",
-          "move_speed": "8",
-          "move_dir": "西北西",
-          "max_wind": "28",
+          "move_speed": "17",
+          "move_dir": "北",
+          "max_wind": "30",
           "lat": 16.8,
-          "lon": 144.8,
+          "lon": 144.5,
           "direction": "東南東",
-          "distance_km": 2590
+          "distance_km": 2560
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-02 15:50",
+    "checked_at": "2026-10-02 16:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
