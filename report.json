@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "東北東",
         "wind_force": 2,
-        "wind_speed": 2.0,
-        "wind_time": "10/03 04:30",
+        "wind_speed": 2.4,
+        "wind_time": "10/03 04:40",
         "gust_force": 3,
-        "gust_speed": 3.7,
-        "gust_time": "10/03 04:30"
+        "gust_speed": 3.8,
+        "gust_time": "10/03 04:40"
       },
       "stations": [
         {
@@ -104,7 +104,7 @@
         "ten_min": 0.0,
         "one_hr": 0.0,
         "three_hr": 0.0,
-        "six_hr": 11.0,
+        "six_hr": 10.5,
         "twelve_hr": 17.0,
         "twenty_four_hr": 17.0,
         "today": 2.0
@@ -114,11 +114,11 @@
         "station_id": "C0C49",
         "direction": "東南",
         "wind_force": 2,
-        "wind_speed": 2.9,
-        "wind_time": "10/03 04:10",
+        "wind_speed": 3.1,
+        "wind_time": "10/03 04:40",
         "gust_force": 4,
-        "gust_speed": 6.1,
-        "gust_time": "10/03 04:10"
+        "gust_speed": 6.6,
+        "gust_time": "10/03 04:40"
       },
       "stations": [
         {
@@ -158,8 +158,8 @@
         "station_id": "C0C65",
         "direction": "東北",
         "wind_force": 3,
-        "wind_speed": 3.4,
-        "wind_time": "10/03 04:30",
+        "wind_speed": 3.5,
+        "wind_time": "10/03 04:40",
         "gust_force": 4,
         "gust_speed": 7.4,
         "gust_time": "10/03 04:30"
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日0400至0600時",
-  "rain_obs_time": "2026-10-03 04:40:00",
-  "rain_gen_time": "2026-10-03 04:47:07",
-  "wind_update_time": "2026-10-03 04:45:19",
-  "generated_at": "2026-10-03 04:50:03",
+  "rain_obs_time": "2026-10-03 04:50:00",
+  "rain_gen_time": "2026-10-03 04:57:07",
+  "wind_update_time": "2026-10-03 04:55:19",
+  "generated_at": "2026-10-03 05:00:05",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 04: 49",
-    "captured_at": "2026-10-02T20:50:00.184Z",
-    "received_at": "2026-10-03T04:50:00+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 04: 59",
+    "captured_at": "2026-10-02T21:00:01.250Z",
+    "received_at": "2026-10-03T05:00:01+08:00",
     "age_minutes": 0.1,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-02T20:49:58.759Z",
-    "incidents_received_at": "2026-10-03T04:50:00+08:00",
+    "incidents_captured_at": "2026-10-02T20:59:59.785Z",
+    "incidents_received_at": "2026-10-03T05:00:01+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.1
   },
@@ -226,7 +226,7 @@
     "wind": "風向2-3級，瞬間達4級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
-    "forecast_rain_4h_mm": 0.2,
+    "forecast_rain_4h_mm": 0.0,
     "typhoon_stage": 0
   },
   "sources": {
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 04:50",
+    "checked_at": "2026-10-03 05:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
