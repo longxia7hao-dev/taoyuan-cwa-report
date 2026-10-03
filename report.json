@@ -158,8 +158,8 @@
         "station_id": "C0C65",
         "direction": "東北東",
         "wind_force": 3,
-        "wind_speed": 4.3,
-        "wind_time": "10/03 09:30",
+        "wind_speed": 4.9,
+        "wind_time": "10/03 09:40",
         "gust_force": 5,
         "gust_speed": 9.4,
         "gust_time": "10/03 09:20"
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日0800至1000時",
-  "rain_obs_time": "2026-10-03 09:40:00",
-  "rain_gen_time": "2026-10-03 09:47:07",
-  "wind_update_time": "2026-10-03 09:45:18",
-  "generated_at": "2026-10-03 09:50:03",
+  "rain_obs_time": "2026-10-03 09:50:00",
+  "rain_gen_time": "2026-10-03 09:56:11",
+  "wind_update_time": "2026-10-03 09:55:20",
+  "generated_at": "2026-10-03 10:00:05",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 09: 49",
-    "captured_at": "2026-10-03T01:49:21.929Z",
-    "received_at": "2026-10-03T09:49:21+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 09: 59",
+    "captured_at": "2026-10-03T01:59:22.532Z",
+    "received_at": "2026-10-03T09:59:22+08:00",
     "age_minutes": 0.7,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T01:49:19.250Z",
-    "incidents_received_at": "2026-10-03T09:49:21+08:00",
+    "incidents_captured_at": "2026-10-03T01:59:19.990Z",
+    "incidents_received_at": "2026-10-03T09:59:22+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.7
   },
@@ -226,7 +226,7 @@
     "wind": "風向2-3級，瞬間達5級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
-    "forecast_rain_4h_mm": 1.4,
+    "forecast_rain_4h_mm": 2.1,
     "typhoon_stage": 0
   },
   "sources": {
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年10月03日02時",
+      "data_time": "民國115年10月03日08時",
       "typhoons": [
         {
           "intensity": "中度颱風",
           "name": "彩雲",
           "number": "第26號",
           "eng": "CHOI-WAN",
-          "move_speed": "14",
-          "move_dir": "東北",
-          "max_wind": "33",
-          "lat": 17.9,
-          "lon": 144.7,
+          "move_speed": "18",
+          "move_dir": "北北東",
+          "max_wind": "35",
+          "lat": 18.4,
+          "lon": 145.4,
           "direction": "東",
-          "distance_km": 2540
+          "distance_km": 2600
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 09:50",
+    "checked_at": "2026-10-03 10:00",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
