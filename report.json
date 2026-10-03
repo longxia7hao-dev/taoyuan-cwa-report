@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月3日2000至2200時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：2.5mm\n風向風力：東北東2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東南1級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：17mm\n風向風力：東南東2級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：4mm\n風向風力：東北2級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區17毫米較高。\n🔶《風力風向》風向1-2級，瞬間達3級。\n🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月3日2000至2200時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：2.5mm\n風向風力：東北東2級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：0mm\n風向風力：東南東2級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：17mm\n風向風力：東南東2級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：4mm\n風向風力：東北2級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區17毫米較高。\n🔶《風力風向》風向2級，瞬間達3級。\n🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
   "items": [
     {
       "name": "蘆竹",
@@ -62,13 +62,13 @@
       "wind": {
         "station": "桃園",
         "station_id": "C2C48",
-        "direction": "東南",
-        "wind_force": 1,
-        "wind_speed": 1.4,
-        "wind_time": "10/03 20:10",
-        "gust_force": 2,
-        "gust_speed": 3.1,
-        "gust_time": "10/03 20:10"
+        "direction": "東南東",
+        "wind_force": 2,
+        "wind_speed": 1.6,
+        "wind_time": "10/03 20:20",
+        "gust_force": 3,
+        "gust_speed": 3.7,
+        "gust_time": "10/03 20:20"
       },
       "stations": [
         {
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日2000至2200時",
-  "rain_obs_time": "2026-10-03 20:20:00",
-  "rain_gen_time": "2026-10-03 20:27:06",
-  "wind_update_time": "2026-10-03 20:25:19",
-  "generated_at": "2026-10-03 20:30:05",
+  "rain_obs_time": "2026-10-03 20:30:00",
+  "rain_gen_time": "2026-10-03 20:37:11",
+  "wind_update_time": "2026-10-03 20:35:19",
+  "generated_at": "2026-10-03 20:40:06",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 20: 29",
-    "captured_at": "2026-10-03T12:29:10.524Z",
-    "received_at": "2026-10-03T20:29:10+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 20: 39",
+    "captured_at": "2026-10-03T12:39:11.549Z",
+    "received_at": "2026-10-03T20:39:11+08:00",
     "age_minutes": 0.9,
     "stats": {
       "total": 0,
@@ -215,15 +215,15 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T12:29:08.051Z",
-    "incidents_received_at": "2026-10-03T20:29:10+08:00",
+    "incidents_captured_at": "2026-10-03T12:39:08.819Z",
+    "incidents_received_at": "2026-10-03T20:39:11+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.9
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
     "day_rain": "以八德區17毫米較高",
-    "wind": "風向1-2級，瞬間達3級",
+    "wind": "風向2級，瞬間達3級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
     "forecast_rain_4h_mm": 0.0,
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 20:30",
+    "checked_at": "2026-10-03 20:40",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
