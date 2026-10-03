@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月3日1200至1400時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：2.5mm\n風向風力：東北東3級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：14mm\n風向風力：東南東2級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：17mm\n風向風力：東南2級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：4mm\n風向風力：東北東3級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區17毫米較高。\n🔶《風力風向》風向2-3級，瞬間達5級。\n🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月3日1200至1400時）\n🔵蘆竹災防分區\n時雨量：0mm\n日雨量：2.5mm\n風向風力：東北東3級\n\n🔵桃園災防分區\n時雨量：0mm\n日雨量：14mm\n風向風力：東南東2級\n\n🔵八德災防分區\n時雨量：0mm\n日雨量：17mm\n風向風力：東南3級\n\n🔵平鎮災防分區\n時雨量：0mm\n日雨量：4mm\n風向風力：東北3級\n\n🔵綜合說明 ：\n🔶《時雨量》各區均為0毫米。\n🔶《日雨量》以八德區17毫米較高。\n🔶《風力風向》風向2-3級，瞬間達5級。\n🔵災情管制：依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區目前觀測無明顯降雨。",
   "items": [
     {
       "name": "蘆竹",
@@ -64,11 +64,11 @@
         "station_id": "C2C48",
         "direction": "東南東",
         "wind_force": 2,
-        "wind_speed": 2.5,
-        "wind_time": "10/03 13:10",
+        "wind_speed": 2.8,
+        "wind_time": "10/03 13:20",
         "gust_force": 3,
-        "gust_speed": 5.1,
-        "gust_time": "10/03 13:10"
+        "gust_speed": 5.3,
+        "gust_time": "10/03 13:20"
       },
       "stations": [
         {
@@ -113,12 +113,12 @@
         "station": "八德",
         "station_id": "C0C49",
         "direction": "東南",
-        "wind_force": 2,
-        "wind_speed": 3.1,
-        "wind_time": "10/03 13:10",
+        "wind_force": 3,
+        "wind_speed": 4.0,
+        "wind_time": "10/03 13:20",
         "gust_force": 5,
-        "gust_speed": 9.0,
-        "gust_time": "10/03 13:10"
+        "gust_speed": 9.1,
+        "gust_time": "10/03 13:20"
       },
       "stations": [
         {
@@ -156,13 +156,13 @@
       "wind": {
         "station": "平鎮",
         "station_id": "C0C65",
-        "direction": "東北東",
+        "direction": "東北",
         "wind_force": 3,
         "wind_speed": 3.7,
-        "wind_time": "10/03 13:10",
-        "gust_force": 4,
-        "gust_speed": 7.4,
-        "gust_time": "10/03 13:10"
+        "wind_time": "10/03 13:20",
+        "gust_force": 5,
+        "gust_speed": 8.9,
+        "gust_time": "10/03 13:20"
       },
       "stations": [
         {
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日1200至1400時",
-  "rain_obs_time": "2026-10-03 13:20:00",
-  "rain_gen_time": "2026-10-03 13:26:29",
-  "wind_update_time": "2026-10-03 13:25:21",
-  "generated_at": "2026-10-03 13:30:03",
+  "rain_obs_time": "2026-10-03 13:30:00",
+  "rain_gen_time": "2026-10-03 13:37:12",
+  "wind_update_time": "2026-10-03 13:35:21",
+  "generated_at": "2026-10-03 13:40:04",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 13: 29",
-    "captured_at": "2026-10-03T05:29:39.257Z",
-    "received_at": "2026-10-03T13:29:39+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 13: 39",
+    "captured_at": "2026-10-03T05:39:39.325Z",
+    "received_at": "2026-10-03T13:39:39+08:00",
     "age_minutes": 0.4,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T05:29:36.515Z",
-    "incidents_received_at": "2026-10-03T13:29:39+08:00",
+    "incidents_captured_at": "2026-10-03T05:39:37.359Z",
+    "incidents_received_at": "2026-10-03T13:39:39+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.4
   },
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 13:30",
+    "checked_at": "2026-10-03 13:40",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
