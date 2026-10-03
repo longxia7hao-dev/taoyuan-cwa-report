@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "東北",
         "wind_force": 2,
-        "wind_speed": 3.0,
-        "wind_time": "10/03 11:30",
+        "wind_speed": 3.2,
+        "wind_time": "10/03 11:50",
         "gust_force": 4,
-        "gust_speed": 6.1,
-        "gust_time": "10/03 11:30"
+        "gust_speed": 6.6,
+        "gust_time": "10/03 11:40"
       },
       "stations": [
         {
@@ -158,8 +158,8 @@
         "station_id": "C0C65",
         "direction": "東北東",
         "wind_force": 3,
-        "wind_speed": 4.5,
-        "wind_time": "10/03 11:20",
+        "wind_speed": 5.0,
+        "wind_time": "10/03 11:40",
         "gust_force": 5,
         "gust_speed": 8.9,
         "gust_time": "10/03 11:30"
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日1000至1200時",
-  "rain_obs_time": "2026-10-03 11:50:00",
-  "rain_gen_time": "2026-10-03 11:57:07",
-  "wind_update_time": "2026-10-03 11:45:20",
-  "generated_at": "2026-10-03 12:00:04",
+  "rain_obs_time": "2026-10-03 12:00:00",
+  "rain_gen_time": "2026-10-03 12:06:29",
+  "wind_update_time": "2026-10-03 12:05:23",
+  "generated_at": "2026-10-03 12:10:03",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 11: 59",
-    "captured_at": "2026-10-03T03:59:32.152Z",
-    "received_at": "2026-10-03T11:59:32+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 12: 09",
+    "captured_at": "2026-10-03T04:09:33.155Z",
+    "received_at": "2026-10-03T12:09:33+08:00",
     "age_minutes": 0.5,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T03:59:29.321Z",
-    "incidents_received_at": "2026-10-03T11:59:32+08:00",
+    "incidents_captured_at": "2026-10-03T04:09:30.160Z",
+    "incidents_received_at": "2026-10-03T12:09:33+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.5
   },
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 12:00",
+    "checked_at": "2026-10-03 12:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
