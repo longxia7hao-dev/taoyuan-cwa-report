@@ -12,7 +12,7 @@
         "three_hr": 0.0,
         "six_hr": 0.0,
         "twelve_hr": 0.0,
-        "twenty_four_hr": 0.5,
+        "twenty_four_hr": 0.0,
         "today": 0.0
       },
       "wind": {
@@ -23,8 +23,8 @@
         "wind_speed": 1.7,
         "wind_time": "10/03 20:10",
         "gust_force": 2,
-        "gust_speed": 3.1,
-        "gust_time": "10/03 20:10"
+        "gust_speed": 3.2,
+        "gust_time": "10/03 20:50"
       },
       "stations": [
         {
@@ -43,7 +43,7 @@
       "hour_rain": 0.0,
       "day_rain": 2.5,
       "three_hr": 0.0,
-      "twenty_four_hr": 0.5
+      "twenty_four_hr": 0.0
     },
     {
       "name": "桃園",
@@ -56,7 +56,7 @@
         "three_hr": 0.0,
         "six_hr": 0.0,
         "twelve_hr": 0.0,
-        "twenty_four_hr": 6.0,
+        "twenty_four_hr": 5.5,
         "today": 0.0
       },
       "wind": {
@@ -93,7 +93,7 @@
       "hour_rain": 0.0,
       "day_rain": 0.0,
       "three_hr": 0.0,
-      "twenty_four_hr": 6.0
+      "twenty_four_hr": 5.5
     },
     {
       "name": "八德",
@@ -161,8 +161,8 @@
         "wind_speed": 1.9,
         "wind_time": "10/03 20:10",
         "gust_force": 3,
-        "gust_speed": 3.9,
-        "gust_time": "10/03 20:40"
+        "gust_speed": 4.2,
+        "gust_time": "10/03 20:50"
       },
       "stations": [
         {
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日2000至2200時",
-  "rain_obs_time": "2026-10-03 20:50:00",
-  "rain_gen_time": "2026-10-03 20:56:27",
-  "wind_update_time": "2026-10-03 20:55:20",
-  "generated_at": "2026-10-03 21:00:06",
+  "rain_obs_time": "2026-10-03 21:00:00",
+  "rain_gen_time": "2026-10-03 21:08:51",
+  "wind_update_time": "2026-10-03 21:05:18",
+  "generated_at": "2026-10-03 21:10:05",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 20: 59",
-    "captured_at": "2026-10-03T12:59:12.590Z",
-    "received_at": "2026-10-03T20:59:12+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 21: 09",
+    "captured_at": "2026-10-03T13:09:13.613Z",
+    "received_at": "2026-10-03T21:09:13+08:00",
     "age_minutes": 0.9,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T12:59:10.323Z",
-    "incidents_received_at": "2026-10-03T20:59:12+08:00",
+    "incidents_captured_at": "2026-10-03T13:09:11.115Z",
+    "incidents_received_at": "2026-10-03T21:09:13+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.9
   },
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年10月03日14時",
+      "data_time": "民國115年10月03日20時",
       "typhoons": [
         {
           "intensity": "中度颱風",
           "name": "彩雲",
           "number": "第26號",
           "eng": "CHOI-WAN",
-          "move_speed": "10",
+          "move_speed": "16",
           "move_dir": "北北東",
           "max_wind": "40",
-          "lat": 19.7,
-          "lon": 146.1,
+          "lat": 20.1,
+          "lon": 146.3,
           "direction": "東",
-          "distance_km": 2630
+          "distance_km": 2640
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 21:00",
+    "checked_at": "2026-10-03 21:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
