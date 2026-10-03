@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "東北",
         "wind_force": 2,
-        "wind_speed": 2.3,
-        "wind_time": "10/03 10:10",
-        "gust_force": 3,
-        "gust_speed": 4.9,
-        "gust_time": "10/03 10:10"
+        "wind_speed": 2.5,
+        "wind_time": "10/03 10:20",
+        "gust_force": 4,
+        "gust_speed": 6.0,
+        "gust_time": "10/03 10:20"
       },
       "stations": [
         {
@@ -64,11 +64,11 @@
         "station_id": "C2C48",
         "direction": "東南東",
         "wind_force": 2,
-        "wind_speed": 1.7,
-        "wind_time": "10/03 10:10",
+        "wind_speed": 2.0,
+        "wind_time": "10/03 10:20",
         "gust_force": 3,
-        "gust_speed": 3.6,
-        "gust_time": "10/03 10:10"
+        "gust_speed": 4.6,
+        "gust_time": "10/03 10:20"
       },
       "stations": [
         {
@@ -114,11 +114,11 @@
         "station_id": "C0C49",
         "direction": "東南",
         "wind_force": 2,
-        "wind_speed": 2.6,
-        "wind_time": "10/03 10:10",
-        "gust_force": 4,
-        "gust_speed": 6.0,
-        "gust_time": "10/03 10:10"
+        "wind_speed": 3.3,
+        "wind_time": "10/03 10:20",
+        "gust_force": 5,
+        "gust_speed": 8.1,
+        "gust_time": "10/03 10:20"
       },
       "stations": [
         {
@@ -158,8 +158,8 @@
         "station_id": "C0C65",
         "direction": "東北東",
         "wind_force": 3,
-        "wind_speed": 3.8,
-        "wind_time": "10/03 10:10",
+        "wind_speed": 4.7,
+        "wind_time": "10/03 10:20",
         "gust_force": 5,
         "gust_speed": 9.2,
         "gust_time": "10/03 10:10"
@@ -185,17 +185,17 @@
     }
   ],
   "period": "10月3日1000至1200時",
-  "rain_obs_time": "2026-10-03 10:20:00",
-  "rain_gen_time": "2026-10-03 10:27:07",
-  "wind_update_time": "2026-10-03 10:25:19",
-  "generated_at": "2026-10-03 10:30:04",
+  "rain_obs_time": "2026-10-03 10:30:00",
+  "rain_gen_time": "2026-10-03 10:37:07",
+  "wind_update_time": "2026-10-03 10:35:19",
+  "generated_at": "2026-10-03 10:40:04",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 03 10: 29",
-    "captured_at": "2026-10-03T02:29:24.884Z",
-    "received_at": "2026-10-03T10:29:24+08:00",
+    "source_page_time": "時間：2026 - 10 - 03 10: 39",
+    "captured_at": "2026-10-03T02:39:25.873Z",
+    "received_at": "2026-10-03T10:39:25+08:00",
     "age_minutes": 0.7,
     "stats": {
       "total": 0,
@@ -215,8 +215,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T02:29:22.377Z",
-    "incidents_received_at": "2026-10-03T10:29:24+08:00",
+    "incidents_captured_at": "2026-10-03T02:39:23.105Z",
+    "incidents_received_at": "2026-10-03T10:39:25+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.7
   },
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-03 10:30",
+    "checked_at": "2026-10-03 10:40",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
