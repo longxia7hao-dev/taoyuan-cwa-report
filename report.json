@@ -72,13 +72,13 @@
       },
       "stations": [
         {
-          "name": "桃園",
+          "name": "中德",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
         },
         {
-          "name": "中德",
+          "name": "桃園",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
@@ -179,17 +179,17 @@
     }
   ],
   "period": "10月4日0200至0400時",
-  "rain_obs_time": "2026-10-04 03:00:00",
-  "rain_gen_time": "2026-10-04 03:06:27",
-  "wind_update_time": "2026-10-04 03:05:20",
-  "generated_at": "2026-10-04 03:10:06",
+  "rain_obs_time": "2026-10-04 03:10:00",
+  "rain_gen_time": "2026-10-04 03:17:07",
+  "wind_update_time": "2026-10-04 03:15:18",
+  "generated_at": "2026-10-04 03:20:04",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 04 03: 09",
-    "captured_at": "2026-10-03T19:09:40.668Z",
-    "received_at": "2026-10-04T03:09:40+08:00",
+    "source_page_time": "時間：2026 - 10 - 04 03: 19",
+    "captured_at": "2026-10-03T19:19:41.683Z",
+    "received_at": "2026-10-04T03:19:41+08:00",
     "age_minutes": 0.4,
     "stats": {
       "total": 0,
@@ -209,8 +209,8 @@
     },
     "incidents": [],
     "incidents_total": 0,
-    "incidents_captured_at": "2026-10-03T19:09:38.327Z",
-    "incidents_received_at": "2026-10-04T03:09:40+08:00",
+    "incidents_captured_at": "2026-10-03T19:19:39.082Z",
+    "incidents_received_at": "2026-10-04T03:19:41+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.4
   },
@@ -263,7 +263,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-04 03:10",
+    "checked_at": "2026-10-04 03:20",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
