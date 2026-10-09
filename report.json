@@ -20,8 +20,8 @@
         "station_id": "C0C62",
         "direction": "東北東",
         "wind_force": 3,
-        "wind_speed": 3.7,
-        "wind_time": "10/09 14:50",
+        "wind_speed": 3.8,
+        "wind_time": "10/09 15:00",
         "gust_force": 5,
         "gust_speed": 8.1,
         "gust_time": "10/09 14:30"
@@ -67,8 +67,8 @@
         "wind_speed": 1.9,
         "wind_time": "10/09 14:50",
         "gust_force": 3,
-        "gust_speed": 4.1,
-        "gust_time": "10/09 14:50"
+        "gust_speed": 4.5,
+        "gust_time": "10/09 15:00"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月9日1400至1600時",
-  "rain_obs_time": "2026-10-09 15:00:00",
-  "rain_gen_time": "2026-10-09 15:07:11",
-  "wind_update_time": "2026-10-09 15:05:20",
-  "generated_at": "2026-10-09 15:10:06",
+  "rain_obs_time": "2026-10-09 15:10:00",
+  "rain_gen_time": "2026-10-09 15:17:25",
+  "wind_update_time": "2026-10-09 15:15:19",
+  "generated_at": "2026-10-09 15:20:03",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 10 - 04 11: 17",
     "captured_at": "2026-10-04T03:19:18.570Z",
     "received_at": "2026-10-04T11:19:18+08:00",
-    "age_minutes": 7430.8,
+    "age_minutes": 7440.8,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-10-04T03:17:29.330Z",
     "incidents_received_at": "2026-10-04T11:19:18+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 7430.8
+    "incidents_age_minutes": 7440.8
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -238,33 +238,33 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年10月09日08時",
+      "data_time": "民國115年10月09日14時",
       "typhoons": [
         {
           "intensity": "輕度颱風",
           "name": "諾洛",
           "number": "第27號",
           "eng": "NOLO",
-          "move_speed": "17",
-          "move_dir": "西北西",
+          "move_speed": "16",
+          "move_dir": "西北",
           "max_wind": "25",
-          "lat": 28.4,
-          "lon": 150.0,
+          "lat": 28.9,
+          "lon": 148.8,
           "direction": "東北東",
-          "distance_km": 2940
+          "distance_km": 2820
         },
         {
           "intensity": "中度颱風",
           "name": "小熊",
           "number": "第28號",
           "eng": "KOGUMA",
-          "move_speed": "26",
+          "move_speed": "27",
           "move_dir": "西北西",
-          "max_wind": "38",
-          "lat": 18.6,
-          "lon": 156.6,
+          "max_wind": "40",
+          "lat": 19.3,
+          "lon": 155.3,
           "direction": "東",
-          "distance_km": 3730
+          "distance_km": 3570
         }
       ]
     }
@@ -282,7 +282,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-09 15:10",
+    "checked_at": "2026-10-09 15:20",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
