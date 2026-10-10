@@ -23,8 +23,8 @@
         "wind_speed": 4.7,
         "wind_time": "10/10 13:10",
         "gust_force": 5,
-        "gust_speed": 8.4,
-        "gust_time": "10/10 13:10"
+        "gust_speed": 9.1,
+        "gust_time": "10/10 13:20"
       },
       "stations": [
         {
@@ -64,11 +64,11 @@
         "station_id": "C2C48",
         "direction": "東南東",
         "wind_force": 2,
-        "wind_speed": 2.1,
-        "wind_time": "10/10 13:10",
+        "wind_speed": 2.2,
+        "wind_time": "10/10 13:20",
         "gust_force": 3,
-        "gust_speed": 4.6,
-        "gust_time": "10/10 13:10"
+        "gust_speed": 4.7,
+        "gust_time": "10/10 13:20"
       },
       "stations": [
         {
@@ -114,11 +114,11 @@
         "station_id": "C0C49",
         "direction": "東南",
         "wind_force": 2,
-        "wind_speed": 2.6,
-        "wind_time": "10/10 13:10",
+        "wind_speed": 3.2,
+        "wind_time": "10/10 13:20",
         "gust_force": 4,
-        "gust_speed": 6.1,
-        "gust_time": "10/10 13:10"
+        "gust_speed": 7.8,
+        "gust_time": "10/10 13:20"
       },
       "stations": [
         {
@@ -161,8 +161,8 @@
         "wind_speed": 5.3,
         "wind_time": "10/10 13:10",
         "gust_force": 5,
-        "gust_speed": 9.6,
-        "gust_time": "10/10 13:10"
+        "gust_speed": 10.2,
+        "gust_time": "10/10 13:20"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月10日1200至1400時",
-  "rain_obs_time": "2026-10-10 13:20:00",
-  "rain_gen_time": "2026-10-10 13:28:08",
-  "wind_update_time": "2026-10-10 13:25:20",
-  "generated_at": "2026-10-10 13:30:06",
+  "rain_obs_time": "2026-10-10 13:30:00",
+  "rain_gen_time": "2026-10-10 13:37:15",
+  "wind_update_time": "2026-10-10 13:35:20",
+  "generated_at": "2026-10-10 13:40:04",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 10 - 04 11: 17",
     "captured_at": "2026-10-04T03:19:18.570Z",
     "received_at": "2026-10-04T11:19:18+08:00",
-    "age_minutes": 8770.8,
+    "age_minutes": 8780.8,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-10-04T03:17:29.330Z",
     "incidents_received_at": "2026-10-04T11:19:18+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 8770.8
+    "incidents_age_minutes": 8780.8
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -282,7 +282,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-10 13:30",
+    "checked_at": "2026-10-10 13:40",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
