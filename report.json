@@ -78,13 +78,13 @@
           "primary": true
         },
         {
-          "name": "中德",
+          "name": "桃園",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
         },
         {
-          "name": "桃園",
+          "name": "中德",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
@@ -114,8 +114,8 @@
         "station_id": "C0C49",
         "direction": "東南",
         "wind_force": 2,
-        "wind_speed": 3.2,
-        "wind_time": "10/10 13:20",
+        "wind_speed": 3.3,
+        "wind_time": "10/10 13:50",
         "gust_force": 6,
         "gust_speed": 11.0,
         "gust_time": "10/10 13:30"
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月10日1200至1400時",
-  "rain_obs_time": "2026-10-10 13:50:00",
-  "rain_gen_time": "2026-10-10 13:56:28",
-  "wind_update_time": "2026-10-10 13:55:22",
-  "generated_at": "2026-10-10 14:00:07",
+  "rain_obs_time": "2026-10-10 14:00:00",
+  "rain_gen_time": "2026-10-10 14:06:29",
+  "wind_update_time": "2026-10-10 14:05:22",
+  "generated_at": "2026-10-10 14:10:06",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 10 - 04 11: 17",
     "captured_at": "2026-10-04T03:19:18.570Z",
     "received_at": "2026-10-04T11:19:18+08:00",
-    "age_minutes": 8800.8,
+    "age_minutes": 8810.8,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-10-04T03:17:29.330Z",
     "incidents_received_at": "2026-10-04T11:19:18+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 8800.8
+    "incidents_age_minutes": 8810.8
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -226,7 +226,7 @@
     "wind": "風向2-4級，瞬間達6級",
     "analysis": "桃園地區目前觀測無明顯降雨。",
     "disaster_control": "依EMIC統計，災情共0件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。（最後同步：2026-10-04 11:19，資料可能延遲）",
-    "forecast_rain_4h_mm": null,
+    "forecast_rain_4h_mm": 0.0,
     "typhoon_stage": 0
   },
   "sources": {
@@ -282,7 +282,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-10 14:00",
+    "checked_at": "2026-10-10 14:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
