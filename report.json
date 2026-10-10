@@ -20,11 +20,11 @@
         "station_id": "C0C62",
         "direction": "東北東",
         "wind_force": 1,
-        "wind_speed": 0.9,
-        "wind_time": "10/11 02:50",
+        "wind_speed": 1.1,
+        "wind_time": "10/11 03:00",
         "gust_force": 2,
-        "gust_speed": 2.5,
-        "gust_time": "10/11 02:30"
+        "gust_speed": 2.8,
+        "gust_time": "10/11 03:00"
       },
       "stations": [
         {
@@ -78,13 +78,13 @@
           "primary": true
         },
         {
-          "name": "中德",
+          "name": "桃園",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
         },
         {
-          "name": "桃園",
+          "name": "中德",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月11日0200至0400時",
-  "rain_obs_time": "2026-10-11 03:00:00",
-  "rain_gen_time": "2026-10-11 03:06:08",
-  "wind_update_time": "2026-10-11 03:05:21",
-  "generated_at": "2026-10-11 03:10:03",
+  "rain_obs_time": "2026-10-11 03:10:00",
+  "rain_gen_time": "2026-10-11 03:17:07",
+  "wind_update_time": "2026-10-11 03:15:20",
+  "generated_at": "2026-10-11 03:20:07",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 10 - 04 11: 17",
     "captured_at": "2026-10-04T03:19:18.570Z",
     "received_at": "2026-10-04T11:19:18+08:00",
-    "age_minutes": 9590.8,
+    "age_minutes": 9600.8,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-10-04T03:17:29.330Z",
     "incidents_received_at": "2026-10-04T11:19:18+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 9590.8
+    "incidents_age_minutes": 9600.8
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -238,33 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年10月10日20時",
+      "data_time": "民國115年10月11日02時",
       "typhoons": [
-        {
-          "intensity": "颱風",
-          "name": "熱帶性低氣壓 TD32 (原諾洛颱風)",
-          "number": "",
-          "eng": "",
-          "move_speed": "6",
-          "move_dir": "北北西",
-          "max_wind": "15",
-          "lat": 31.0,
-          "lon": 145.7,
-          "direction": "東北東",
-          "distance_km": 2560
-        },
         {
           "intensity": "中度颱風",
           "name": "小熊",
           "number": "第28號",
           "eng": "KOGUMA",
-          "move_speed": "20",
+          "move_speed": "18",
           "move_dir": "西北",
           "max_wind": "48",
-          "lat": 23.0,
-          "lon": 149.6,
+          "lat": 23.8,
+          "lon": 148.9,
           "direction": "東",
-          "distance_km": 2920
+          "distance_km": 2830
         }
       ]
     }
@@ -282,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-11 03:10",
+    "checked_at": "2026-10-11 03:20",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
