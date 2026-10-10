@@ -78,13 +78,13 @@
           "primary": true
         },
         {
-          "name": "中德",
+          "name": "桃園",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
         },
         {
-          "name": "桃園",
+          "name": "中德",
           "hour": 0.0,
           "day24": 0.0,
           "primary": false
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月10日1200至1400時",
-  "rain_obs_time": "2026-10-10 12:50:00",
-  "rain_gen_time": "2026-10-10 12:56:47",
-  "wind_update_time": "2026-10-10 12:45:21",
-  "generated_at": "2026-10-10 13:00:08",
+  "rain_obs_time": "2026-10-10 13:00:00",
+  "rain_gen_time": "2026-10-10 13:06:32",
+  "wind_update_time": "2026-10-10 12:55:21",
+  "generated_at": "2026-10-10 13:10:03",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 10 - 04 11: 17",
     "captured_at": "2026-10-04T03:19:18.570Z",
     "received_at": "2026-10-04T11:19:18+08:00",
-    "age_minutes": 8740.8,
+    "age_minutes": 8750.8,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-10-04T03:17:29.330Z",
     "incidents_received_at": "2026-10-04T11:19:18+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 8740.8
+    "incidents_age_minutes": 8750.8
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -282,7 +282,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-10 13:00",
+    "checked_at": "2026-10-10 13:10",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
