@@ -23,8 +23,8 @@
         "wind_speed": 3.1,
         "wind_time": "10/11 09:20",
         "gust_force": 4,
-        "gust_speed": 6.5,
-        "gust_time": "10/11 09:10"
+        "gust_speed": 6.8,
+        "gust_time": "10/11 09:30"
       },
       "stations": [
         {
@@ -67,8 +67,8 @@
         "wind_speed": 1.3,
         "wind_time": "10/11 09:20",
         "gust_force": 2,
-        "gust_speed": 2.6,
-        "gust_time": "10/11 09:10"
+        "gust_speed": 3.3,
+        "gust_time": "10/11 09:30"
       },
       "stations": [
         {
@@ -116,9 +116,9 @@
         "wind_force": 2,
         "wind_speed": 3.3,
         "wind_time": "10/11 09:10",
-        "gust_force": 4,
-        "gust_speed": 7.5,
-        "gust_time": "10/11 09:10"
+        "gust_force": 5,
+        "gust_speed": 8.2,
+        "gust_time": "10/11 09:30"
       },
       "stations": [
         {
@@ -185,10 +185,10 @@
     }
   ],
   "period": "10月11日0800至1000時",
-  "rain_obs_time": "2026-10-11 09:30:00",
-  "rain_gen_time": "2026-10-11 09:37:11",
-  "wind_update_time": "2026-10-11 09:35:20",
-  "generated_at": "2026-10-11 09:40:08",
+  "rain_obs_time": "2026-10-11 09:40:00",
+  "rain_gen_time": "2026-10-11 09:48:11",
+  "wind_update_time": "2026-10-11 09:45:20",
+  "generated_at": "2026-10-11 09:50:06",
   "disaster_control": {
     "status": "stale",
     "eoc_name": "桃園市災害應變中心",
@@ -196,7 +196,7 @@
     "source_page_time": "時間：2026 - 10 - 04 11: 17",
     "captured_at": "2026-10-04T03:19:18.570Z",
     "received_at": "2026-10-04T11:19:18+08:00",
-    "age_minutes": 9980.8,
+    "age_minutes": 9990.8,
     "stats": {
       "total": 0,
       "dead": 0,
@@ -218,7 +218,7 @@
     "incidents_captured_at": "2026-10-04T03:17:29.330Z",
     "incidents_received_at": "2026-10-04T11:19:18+08:00",
     "incidents_status": "stale",
-    "incidents_age_minutes": 9980.8
+    "incidents_age_minutes": 9990.8
   },
   "summary": {
     "hour_rain": "各區均為0毫米",
@@ -238,20 +238,20 @@
     "status": "ok",
     "warnings": [],
     "news": {
-      "data_time": "民國115年10月11日02時",
+      "data_time": "民國115年10月11日08時",
       "typhoons": [
         {
-          "intensity": "中度颱風",
+          "intensity": "強烈颱風",
           "name": "小熊",
           "number": "第28號",
           "eng": "KOGUMA",
-          "move_speed": "18",
-          "move_dir": "西北",
-          "max_wind": "48",
-          "lat": 23.8,
-          "lon": 148.9,
+          "move_speed": "21",
+          "move_dir": "北北西",
+          "max_wind": "51",
+          "lat": 24.5,
+          "lon": 148.2,
           "direction": "東",
-          "distance_km": 2830
+          "distance_km": 2760
         }
       ]
     }
@@ -269,7 +269,7 @@
     },
     "central_open": false,
     "central_event": "",
-    "checked_at": "2026-10-11 09:40",
+    "checked_at": "2026-10-11 09:50",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
