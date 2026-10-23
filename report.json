@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 09:30:00",
   "rain_gen_time": "2026-10-23 09:36:26",
   "wind_update_time": "2026-10-23 09:36:12",
-  "generated_at": "2026-10-23 09:42:26",
+  "generated_at": "2026-10-23 09:43:28",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 09: 41",
-    "captured_at": "2026-10-23T01:41:29.013Z",
-    "received_at": "2026-10-23T09:42:26+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 09: 43",
+    "captured_at": "2026-10-23T01:43:27.890Z",
+    "received_at": "2026-10-23T09:43:27+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 60,
@@ -362,7 +362,7 @@
         "time": "2026-10-23 08:50",
         "district": "大園區",
         "category": "道路、隧道災情-工區及周邊區域損壞",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 08:47",
@@ -576,8 +576,8 @@
       }
     ],
     "incidents_total": 60,
-    "incidents_captured_at": "2026-10-23T01:42:26.399Z",
-    "incidents_received_at": "2026-10-23T09:42:26+08:00",
+    "incidents_captured_at": "2026-10-23T01:43:26.316Z",
+    "incidents_received_at": "2026-10-23T09:43:27+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
