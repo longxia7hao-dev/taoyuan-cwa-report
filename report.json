@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 11:00:00",
   "rain_gen_time": "2026-10-23 11:06:29",
   "wind_update_time": "2026-10-23 10:56:08",
-  "generated_at": "2026-10-23 11:10:41",
+  "generated_at": "2026-10-23 11:12:42",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
-    "source_page_time": "時間：2026 - 10 - 23 11: 10",
-    "captured_at": "2026-10-23T03:10:40.952Z",
-    "received_at": "2026-10-23T11:10:40+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 11: 12",
+    "captured_at": "2026-10-23T03:12:42.065Z",
+    "received_at": "2026-10-23T11:12:42+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 80,
+      "total": 79,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -210,7 +210,7 @@
       "unreplied": 10,
       "form_not_updated": 0,
       "task_unreplied": 0,
-      "meeting_unreplied": 1,
+      "meeting_unreplied": 0,
       "core_group_unreplied": 0
     },
     "incidents": [
@@ -696,8 +696,8 @@
       }
     ],
     "incidents_total": 80,
-    "incidents_captured_at": "2026-10-23T03:10:39.676Z",
-    "incidents_received_at": "2026-10-23T11:10:40+08:00",
+    "incidents_captured_at": "2026-10-23T03:11:39.857Z",
+    "incidents_received_at": "2026-10-23T11:12:42+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
