@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 10:00:00",
   "rain_gen_time": "2026-10-23 10:06:08",
   "wind_update_time": "2026-10-23 10:06:13",
-  "generated_at": "2026-10-23 10:18:17",
+  "generated_at": "2026-10-23 10:19:17",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 18",
-    "captured_at": "2026-10-23T02:18:16.630Z",
-    "received_at": "2026-10-23T10:18:16+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 19",
+    "captured_at": "2026-10-23T02:19:16.706Z",
+    "received_at": "2026-10-23T10:19:16+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 70,
@@ -223,7 +223,7 @@
       {
         "time": "2026-10-23 10:13",
         "district": "新屋區",
-        "category": "其他災情-其他",
+        "category": "積淹水災情-房屋積淹水(未退水)",
         "status": "待處理"
       },
       {
@@ -636,8 +636,8 @@
       }
     ],
     "incidents_total": 70,
-    "incidents_captured_at": "2026-10-23T02:18:15.206Z",
-    "incidents_received_at": "2026-10-23T10:18:16+08:00",
+    "incidents_captured_at": "2026-10-23T02:19:15.210Z",
+    "incidents_received_at": "2026-10-23T10:19:16+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
