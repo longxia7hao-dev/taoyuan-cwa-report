@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 11:20:00",
   "rain_gen_time": "2026-10-23 11:27:07",
   "wind_update_time": "2026-10-23 11:26:09",
-  "generated_at": "2026-10-23 11:31:03",
+  "generated_at": "2026-10-23 11:32:44",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
-    "source_page_time": "時間：2026 - 10 - 23 11: 30",
-    "captured_at": "2026-10-23T03:30:43.102Z",
-    "received_at": "2026-10-23T11:30:43+08:00",
-    "age_minutes": 0.3,
+    "source_page_time": "時間：2026 - 10 - 23 11: 32",
+    "captured_at": "2026-10-23T03:32:44.107Z",
+    "received_at": "2026-10-23T11:32:44+08:00",
+    "age_minutes": 0.0,
     "stats": {
-      "total": 88,
+      "total": 89,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -210,15 +210,21 @@
       "unreplied": 10,
       "form_not_updated": 0,
       "task_unreplied": 0,
-      "meeting_unreplied": 0,
+      "meeting_unreplied": 1,
       "core_group_unreplied": 0
     },
     "incidents": [
       {
+        "time": "2026-10-23 11:32",
+        "district": "龍潭區",
+        "category": "路樹災情-路樹傾斜",
+        "status": "待處理"
+      },
+      {
         "time": "2026-10-23 11:26",
         "district": "觀音區",
         "category": "民生、基礎設施災情-電力停電",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 11:21",
@@ -374,7 +380,7 @@
         "time": "2026-10-23 10:01",
         "district": "楊梅區",
         "category": "路樹災情-路樹倒塌",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 10:00",
@@ -743,11 +749,11 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 88,
-    "incidents_captured_at": "2026-10-23T03:30:41.207Z",
-    "incidents_received_at": "2026-10-23T11:30:43+08:00",
+    "incidents_total": 89,
+    "incidents_captured_at": "2026-10-23T03:32:43.756Z",
+    "incidents_received_at": "2026-10-23T11:32:44+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.3
+    "incidents_age_minutes": 0.0
   },
   "summary": {
     "hour_rain": "以蘆竹、平鎮區3.5毫米較高",
