@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 10:20:00",
   "rain_gen_time": "2026-10-23 10:26:27",
   "wind_update_time": "2026-10-23 10:26:09",
-  "generated_at": "2026-10-23 10:33:18",
+  "generated_at": "2026-10-23 10:34:19",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 33",
-    "captured_at": "2026-10-23T02:33:17.815Z",
-    "received_at": "2026-10-23T10:33:17+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 34",
+    "captured_at": "2026-10-23T02:34:18.979Z",
+    "received_at": "2026-10-23T10:34:18+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 70,
+      "total": 71,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -214,6 +214,12 @@
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 10:31",
+        "district": "新屋區",
+        "category": "民生、基礎設施災情-電線掉落、垂落",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 10:30",
         "district": "八德區",
@@ -248,7 +254,7 @@
         "time": "2026-10-23 10:05",
         "district": "新屋區",
         "category": "建物毀損-建物屋頂掀飛(含鐵皮及非鐵皮屋頂)",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 10:03",
@@ -635,9 +641,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 70,
-    "incidents_captured_at": "2026-10-23T02:33:16.339Z",
-    "incidents_received_at": "2026-10-23T10:33:17+08:00",
+    "incidents_total": 71,
+    "incidents_captured_at": "2026-10-23T02:34:16.446Z",
+    "incidents_received_at": "2026-10-23T10:34:18+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
