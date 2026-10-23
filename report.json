@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 09:50:00",
   "rain_gen_time": "2026-10-23 09:57:06",
   "wind_update_time": "2026-10-23 09:46:10",
-  "generated_at": "2026-10-23 10:05:30",
+  "generated_at": "2026-10-23 10:06:31",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 05",
-    "captured_at": "2026-10-23T02:05:30.136Z",
-    "received_at": "2026-10-23T10:05:30+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 06",
+    "captured_at": "2026-10-23T02:06:31.031Z",
+    "received_at": "2026-10-23T10:06:31+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 66,
@@ -224,7 +224,7 @@
         "time": "2026-10-23 10:01",
         "district": "楊梅區",
         "category": "路樹災情-路樹倒塌",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 10:00",
@@ -612,8 +612,8 @@
       }
     ],
     "incidents_total": 66,
-    "incidents_captured_at": "2026-10-23T02:05:28.797Z",
-    "incidents_received_at": "2026-10-23T10:05:30+08:00",
+    "incidents_captured_at": "2026-10-23T02:06:28.340Z",
+    "incidents_received_at": "2026-10-23T10:06:31+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
