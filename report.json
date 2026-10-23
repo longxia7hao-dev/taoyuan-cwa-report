@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 10:00:00",
   "rain_gen_time": "2026-10-23 10:06:08",
   "wind_update_time": "2026-10-23 10:06:13",
-  "generated_at": "2026-10-23 10:15:15",
+  "generated_at": "2026-10-23 10:16:15",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 14",
-    "captured_at": "2026-10-23T02:14:17.912Z",
-    "received_at": "2026-10-23T10:15:14+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 15",
+    "captured_at": "2026-10-23T02:15:17.913Z",
+    "received_at": "2026-10-23T10:16:14+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 69,
+      "total": 70,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -235,7 +235,7 @@
       {
         "time": "2026-10-23 10:05",
         "district": "新屋區",
-        "category": "其他災情-其他",
+        "category": "建物毀損-建物屋頂掀飛(含鐵皮及非鐵皮屋頂)",
         "status": "處理中"
       },
       {
@@ -636,8 +636,8 @@
       }
     ],
     "incidents_total": 70,
-    "incidents_captured_at": "2026-10-23T02:15:14.868Z",
-    "incidents_received_at": "2026-10-23T10:15:14+08:00",
+    "incidents_captured_at": "2026-10-23T02:16:14.977Z",
+    "incidents_received_at": "2026-10-23T10:16:14+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
