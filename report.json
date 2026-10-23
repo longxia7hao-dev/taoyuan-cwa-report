@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 09:30:00",
   "rain_gen_time": "2026-10-23 09:36:26",
   "wind_update_time": "2026-10-23 09:36:12",
-  "generated_at": "2026-10-23 09:43:28",
+  "generated_at": "2026-10-23 09:45:27",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 09: 43",
-    "captured_at": "2026-10-23T01:43:27.890Z",
-    "received_at": "2026-10-23T09:43:27+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 09: 44",
+    "captured_at": "2026-10-23T01:44:29.015Z",
+    "received_at": "2026-10-23T09:45:26+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 60,
@@ -215,10 +215,16 @@
     },
     "incidents": [
       {
+        "time": "2026-10-23 09:41",
+        "district": "新屋區",
+        "category": "民生、基礎設施災情-電線掉落、垂落",
+        "status": "待處理"
+      },
+      {
         "time": "2026-10-23 09:39",
         "district": "中壢區",
         "category": "積淹水災情-房屋積淹水(未退水)",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 09:36",
@@ -308,12 +314,6 @@
         "time": "2026-10-23 09:02",
         "district": "新屋區",
         "category": "民生、基礎設施災情-路燈故障",
-        "status": "處理中"
-      },
-      {
-        "time": "2026-10-23 09:01",
-        "district": "中壢區",
-        "category": "積淹水災情-房屋積淹水(未退水)",
         "status": "處理中"
       },
       {
@@ -576,8 +576,8 @@
       }
     ],
     "incidents_total": 60,
-    "incidents_captured_at": "2026-10-23T01:43:26.316Z",
-    "incidents_received_at": "2026-10-23T09:43:27+08:00",
+    "incidents_captured_at": "2026-10-23T01:45:26.582Z",
+    "incidents_received_at": "2026-10-23T09:45:26+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
