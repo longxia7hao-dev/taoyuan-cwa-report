@@ -188,15 +188,15 @@
   "rain_obs_time": "2026-10-23 11:30:00",
   "rain_gen_time": "2026-10-23 11:36:27",
   "wind_update_time": "2026-10-23 11:36:12",
-  "generated_at": "2026-10-23 11:40:03",
+  "generated_at": "2026-10-23 11:40:42",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
     "source_page_time": "時間：2026 - 10 - 23 11: 39",
     "captured_at": "2026-10-23T03:39:44.110Z",
-    "received_at": "2026-10-23T11:39:44+08:00",
-    "age_minutes": 0.3,
+    "received_at": "2026-10-23T11:40:42+08:00",
+    "age_minutes": 0.0,
     "stats": {
       "total": 91,
       "dead": 0,
@@ -214,6 +214,12 @@
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 11:37",
+        "district": "新屋區",
+        "category": "民生、基礎設施災情-電力停電",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 11:36",
         "district": "八德區",
@@ -761,11 +767,11 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 91,
-    "incidents_captured_at": "2026-10-23T03:39:42.009Z",
-    "incidents_received_at": "2026-10-23T11:39:44+08:00",
+    "incidents_total": 92,
+    "incidents_captured_at": "2026-10-23T03:40:42.150Z",
+    "incidents_received_at": "2026-10-23T11:40:42+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.3
+    "incidents_age_minutes": 0.0
   },
   "summary": {
     "hour_rain": "以蘆竹、平鎮區3.5毫米較高",
