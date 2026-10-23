@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 09:40:00",
   "rain_gen_time": "2026-10-23 09:46:23",
   "wind_update_time": "2026-10-23 09:36:12",
-  "generated_at": "2026-10-23 09:53:27",
+  "generated_at": "2026-10-23 09:54:29",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 09: 52",
-    "captured_at": "2026-10-23T01:52:35.021Z",
-    "received_at": "2026-10-23T09:53:27+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 09: 54",
+    "captured_at": "2026-10-23T01:54:29.023Z",
+    "received_at": "2026-10-23T09:54:29+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 61,
+      "total": 62,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -350,7 +350,7 @@
         "time": "2026-10-23 08:54",
         "district": "大園區",
         "category": "路樹災情-路樹倒塌",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 08:54",
@@ -446,7 +446,7 @@
         "time": "2026-10-23 07:43",
         "district": "龜山區",
         "category": "路樹災情-路樹倒塌",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 07:39",
@@ -588,8 +588,8 @@
       }
     ],
     "incidents_total": 62,
-    "incidents_captured_at": "2026-10-23T01:53:27.066Z",
-    "incidents_received_at": "2026-10-23T09:53:27+08:00",
+    "incidents_captured_at": "2026-10-23T01:54:27.064Z",
+    "incidents_received_at": "2026-10-23T09:54:29+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
