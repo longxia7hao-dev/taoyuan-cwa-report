@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 11:00:00",
   "rain_gen_time": "2026-10-23 11:06:29",
   "wind_update_time": "2026-10-23 10:56:08",
-  "generated_at": "2026-10-23 11:14:42",
+  "generated_at": "2026-10-23 11:16:40",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
-    "source_page_time": "時間：2026 - 10 - 23 11: 14",
-    "captured_at": "2026-10-23T03:14:42.089Z",
-    "received_at": "2026-10-23T11:14:42+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 11: 15",
+    "captured_at": "2026-10-23T03:15:42.090Z",
+    "received_at": "2026-10-23T11:16:40+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 83,
@@ -210,10 +210,22 @@
       "unreplied": 10,
       "form_not_updated": 0,
       "task_unreplied": 0,
-      "meeting_unreplied": 2,
+      "meeting_unreplied": 1,
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 11:15",
+        "district": "桃園區",
+        "category": "其他災情-其他",
+        "status": "待處理"
+      },
+      {
+        "time": "2026-10-23 11:14",
+        "district": "新屋區",
+        "category": "民生、基礎設施災情-電力停電",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 11:13",
         "district": "大園區",
@@ -236,7 +248,7 @@
         "time": "2026-10-23 11:11",
         "district": "觀音區",
         "category": "民生、基礎設施災情-電線掉落、垂落",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 11:05",
@@ -713,9 +725,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 83,
-    "incidents_captured_at": "2026-10-23T03:14:40.098Z",
-    "incidents_received_at": "2026-10-23T11:14:42+08:00",
+    "incidents_total": 85,
+    "incidents_captured_at": "2026-10-23T03:16:40.124Z",
+    "incidents_received_at": "2026-10-23T11:16:40+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
