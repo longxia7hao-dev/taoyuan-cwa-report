@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 11:30:00",
   "rain_gen_time": "2026-10-23 11:36:27",
   "wind_update_time": "2026-10-23 11:36:12",
-  "generated_at": "2026-10-23 11:47:46",
+  "generated_at": "2026-10-23 11:49:43",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
-    "source_page_time": "時間：2026 - 10 - 23 11: 47",
-    "captured_at": "2026-10-23T03:47:46.131Z",
-    "received_at": "2026-10-23T11:47:46+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 11: 48",
+    "captured_at": "2026-10-23T03:48:45.132Z",
+    "received_at": "2026-10-23T11:49:42+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 92,
@@ -214,6 +214,12 @@
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 11:48",
+        "district": "觀音區",
+        "category": "民生、基礎設施災情-路燈故障",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 11:37",
         "district": "新屋區",
@@ -767,9 +773,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 92,
-    "incidents_captured_at": "2026-10-23T03:47:46.401Z",
-    "incidents_received_at": "2026-10-23T11:47:46+08:00",
+    "incidents_total": 93,
+    "incidents_captured_at": "2026-10-23T03:49:42.826Z",
+    "incidents_received_at": "2026-10-23T11:49:42+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
