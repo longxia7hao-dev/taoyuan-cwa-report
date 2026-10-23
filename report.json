@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 10:10:00",
   "rain_gen_time": "2026-10-23 10:16:07",
   "wind_update_time": "2026-10-23 10:06:13",
-  "generated_at": "2026-10-23 10:23:17",
+  "generated_at": "2026-10-23 10:25:15",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 23",
-    "captured_at": "2026-10-23T02:23:16.932Z",
-    "received_at": "2026-10-23T10:23:16+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 24",
+    "captured_at": "2026-10-23T02:24:17.914Z",
+    "received_at": "2026-10-23T10:25:15+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 68,
@@ -214,12 +214,6 @@
       "core_group_unreplied": 0
     },
     "incidents": [
-      {
-        "time": "2026-10-23 10:22",
-        "district": "中壢區",
-        "category": "積淹水災情-房屋積淹水(未退水)",
-        "status": "待處理"
-      },
       {
         "time": "2026-10-23 10:14",
         "district": "觀音區",
@@ -284,7 +278,7 @@
         "time": "2026-10-23 09:39",
         "district": "中壢區",
         "category": "積淹水災情-房屋積淹水(未退水)",
-        "status": "已處置"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 09:36",
@@ -623,9 +617,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 68,
-    "incidents_captured_at": "2026-10-23T02:23:15.421Z",
-    "incidents_received_at": "2026-10-23T10:23:16+08:00",
+    "incidents_total": 67,
+    "incidents_captured_at": "2026-10-23T02:25:15.413Z",
+    "incidents_received_at": "2026-10-23T10:25:15+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
