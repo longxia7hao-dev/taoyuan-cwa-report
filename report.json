@@ -188,15 +188,15 @@
   "rain_obs_time": "2026-10-23 10:20:00",
   "rain_gen_time": "2026-10-23 10:26:27",
   "wind_update_time": "2026-10-23 10:26:09",
-  "generated_at": "2026-10-23 10:30:08",
+  "generated_at": "2026-10-23 10:31:16",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 29",
-    "captured_at": "2026-10-23T02:29:18.977Z",
-    "received_at": "2026-10-23T10:29:18+08:00",
-    "age_minutes": 0.8,
+    "source_page_time": "時間：2026 - 10 - 23 10: 30",
+    "captured_at": "2026-10-23T02:30:18.976Z",
+    "received_at": "2026-10-23T10:31:16+08:00",
+    "age_minutes": 0.0,
     "stats": {
       "total": 68,
       "dead": 0,
@@ -215,10 +215,16 @@
     },
     "incidents": [
       {
+        "time": "2026-10-23 10:30",
+        "district": "八德區",
+        "category": "路樹災情-路樹倒塌",
+        "status": "待處理"
+      },
+      {
         "time": "2026-10-23 10:26",
         "district": "觀音區",
         "category": "路樹災情-路樹倒塌",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 10:14",
@@ -535,7 +541,7 @@
       {
         "time": "2026-10-23 06:35",
         "district": "新屋區",
-        "category": "積淹水災情-房屋積淹水(未退水)",
+        "category": "積淹水災情-房屋積淹水(已退水)",
         "status": "已處置"
       },
       {
@@ -623,11 +629,11 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 68,
-    "incidents_captured_at": "2026-10-23T02:29:15.896Z",
-    "incidents_received_at": "2026-10-23T10:29:18+08:00",
+    "incidents_total": 69,
+    "incidents_captured_at": "2026-10-23T02:31:16.262Z",
+    "incidents_received_at": "2026-10-23T10:31:16+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.8
+    "incidents_age_minutes": 0.0
   },
   "summary": {
     "hour_rain": "以蘆竹區7毫米較高",
