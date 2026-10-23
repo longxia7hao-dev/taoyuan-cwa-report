@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月23日1000至1200時）\n🔵蘆竹災防分區\n時雨量：7mm\n日雨量：40.5mm\n風向風力：北北東3級\n\n🔵桃園災防分區\n時雨量：1mm\n日雨量：23.5mm\n風向風力：東北東1級\n\n🔵八德災防分區\n時雨量：0.5mm\n日雨量：36mm\n風向風力：東南2級\n\n🔵平鎮災防分區\n時雨量：1.5mm\n日雨量：27mm\n風向風力：東北4級\n\n🔵綜合說明 ：\n🔶《時雨量》以蘆竹區7毫米較高。\n🔶《日雨量》以蘆竹區40.5毫米較高。\n🔶《風力風向》風向1-4級，瞬間達6級。\n🔵災情管制：依EMIC統計，災情共70件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，隨颱風暴風圈接近，預估降雨量將明顯提升（未來4小時平均約12.5毫米）；另桃園市應變中心維持一級開設，賡續掌握。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月23日1000至1200時）\n🔵蘆竹災防分區\n時雨量：7mm\n日雨量：40.5mm\n風向風力：東北東4級\n\n🔵桃園災防分區\n時雨量：1mm\n日雨量：23.5mm\n風向風力：東南東1級\n\n🔵八德災防分區\n時雨量：0.5mm\n日雨量：36mm\n風向風力：東南3級\n\n🔵平鎮災防分區\n時雨量：1.5mm\n日雨量：27mm\n風向風力：北北東3級\n\n🔵綜合說明 ：\n🔶《時雨量》以蘆竹區7毫米較高。\n🔶《日雨量》以蘆竹區40.5毫米較高。\n🔶《風力風向》風向1-4級，瞬間達6級。\n🔵災情管制：依EMIC統計，災情共68件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，隨颱風暴風圈接近，預估降雨量將明顯提升（未來4小時平均約12.5毫米）；另桃園市應變中心維持一級開設，賡續掌握。",
   "items": [
     {
       "name": "蘆竹",
@@ -8,8 +8,8 @@
         "station_id": "C0C62",
         "region": "蘆竹區",
         "ten_min": 0.0,
-        "one_hr": 5.5,
-        "three_hr": 17.5,
+        "one_hr": 4.0,
+        "three_hr": 16.0,
         "six_hr": 23.5,
         "twelve_hr": 40.0,
         "twenty_four_hr": 40.5,
@@ -18,13 +18,13 @@
       "wind": {
         "station": "蘆竹",
         "station_id": "C0C62",
-        "direction": "北北東",
-        "wind_force": 3,
-        "wind_speed": 4.9,
-        "wind_time": "10/23 09:50",
+        "direction": "東北東",
+        "wind_force": 4,
+        "wind_speed": 5.8,
+        "wind_time": "10/23 10:10",
         "gust_force": 6,
-        "gust_speed": 13.1,
-        "gust_time": "10/23 09:40"
+        "gust_speed": 13.4,
+        "gust_time": "10/23 10:10"
       },
       "stations": [
         {
@@ -42,7 +42,7 @@
       ],
       "hour_rain": 7.0,
       "day_rain": 40.5,
-      "three_hr": 17.5,
+      "three_hr": 16.0,
       "twenty_four_hr": 40.5
     },
     {
@@ -53,22 +53,22 @@
         "region": "桃園區",
         "ten_min": 0.0,
         "one_hr": 0.5,
-        "three_hr": 5.0,
-        "six_hr": 16.5,
-        "twelve_hr": 23.0,
+        "three_hr": 4.5,
+        "six_hr": 16.0,
+        "twelve_hr": 22.5,
         "twenty_four_hr": 28.0,
         "today": 20.5
       },
       "wind": {
         "station": "桃園",
         "station_id": "C2C48",
-        "direction": "東北東",
+        "direction": "東南東",
         "wind_force": 1,
-        "wind_speed": 0.9,
-        "wind_time": "10/23 09:20",
-        "gust_force": 2,
-        "gust_speed": 2.6,
-        "gust_time": "10/23 09:10"
+        "wind_speed": 1.1,
+        "wind_time": "10/23 10:10",
+        "gust_force": 3,
+        "gust_speed": 5.4,
+        "gust_time": "10/23 10:10"
       },
       "stations": [
         {
@@ -92,7 +92,7 @@
       ],
       "hour_rain": 1.0,
       "day_rain": 23.5,
-      "three_hr": 5.0,
+      "three_hr": 4.5,
       "twenty_four_hr": 28.0
     },
     {
@@ -103,9 +103,9 @@
         "region": "八德區",
         "ten_min": 0.0,
         "one_hr": 0.5,
-        "three_hr": 4.0,
-        "six_hr": 11.0,
-        "twelve_hr": 28.5,
+        "three_hr": 3.5,
+        "six_hr": 10.5,
+        "twelve_hr": 28.0,
         "twenty_four_hr": 36.0,
         "today": 24.0
       },
@@ -113,12 +113,12 @@
         "station": "八德",
         "station_id": "C0C49",
         "direction": "東南",
-        "wind_force": 2,
-        "wind_speed": 2.7,
-        "wind_time": "10/23 09:10",
-        "gust_force": 4,
-        "gust_speed": 7.0,
-        "gust_time": "10/23 09:10"
+        "wind_force": 3,
+        "wind_speed": 4.8,
+        "wind_time": "10/23 10:10",
+        "gust_force": 6,
+        "gust_speed": 12.2,
+        "gust_time": "10/23 10:10"
       },
       "stations": [
         {
@@ -136,7 +136,7 @@
       ],
       "hour_rain": 0.5,
       "day_rain": 36.0,
-      "three_hr": 4.0,
+      "three_hr": 3.5,
       "twenty_four_hr": 36.0
     },
     {
@@ -148,21 +148,21 @@
         "ten_min": 0.0,
         "one_hr": 0.5,
         "three_hr": 5.5,
-        "six_hr": 11.5,
-        "twelve_hr": 32.5,
+        "six_hr": 11.0,
+        "twelve_hr": 32.0,
         "twenty_four_hr": 37.5,
         "today": 28.5
       },
       "wind": {
         "station": "平鎮",
         "station_id": "C0C65",
-        "direction": "東北",
-        "wind_force": 4,
-        "wind_speed": 5.5,
-        "wind_time": "10/23 09:10",
+        "direction": "北北東",
+        "wind_force": 3,
+        "wind_speed": 4.9,
+        "wind_time": "10/23 10:10",
         "gust_force": 5,
-        "gust_speed": 9.2,
-        "gust_time": "10/23 09:30"
+        "gust_speed": 10.2,
+        "gust_time": "10/23 10:10"
       },
       "stations": [
         {
@@ -185,18 +185,18 @@
     }
   ],
   "period": "10月23日1000至1200時",
-  "rain_obs_time": "2026-10-23 10:10:00",
-  "rain_gen_time": "2026-10-23 10:16:07",
-  "wind_update_time": "2026-10-23 10:06:13",
-  "generated_at": "2026-10-23 10:30:16",
+  "rain_obs_time": "2026-10-23 10:20:00",
+  "rain_gen_time": "2026-10-23 10:26:27",
+  "wind_update_time": "2026-10-23 10:26:09",
+  "generated_at": "2026-10-23 10:30:08",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
     "source_page_time": "時間：2026 - 10 - 23 10: 29",
     "captured_at": "2026-10-23T02:29:18.977Z",
-    "received_at": "2026-10-23T10:30:15+08:00",
-    "age_minutes": 0.0,
+    "received_at": "2026-10-23T10:29:18+08:00",
+    "age_minutes": 0.8,
     "stats": {
       "total": 68,
       "dead": 0,
@@ -218,7 +218,7 @@
         "time": "2026-10-23 10:26",
         "district": "觀音區",
         "category": "路樹災情-路樹倒塌",
-        "status": "處理中"
+        "status": "待處理"
       },
       {
         "time": "2026-10-23 10:14",
@@ -624,17 +624,17 @@
       }
     ],
     "incidents_total": 68,
-    "incidents_captured_at": "2026-10-23T02:30:15.792Z",
-    "incidents_received_at": "2026-10-23T10:30:15+08:00",
+    "incidents_captured_at": "2026-10-23T02:29:15.896Z",
+    "incidents_received_at": "2026-10-23T10:29:18+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.0
+    "incidents_age_minutes": 0.8
   },
   "summary": {
     "hour_rain": "以蘆竹區7毫米較高",
     "day_rain": "以蘆竹區40.5毫米較高",
     "wind": "風向1-4級，瞬間達6級",
     "analysis": "桃園地區現有局部降雨，隨颱風暴風圈接近，預估降雨量將明顯提升（未來4小時平均約12.5毫米）；另桃園市應變中心維持一級開設，賡續掌握。",
-    "disaster_control": "依EMIC統計，災情共70件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
+    "disaster_control": "依EMIC統計，災情共68件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
     "forecast_rain_4h_mm": 12.5,
     "typhoon_stage": 3
   },
@@ -651,9 +651,9 @@
         "short_name": "薔琵",
         "international_name": "CHAMPI",
         "warning_title": "海上陸上颱風警報",
-        "report_no": "編號第29號颱風警報 第12-1報",
-        "issued": "2026/10/23 09:15",
-        "valid_to": "2026/10/23 13:15",
+        "report_no": "編號第29號颱風警報 第12-2報",
+        "issued": "2026/10/23 10:15",
+        "valid_to": "2026/10/23 14:15",
         "current_position": "目前颱風中心位於鵝鑾鼻東北東方約320公里海面。",
         "movement": "颱風目前以每小時16至11公里速度向西北轉北移動，目前強度維持為中度颱風，七級暴風半徑達320公里，預估明（24）日8時中心位置將位於宜蘭東北東方約100公里海面。",
         "max_wind": "43",
@@ -665,16 +665,16 @@
         "warning_zone_sea": "臺灣附近各海面及巴士海峽航行作業船隻應嚴加戒備。",
         "stage": 3,
         "reminder": "根據最新資料顯示，颱風薔琵路徑雖有縮減，惟暴風圈仍保持巨大影響範圍，對桃園地區將帶來局部強風及降雨，各單位應嚴加戒備，完成防颱整備，注意行車安全。",
-        "message": "情報科針對「薔琵」（CHAMPI）颱風動態報告：\n🟥依據中央氣象署於0915時發布之海上陸上颱風警報第12-1報。\n🔵現在位置：\n目前颱風中心位於鵝鑾鼻東北東方約320公里海面。\n🔵移動方向及預測：\n颱風目前以每小時16至11公里速度向西北轉北移動，目前強度維持為中度颱風，七級暴風半徑達320公里，預估明（24）日8時中心位置將位於宜蘭東北東方約100公里海面。\n🔵警戒區域：\n🔶陸上警戒：\n臺灣各地區、澎湖及馬祖應嚴加戒備，並防強風豪雨。\n🔶海上警戒：\n臺灣附近各海面及巴士海峽航行作業船隻應嚴加戒備。\n🟥提醒事項：\n根據最新資料顯示，颱風薔琵路徑雖有縮減，惟暴風圈仍保持巨大影響範圍，對桃園地區將帶來局部強風及降雨，各單位應嚴加戒備，完成防颱整備，注意行車安全。",
+        "message": "情報科針對「薔琵」（CHAMPI）颱風動態報告：\n🟥依據中央氣象署於1015時發布之海上陸上颱風警報第12-2報。\n🔵現在位置：\n目前颱風中心位於鵝鑾鼻東北東方約320公里海面。\n🔵移動方向及預測：\n颱風目前以每小時16至11公里速度向西北轉北移動，目前強度維持為中度颱風，七級暴風半徑達320公里，預估明（24）日8時中心位置將位於宜蘭東北東方約100公里海面。\n🔵警戒區域：\n🔶陸上警戒：\n臺灣各地區、澎湖及馬祖應嚴加戒備，並防強風豪雨。\n🔶海上警戒：\n臺灣附近各海面及巴士海峽航行作業船隻應嚴加戒備。\n🟥提醒事項：\n根據最新資料顯示，颱風薔琵路徑雖有縮減，惟暴風圈仍保持巨大影響範圍，對桃園地區將帶來局部強風及降雨，各單位應嚴加戒備，完成防颱整備，注意行車安全。",
         "image_urls": [
-          "https://www.cwa.gov.tw/Data/typhoon/I10.png?T=202610230100",
-          "https://www.cwa.gov.tw/Data/typhoon/TY_WARN/B20.png?T=202610230100"
+          "https://www.cwa.gov.tw/Data/typhoon/I10.png?T=202610230200",
+          "https://www.cwa.gov.tw/Data/typhoon/TY_WARN/B20.png?T=202610230200"
         ],
         "source_url": "https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_WARN.html",
         "note": "下次警報預定發布時間為10月23日11時30分。",
-        "reminder_source": "llm-cache",
+        "reminder_source": "llm",
         "reminder_validation": "ok",
-        "reminder_generated_at": "2026-10-23 10:20:06"
+        "reminder_generated_at": "2026-10-23 10:30:20"
       }
     ],
     "news": {
@@ -722,7 +722,7 @@
     },
     "central_open": true,
     "central_event": "薔琵颱風中央災害應變中心",
-    "checked_at": "2026-10-23 10:20",
+    "checked_at": "2026-10-23 10:30",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
