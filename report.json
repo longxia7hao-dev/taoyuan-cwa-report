@@ -1,5 +1,5 @@
 {
-  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月23日0800至1000時）\n🔵蘆竹災防分區\n時雨量：7mm\n日雨量：40.5mm\n風向風力：北北東3級\n\n🔵桃園災防分區\n時雨量：1mm\n日雨量：23.5mm\n風向風力：東北東1級\n\n🔵八德災防分區\n時雨量：0.5mm\n日雨量：36mm\n風向風力：東南2級\n\n🔵平鎮災防分區\n時雨量：1.5mm\n日雨量：27mm\n風向風力：東北4級\n\n🔵綜合說明 ：\n🔶《時雨量》以蘆竹區7毫米較高。\n🔶《日雨量》以蘆竹區40.5毫米較高。\n🔶《風力風向》風向1-4級，瞬間達6級。\n🔵災情管制：依EMIC統計，災情共68件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，隨颱風暴風圈接近，預估降雨量將明顯提升（未來4小時平均約12.5毫米）；另桃園市應變中心維持一級開設，賡續掌握。",
+  "report": "桃園災防區報告：\n🟥桃園災防區雨量統計：\n（時間：10月23日1000至1200時）\n🔵蘆竹災防分區\n時雨量：7mm\n日雨量：40.5mm\n風向風力：北北東3級\n\n🔵桃園災防分區\n時雨量：1mm\n日雨量：23.5mm\n風向風力：東北東1級\n\n🔵八德災防分區\n時雨量：0.5mm\n日雨量：36mm\n風向風力：東南2級\n\n🔵平鎮災防分區\n時雨量：1.5mm\n日雨量：27mm\n風向風力：東北4級\n\n🔵綜合說明 ：\n🔶《時雨量》以蘆竹區7毫米較高。\n🔶《日雨量》以蘆竹區40.5毫米較高。\n🔶《風力風向》風向1-4級，瞬間達6級。\n🔵災情管制：依EMIC統計，災情共70件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。\n⭐️綜合研判分析：\n桃園地區現有局部降雨，隨颱風暴風圈接近，預估降雨量將明顯提升（未來4小時平均約12.5毫米）；另桃園市應變中心維持一級開設，賡續掌握。",
   "items": [
     {
       "name": "蘆竹",
@@ -7,10 +7,10 @@
         "station": "蘆竹",
         "station_id": "C0C62",
         "region": "蘆竹區",
-        "ten_min": 2.0,
-        "one_hr": 7.0,
-        "three_hr": 18.0,
-        "six_hr": 24.0,
+        "ten_min": 0.0,
+        "one_hr": 5.5,
+        "three_hr": 17.5,
+        "six_hr": 23.5,
         "twelve_hr": 40.0,
         "twenty_four_hr": 40.5,
         "today": 38.0
@@ -42,7 +42,7 @@
       ],
       "hour_rain": 7.0,
       "day_rain": 40.5,
-      "three_hr": 18.0,
+      "three_hr": 17.5,
       "twenty_four_hr": 40.5
     },
     {
@@ -53,7 +53,7 @@
         "region": "桃園區",
         "ten_min": 0.0,
         "one_hr": 0.5,
-        "three_hr": 6.0,
+        "three_hr": 5.0,
         "six_hr": 16.5,
         "twelve_hr": 23.0,
         "twenty_four_hr": 28.0,
@@ -92,7 +92,7 @@
       ],
       "hour_rain": 1.0,
       "day_rain": 23.5,
-      "three_hr": 6.0,
+      "three_hr": 5.0,
       "twenty_four_hr": 28.0
     },
     {
@@ -103,7 +103,7 @@
         "region": "八德區",
         "ten_min": 0.0,
         "one_hr": 0.5,
-        "three_hr": 4.5,
+        "three_hr": 4.0,
         "six_hr": 11.0,
         "twelve_hr": 28.5,
         "twenty_four_hr": 36.0,
@@ -136,7 +136,7 @@
       ],
       "hour_rain": 0.5,
       "day_rain": 36.0,
-      "three_hr": 4.5,
+      "three_hr": 4.0,
       "twenty_four_hr": 36.0
     },
     {
@@ -145,9 +145,9 @@
         "station": "平鎮",
         "station_id": "C0C65",
         "region": "平鎮區",
-        "ten_min": 0.5,
-        "one_hr": 1.0,
-        "three_hr": 6.0,
+        "ten_min": 0.0,
+        "one_hr": 0.5,
+        "three_hr": 5.5,
         "six_hr": 11.5,
         "twelve_hr": 32.5,
         "twenty_four_hr": 37.5,
@@ -180,23 +180,23 @@
       ],
       "hour_rain": 1.5,
       "day_rain": 27.0,
-      "three_hr": 6.0,
+      "three_hr": 5.5,
       "twenty_four_hr": 37.5
     }
   ],
-  "period": "10月23日0800至1000時",
-  "rain_obs_time": "2026-10-23 10:00:00",
-  "rain_gen_time": "2026-10-23 10:06:08",
+  "period": "10月23日1000至1200時",
+  "rain_obs_time": "2026-10-23 10:10:00",
+  "rain_gen_time": "2026-10-23 10:16:07",
   "wind_update_time": "2026-10-23 10:06:13",
-  "generated_at": "2026-10-23 10:19:17",
+  "generated_at": "2026-10-23 10:20:06",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
     "source_page_time": "時間：2026 - 10 - 23 10: 19",
-    "captured_at": "2026-10-23T02:19:16.706Z",
-    "received_at": "2026-10-23T10:19:16+08:00",
-    "age_minutes": 0.0,
+    "captured_at": "2026-10-23T02:19:17.913Z",
+    "received_at": "2026-10-23T10:19:17+08:00",
+    "age_minutes": 0.8,
     "stats": {
       "total": 70,
       "dead": 0,
@@ -637,16 +637,16 @@
     ],
     "incidents_total": 70,
     "incidents_captured_at": "2026-10-23T02:19:15.210Z",
-    "incidents_received_at": "2026-10-23T10:19:16+08:00",
+    "incidents_received_at": "2026-10-23T10:19:17+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.0
+    "incidents_age_minutes": 0.8
   },
   "summary": {
     "hour_rain": "以蘆竹區7毫米較高",
     "day_rain": "以蘆竹區40.5毫米較高",
     "wind": "風向1-4級，瞬間達6級",
     "analysis": "桃園地區現有局部降雨，隨颱風暴風圈接近，預估降雨量將明顯提升（未來4小時平均約12.5毫米）；另桃園市應變中心維持一級開設，賡續掌握。",
-    "disaster_control": "依EMIC統計，災情共68件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
+    "disaster_control": "依EMIC統計，災情共70件，死亡0人、受傷0人、失蹤0人，疏散撤離0人、收容安置0人；未指派0件、未回覆0件。",
     "forecast_rain_4h_mm": 12.5,
     "typhoon_stage": 3
   },
@@ -684,9 +684,9 @@
         ],
         "source_url": "https://www.cwa.gov.tw/V8/C/P/Typhoon/TY_WARN.html",
         "note": "下次警報預定發布時間為10月23日11時30分。",
-        "reminder_source": "llm",
+        "reminder_source": "llm-cache",
         "reminder_validation": "ok",
-        "reminder_generated_at": "2026-10-23 10:10:14"
+        "reminder_generated_at": "2026-10-23 10:20:06"
       }
     ],
     "news": {
@@ -734,7 +734,7 @@
     },
     "central_open": true,
     "central_event": "薔琵颱風中央災害應變中心",
-    "checked_at": "2026-10-23 10:10",
+    "checked_at": "2026-10-23 10:20",
     "source_ok": true,
     "stale": false,
     "source": "消防署災害情報看板",
