@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 10:10:00",
   "rain_gen_time": "2026-10-23 10:16:07",
   "wind_update_time": "2026-10-23 10:06:13",
-  "generated_at": "2026-10-23 10:20:18",
+  "generated_at": "2026-10-23 10:22:15",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 20",
-    "captured_at": "2026-10-23T02:20:17.914Z",
-    "received_at": "2026-10-23T10:20:17+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 21",
+    "captured_at": "2026-10-23T02:21:17.913Z",
+    "received_at": "2026-10-23T10:22:15+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 69,
+      "total": 68,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -218,13 +218,7 @@
         "time": "2026-10-23 10:14",
         "district": "觀音區",
         "category": "路樹災情-路樹倒塌",
-        "status": "待處理"
-      },
-      {
-        "time": "2026-10-23 10:13",
-        "district": "新屋區",
-        "category": "積淹水災情-房屋積淹水(未退水)",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 10:07",
@@ -326,12 +320,6 @@
         "time": "2026-10-23 09:23",
         "district": "觀音區",
         "category": "民生、基礎設施災情-電力停電",
-        "status": "處理中"
-      },
-      {
-        "time": "2026-10-23 09:16",
-        "district": "新屋區",
-        "category": "民生、基礎設施災情-電線掉落、垂落",
         "status": "處理中"
       },
       {
@@ -629,9 +617,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 69,
-    "incidents_captured_at": "2026-10-23T02:20:15.232Z",
-    "incidents_received_at": "2026-10-23T10:20:17+08:00",
+    "incidents_total": 67,
+    "incidents_captured_at": "2026-10-23T02:22:15.449Z",
+    "incidents_received_at": "2026-10-23T10:22:15+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
