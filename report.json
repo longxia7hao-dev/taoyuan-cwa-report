@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 10:20:00",
   "rain_gen_time": "2026-10-23 10:26:27",
   "wind_update_time": "2026-10-23 10:26:09",
-  "generated_at": "2026-10-23 10:31:16",
+  "generated_at": "2026-10-23 10:32:18",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 10: 30",
-    "captured_at": "2026-10-23T02:30:18.976Z",
-    "received_at": "2026-10-23T10:31:16+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 32",
+    "captured_at": "2026-10-23T02:32:17.575Z",
+    "received_at": "2026-10-23T10:32:17+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 68,
+      "total": 70,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -218,6 +218,12 @@
         "time": "2026-10-23 10:30",
         "district": "八德區",
         "category": "路樹災情-路樹倒塌",
+        "status": "待處理"
+      },
+      {
+        "time": "2026-10-23 10:30",
+        "district": "新屋區",
+        "category": "民生、基礎設施災情-電力停電",
         "status": "待處理"
       },
       {
@@ -629,9 +635,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 69,
-    "incidents_captured_at": "2026-10-23T02:31:16.262Z",
-    "incidents_received_at": "2026-10-23T10:31:16+08:00",
+    "incidents_total": 70,
+    "incidents_captured_at": "2026-10-23T02:32:16.169Z",
+    "incidents_received_at": "2026-10-23T10:32:17+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
