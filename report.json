@@ -188,14 +188,14 @@
   "rain_obs_time": "2026-10-23 09:40:00",
   "rain_gen_time": "2026-10-23 09:46:23",
   "wind_update_time": "2026-10-23 09:36:12",
-  "generated_at": "2026-10-23 09:58:28",
+  "generated_at": "2026-10-23 09:59:29",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 09: 57",
-    "captured_at": "2026-10-23T01:57:35.025Z",
-    "received_at": "2026-10-23T09:58:27+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 09: 59",
+    "captured_at": "2026-10-23T01:59:29.032Z",
+    "received_at": "2026-10-23T09:59:29+08:00",
     "age_minutes": 0.0,
     "stats": {
       "total": 64,
@@ -356,7 +356,7 @@
         "time": "2026-10-23 08:55",
         "district": "蘆竹區",
         "category": "民生、基礎設施災情-交通號誌損壞",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 08:54",
@@ -600,8 +600,8 @@
       }
     ],
     "incidents_total": 64,
-    "incidents_captured_at": "2026-10-23T01:58:27.959Z",
-    "incidents_received_at": "2026-10-23T09:58:27+08:00",
+    "incidents_captured_at": "2026-10-23T01:59:27.480Z",
+    "incidents_received_at": "2026-10-23T09:59:29+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
