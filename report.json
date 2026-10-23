@@ -188,15 +188,15 @@
   "rain_obs_time": "2026-10-23 09:40:00",
   "rain_gen_time": "2026-10-23 09:46:23",
   "wind_update_time": "2026-10-23 09:36:12",
-  "generated_at": "2026-10-23 09:50:06",
+  "generated_at": "2026-10-23 09:53:27",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 09: 49",
-    "captured_at": "2026-10-23T01:49:29.019Z",
-    "received_at": "2026-10-23T09:49:29+08:00",
-    "age_minutes": 0.6,
+    "source_page_time": "時間：2026 - 10 - 23 09: 52",
+    "captured_at": "2026-10-23T01:52:35.021Z",
+    "received_at": "2026-10-23T09:53:27+08:00",
+    "age_minutes": 0.0,
     "stats": {
       "total": 61,
       "dead": 0,
@@ -214,6 +214,12 @@
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 09:52",
+        "district": "大園區",
+        "category": "其他災情-其他",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 09:44",
         "district": "新屋區",
@@ -386,7 +392,7 @@
         "time": "2026-10-23 08:32",
         "district": "大園區",
         "category": "民生、基礎設施災情-其他",
-        "status": "處理中"
+        "status": "已處置"
       },
       {
         "time": "2026-10-23 08:28",
@@ -581,11 +587,11 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 61,
-    "incidents_captured_at": "2026-10-23T01:49:26.702Z",
-    "incidents_received_at": "2026-10-23T09:49:29+08:00",
+    "incidents_total": 62,
+    "incidents_captured_at": "2026-10-23T01:53:27.066Z",
+    "incidents_received_at": "2026-10-23T09:53:27+08:00",
     "incidents_status": "live",
-    "incidents_age_minutes": 0.6
+    "incidents_age_minutes": 0.0
   },
   "summary": {
     "hour_rain": "以蘆竹區6毫米較高",
