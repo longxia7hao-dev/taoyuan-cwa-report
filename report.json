@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 10:30:00",
   "rain_gen_time": "2026-10-23 10:36:29",
   "wind_update_time": "2026-10-23 10:36:11",
-  "generated_at": "2026-10-23 10:44:56",
+  "generated_at": "2026-10-23 10:46:42",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
-    "source_page_time": "時間：2026 - 10 - 23 10: 43",
-    "captured_at": "2026-10-23T02:44:55.687Z",
-    "received_at": "2026-10-23T10:44:55+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 10: 45",
+    "captured_at": "2026-10-23T02:45:44.027Z",
+    "received_at": "2026-10-23T10:46:41+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 74,
+      "total": 76,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -210,10 +210,16 @@
       "unreplied": 6,
       "form_not_updated": 0,
       "task_unreplied": 0,
-      "meeting_unreplied": 0,
+      "meeting_unreplied": 1,
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 10:44",
+        "district": "大園區",
+        "category": "其他災情-其他",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 10:41",
         "district": "新屋區",
@@ -255,6 +261,12 @@
         "district": "觀音區",
         "category": "路樹災情-路樹倒塌",
         "status": "處理中"
+      },
+      {
+        "time": "2026-10-23 10:23",
+        "district": "桃園市",
+        "category": "路樹災情-路樹倒塌",
+        "status": "待處理"
       },
       {
         "time": "2026-10-23 10:14",
@@ -659,9 +671,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 74,
-    "incidents_captured_at": "2026-10-23T02:43:55.675Z",
-    "incidents_received_at": "2026-10-23T10:44:55+08:00",
+    "incidents_total": 76,
+    "incidents_captured_at": "2026-10-23T02:46:41.915Z",
+    "incidents_received_at": "2026-10-23T10:46:41+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
