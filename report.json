@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 11:10:00",
   "rain_gen_time": "2026-10-23 11:16:07",
   "wind_update_time": "2026-10-23 11:06:10",
-  "generated_at": "2026-10-23 11:27:43",
+  "generated_at": "2026-10-23 11:29:41",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "薔琵颱風-中央災害應變中1級開設",
-    "source_page_time": "時間：2026 - 10 - 23 11: 27",
-    "captured_at": "2026-10-23T03:27:42.926Z",
-    "received_at": "2026-10-23T11:27:43+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 11: 28",
+    "captured_at": "2026-10-23T03:28:43.101Z",
+    "received_at": "2026-10-23T11:29:41+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 87,
+      "total": 88,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -214,6 +214,12 @@
       "core_group_unreplied": 0
     },
     "incidents": [
+      {
+        "time": "2026-10-23 11:26",
+        "district": "觀音區",
+        "category": "民生、基礎設施災情-電力停電",
+        "status": "待處理"
+      },
       {
         "time": "2026-10-23 11:21",
         "district": "八德區",
@@ -242,7 +248,7 @@
         "time": "2026-10-23 11:13",
         "district": "大園區",
         "category": "其他災情-其他",
-        "status": "待處理"
+        "status": "處理中"
       },
       {
         "time": "2026-10-23 11:13",
@@ -737,9 +743,9 @@
         "status": "已處置"
       }
     ],
-    "incidents_total": 87,
-    "incidents_captured_at": "2026-10-23T03:27:43.308Z",
-    "incidents_received_at": "2026-10-23T11:27:43+08:00",
+    "incidents_total": 88,
+    "incidents_captured_at": "2026-10-23T03:29:41.122Z",
+    "incidents_received_at": "2026-10-23T11:29:41+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
