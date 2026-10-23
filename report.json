@@ -188,17 +188,17 @@
   "rain_obs_time": "2026-10-23 09:40:00",
   "rain_gen_time": "2026-10-23 09:46:23",
   "wind_update_time": "2026-10-23 09:36:12",
-  "generated_at": "2026-10-23 09:57:27",
+  "generated_at": "2026-10-23 09:58:28",
   "disaster_control": {
     "status": "live",
     "eoc_name": "桃園市災害應變中心",
     "project_name": "平時作業",
-    "source_page_time": "時間：2026 - 10 - 23 09: 56",
-    "captured_at": "2026-10-23T01:56:30.024Z",
-    "received_at": "2026-10-23T09:57:27+08:00",
+    "source_page_time": "時間：2026 - 10 - 23 09: 57",
+    "captured_at": "2026-10-23T01:57:35.025Z",
+    "received_at": "2026-10-23T09:58:27+08:00",
     "age_minutes": 0.0,
     "stats": {
-      "total": 63,
+      "total": 64,
       "dead": 0,
       "hurt": 0,
       "missing": 0,
@@ -600,8 +600,8 @@
       }
     ],
     "incidents_total": 64,
-    "incidents_captured_at": "2026-10-23T01:57:27.316Z",
-    "incidents_received_at": "2026-10-23T09:57:27+08:00",
+    "incidents_captured_at": "2026-10-23T01:58:27.959Z",
+    "incidents_received_at": "2026-10-23T09:58:27+08:00",
     "incidents_status": "live",
     "incidents_age_minutes": 0.0
   },
